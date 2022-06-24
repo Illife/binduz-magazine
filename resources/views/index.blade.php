@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Binduz - News Magazine Html Template</title>
+    <title>Laravel 9, пэт-проект по созданию блога</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="{{ asset('/assets/images/favicon.ico') }}" type="image/png">
@@ -62,40 +62,22 @@
                         <div id="menu" class="text-left ">
                             <ul class="binduz-er-news-offcanvas_main_menu">
                                 <li class="binduz-er-news-menu-item-has-children binduz-er-news-active">
-                                    <a href="#">Home</a>
-                                    <ul class="binduz-er-news-sub-menu">
-                                        <li><a href="index.html">Home 1</a></li>
-                                        <li><a href="index-2.html">Home 2</a></li>
-                                        <li><a href="index-3.html">Home 3</a></li>
-                                        <li><a href="index-4.html">Home 4</a></li>
-                                        <li><a href="index-5.html">Home 5</a></li>
-                                        <li><a href="index-6.html">Home 6</a></li>
-                                        <li><a href="index-7.html">Home 7</a></li>
-                                        <li><a href="index-8.html">Home 8</a></li>
-                                        <li><a href="index-9.html">Home 9</a></li>
-                                        <li><a href="index-10.html">Home 10</a></li>
-                                        <li><a href="index-11.html">Home 11</a></li>
-                                        <li><a href="index-12.html">Home 12</a></li>
-                                    </ul>
+                                    <a href="#">Главная</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="archived.html">Archived </a>
+                                    <a href="archived.html">Архивировано</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="author.html">Author</a>
+                                    <a href="author.html">Автор</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="#"> Pages</a>
-                                    <ul class="binduz-er-news-sub-menu">
-                                        <li><a href="blog-details-1.html">Blog Details 1</a></li>
-                                        <li><a href="blog-details-2.html">Blog Details 2</a></li>
-                                    </ul>
+                                    <a href="#">Детали блога</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="about-us.html"> About</a>
+                                    <a href="about-us.html">О нас</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="contact.html"> Contact</a>
+                                    <a href="contact.html">Контакты</a>
                                 </li>
                             </ul>
                         </div>
@@ -105,10 +87,10 @@
                                     <img src="{{ asset('/assets/images/logo.png') }}" alt="">
                                 </a>
                             </div>
-                            <p>I’m Michal Škvarenina, a multi-disciplinary designer currently working at Wild and as a freelance designer.</p>
+                            <p>Я Михал Шкваренина, многопрофильный дизайнер, в настоящее время работающий в Wild в качестве внештатного дизайнера.</p>
                             <ul>
-                                <li><i class="fas fa-phone"></i> +212 34 45 45 98</li>
-                                <li><i class="fas fa-home"></i> Angle Bd Abdelmoumen & rue soumaya, Résidence</li>
+                                <li><i class="fas fa-phone"></i> +7 920 445 45 98</li>
+                                <li><i class="fas fa-home"></i> ул. Казакова, 28, Москва</li>
                                 <li><i class="fas fa-envelope"></i> hello@example.com</li>
                             </ul>
                         </div>
@@ -131,7 +113,7 @@
                     </div>
                     <div class="col-6">
                         <div class="binduz-er-news-search-close float-end">
-                            <button class="binduz-er-news-search-close-btn">Close <span></span><span></span></button>
+                            <button class="binduz-er-news-search-close-btn">Закрыть <span></span><span></span></button>
                         </div> <!-- search close -->
                     </div>
                 </div> <!-- row -->
@@ -163,9 +145,9 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="binduz-er-topbar-headline">
-                        <p><span><i class="fas fa-bolt"></i> Trending News:</span> <a href="#">Miranda halim was viral after finish his workout.</a></p>
-                        <p><span><i class="fas fa-bolt"></i> Trending News:</span> <a href="#">Celebrating Asian Pacific American art and cultures</a></p>
-                        <p><span><i class="fas fa-bolt"></i> Trending News:</span> <a href="#">Honoring Asian Pacific American Heritage Month at Google</a></p>
+                        <p><span><i class="fas fa-bolt"></i> Актуальные новости:</span> <a href="#">Миранда халим заразилась вирусом после окончания своей тренировки.</a></p>
+                        <p><span><i class="fas fa-bolt"></i> Актуальные новости:</span> <a href="#">Празднование Азиатско Тихоокеанского американского искусства и культуры</a></p>
+                        <p><span><i class="fas fa-bolt"></i> Актуальные новости:</span> <a href="#">В честь Месяца американского наследия в Азиатско Тихоокеанском регионе в Google</a></p>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -180,7 +162,7 @@
                             </ul>
                         </div>
                         <div class="binduz-er-news-subscribe-btn">
-                            <a class="binduz-er-main-btn" href="#">Subscribe</a>
+                            <a class="binduz-er-main-btn" href="#">Подписаться</a>
                         </div>
                     </div>
                 </div>
@@ -199,44 +181,26 @@
                     <div class="col-lg-12">
                         <div class="navigation">
                             <nav class="navbar navbar-expand-lg">
-                                <div class="navbar-brand logo"><a href="index.html"><img src="{{ asset('/assets/images/logo.png') }}" alt=""></a></div> <!-- logo -->
+                                <div class="navbar-brand logo"><a href="/"><img src="{{ asset('/assets/images/logo.png') }}" alt=""></a></div> <!-- logo -->
                                 <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                     <ul class="navbar-nav m-auto">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="index.html">Home <i class="fa fa-angle-down"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.html">Home 1</a></li>
-                                                <li><a href="index-2.html">Home 2</a></li>
-                                                <li><a href="index-3.html">Home 3</a></li>
-                                                <li><a href="index-4.html">Home 4</a></li>
-                                                <li><a href="index-5.html">Home 5</a></li>
-                                                <li><a href="index-6.html">Home 6</a></li>
-                                                <li><a href="index-7.html">Home 7</a></li>
-                                                <li><a href="index-8.html">Home 8</a></li>
-                                                <li><a href="index-9.html">Home 9</a></li>
-                                                <li><a href="index-10.html">Home 10</a></li>
-                                                <li><a href="index-11.html">Home 11</a></li>
-                                                <li><a href="index-12.html">Home 12</a></li>
-                                            </ul>
+                                            <a class="nav-link" href="/">Главная<i class="fa"></i></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="archived.html">Archived </a>
+                                            <a class="nav-link" href="archived.html">Архивировано</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="author.html">Author</a>
+                                            <a class="nav-link" href="author.html">Автор</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Pages<i class="fa fa-angle-down"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog-details-1.html">Blog Details 1</a></li>
-                                                <li><a href="blog-details-2.html">Blog Details 2</a></li>
-                                            </ul>
+                                            <a class="nav-link" href="#">Детали блога<i class="fa"></i></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="about-us.html">About</a>
+                                            <a class="nav-link" href="about-us.html">О нас</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="contact.html">Contact</a>
+                                            <a class="nav-link" href="contact.html">Контакты</a>
                                         </li>
                                     </ul>
                                 </div> <!-- navbar collapse -->
@@ -270,19 +234,19 @@
                         <div class="binduz-er-hero-news-content">
                             <div class="binduz-er-hero-meta">
                                 <div class="binduz-er-meta-category">
-                                    <a href="#">Technology</a>
+                                    <a href="#">Технология</a>
                                 </div>
                                 <div class="binduz-er-meta-date">
-                                    <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
+                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
                                 </div>
                             </div>
                             <div class="binduz-er-hero-title">
-                                <h3 class="binduz-er-title"><a href="#">Sparks of inspiration to the new trend 2021</a></h3>
+                                <h3 class="binduz-er-title"><a href="#">Искры вдохновения для нового тренда 2022 года</a></h3>
                             </div>
                             <div class="binduz-er-meta-author">
                                 <div class="binduz-er-author">
                                     <img src="{{ asset('/assets/images/user-1.png') }}" alt="">
-                                    <span>By <span>Rosalina D.</span></span>
+                                    Розалина Д.</span></span>
                                 </div>
                                 <div class="binduz-er-meta-list">
                                     <ul>
@@ -298,12 +262,12 @@
                         <div class="binduz-er-hero-weather d-flex justify-content-end">
                             <div class="binduz-er-weather-item">
                                 <img src="{{ asset('/assets/images/icon/icon-1.png') }}" alt="">
-                                <h5 class="binduz-er-title">Melbourne</h5>
+                                <h5 class="binduz-er-title">Мельбурн</h5>
                                 <span>31°C / 25 - 32°C</span>
                             </div>
                             <div class="binduz-er-weather-item">
                                 <img src="{{ asset('/assets/images/icon/icon-2.png') }}" alt="">
-                                <h5 class="binduz-er-title">New York </h5>
+                                <h5 class="binduz-er-title">Нью-Йорк</h5>
                                 <span>31°C / 25 - 32°C</span>
                             </div>
                         </div>
@@ -319,19 +283,19 @@
                         <div class="binduz-er-hero-news-content">
                             <div class="binduz-er-hero-meta">
                                 <div class="binduz-er-meta-category">
-                                    <a href="#">Technology</a>
+                                    <a href="#">Технология</a>
                                 </div>
                                 <div class="binduz-er-meta-date">
-                                    <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
+                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
                                 </div>
                             </div>
                             <div class="binduz-er-hero-title">
-                                <h3 class="binduz-er-title"><a href="#">Honoring Asian Pacific American Heritage Month </a></h3>
+                                <h3 class="binduz-er-title"><a href="#">В честь Месяца Наследия Америки в Азиатско Тихоокеанском регионе</a></h3>
                             </div>
                             <div class="binduz-er-meta-author">
                                 <div class="binduz-er-author">
                                     <img src="{{ asset('/assets/images/user-1.png') }}" alt="">
-                                    <span>By <span>Rosalina D.</span></span>
+                                    Розалина Д.</span></span>
                                 </div>
                                 <div class="binduz-er-meta-list">
                                     <ul>
@@ -347,12 +311,12 @@
                         <div class="binduz-er-hero-weather d-flex justify-content-end">
                             <div class="binduz-er-weather-item">
                                 <img src="{{ asset('/assets/images/icon/icon-1.png') }}" alt="">
-                                <h5 class="binduz-er-title">Melbourne</h5>
+                                <h5 class="binduz-er-title">Мельбурн</h5>
                                 <span>31°C / 25 - 32°C</span>
                             </div>
                             <div class="binduz-er-weather-item">
                                 <img src="{{ asset('/assets/images/icon/icon-2.png') }}" alt="">
-                                <h5 class="binduz-er-title">New York </h5>
+                                <h5 class="binduz-er-title">Нью-Йорк</h5>
                                 <span>31°C / 25 - 32°C</span>
                             </div>
                         </div>
@@ -368,19 +332,19 @@
                         <div class="binduz-er-hero-news-content">
                             <div class="binduz-er-hero-meta">
                                 <div class="binduz-er-meta-category">
-                                    <a href="#">Technology</a>
+                                    <a href="#">Технология</a>
                                 </div>
                                 <div class="binduz-er-meta-date">
-                                    <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
+                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
                                 </div>
                             </div>
                             <div class="binduz-er-hero-title">
-                                <h3 class="binduz-er-title"><a href="#">Championing women’s sports with the WNBA</a></h3>
+                                <h3 class="binduz-er-title"><a href="#">Отстаивание женских<br>видов спорта с WNBA</a></h3>
                             </div>
                             <div class="binduz-er-meta-author">
                                 <div class="binduz-er-author">
                                     <img src="{{ asset('/assets/images/user-1.png') }}" alt="">
-                                    <span>By <span>Rosalina D.</span></span>
+                                    Розалина Д.</span></span>
                                 </div>
                                 <div class="binduz-er-meta-list">
                                     <ul>
@@ -396,12 +360,12 @@
                         <div class="binduz-er-hero-weather d-flex justify-content-end">
                             <div class="binduz-er-weather-item">
                                 <img src="{{ asset('/assets/images/icon/icon-1.png') }}" alt="">
-                                <h5 class="binduz-er-title">Melbourne</h5>
+                                <h5 class="binduz-er-title">Мельбурн</h5>
                                 <span>31°C / 25 - 32°C</span>
                             </div>
                             <div class="binduz-er-weather-item">
                                 <img src="{{ asset('/assets/images/icon/icon-2.png') }}" alt="">
-                                <h5 class="binduz-er-title">New York </h5>
+                                <h5 class="binduz-er-title">Нью-Йорк</h5>
                                 <span>31°C / 25 - 32°C</span>
                             </div>
                         </div>
@@ -418,9 +382,9 @@
                 </div>
                 <div class="binduz-er-content">
                     <div class="binduz-er-post-meta-date">
-                        <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
+                        <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
                     </div>
-                    <h4 class="binduz-er-title"><a href="#">Sparks of inspiration to <br> the new trend 2021</a></h4>
+                    <h4 class="binduz-er-title"><a href="#">Искры вдохновения для<br>нового тренда 2022</a></h4>
                 </div>
             </div>
             <div class="binduz-er-news-portal-item">
@@ -429,9 +393,9 @@
                 </div>
                 <div class="binduz-er-content">
                     <div class="binduz-er-post-meta-date">
-                        <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
+                        <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
                     </div>
-                    <h4 class="binduz-er-title"><a href="#">Honoring Asian Pacific <br> American Heritage Month</a></h4>
+                    <h4 class="binduz-er-title"><a href="#">В честь Азиатско-Тихоокеанского региона<br>Месяц американского наследия</a></h4>
                 </div>
 
             </div>
@@ -441,9 +405,9 @@
                 </div>
                 <div class="binduz-er-content">
                     <div class="binduz-er-post-meta-date">
-                        <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
+                        <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
                     </div>
-                    <h4 class="binduz-er-title"><a href="#">Championing women’s <br> sports with the WNBA </a></h4>
+                    <h4 class="binduz-er-title"><a href="#">Отстаивание женских<br>видов спорта с WNBA</a></h4>
                 </div>
 
             </div>
@@ -461,26 +425,31 @@
                     <div class="binduz-er-trending-news-topbar d-block d-md-flex justify-content-between align-items-center">
                         <div class="binduz-er-trending-box">
                             <div class="binduz-er-title">
-                                <h3 class="binduz-er-title">Trending News</h3>
+                                <h3 class="binduz-er-title">Актуальные новости</h3>
+                                <style>
+                                    .binduz-er-title::before {
+                                        content: inherit !important;
+                                    }
+                                </style>
                             </div>
                         </div>
 
                         <div class="binduz-er-news-tab-btn d-flex justify-content-md-end justify-content-start">
                             <ul class="nav nav-pills " id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">All</a>
+                                    <a class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">Все</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="pills-2-tab" data-bs-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">Travel</a>
+                                    <a class="nav-link" id="pills-2-tab" data-bs-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">Путешествия</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="pills-3-tab" data-bs-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">Fashion</a>
+                                    <a class="nav-link" id="pills-3-tab" data-bs-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">Мода</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="pills-4-tab" data-bs-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">Health</a>
+                                    <a class="nav-link" id="pills-4-tab" data-bs-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">Здоровье</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="pills-5-tab" data-bs-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false">Nature</a>
+                                    <a class="nav-link" id="pills-5-tab" data-bs-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false">Природа</a>
                                 </li>
                             </ul>
                         </div>
@@ -498,13 +467,13 @@
                                                         <div class="binduz-er-trending-news-overlay">
                                                             <div class="binduz-er-trending-news-meta">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
                                                                 </div>
                                                                 <div class="binduz-er-trending-news-title">
-                                                                    <h3 class="binduz-er-title"><a href="#">A DJ’s mission to tell Asian American stories, track by track</a></h3>
+                                                                    <h3 class="binduz-er-title"><a href="#">Миссия ди-джея - рассказывать истории американцев азиатского происхождения, трек за треком</a></h3>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-news-share">
@@ -523,14 +492,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Bring iconic Japanese characters to life with</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Оживите культовых японских персонажей с помощью</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -541,14 +510,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Get ready for Hollywood’s big night with Google</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Приготовьтесь к большой голливудской ночи вместе с Google</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -559,14 +528,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Spot misinformation online with these tips</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Выявляйте дезинформацию в Интернете с помощью этих советов</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -583,13 +552,13 @@
                                                         <div class="binduz-er-trending-news-overlay">
                                                             <div class="binduz-er-trending-news-meta">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
                                                                 </div>
                                                                 <div class="binduz-er-trending-news-title">
-                                                                    <h3 class="binduz-er-title"><a href="#">A DJ’s mission to tell Asian American stories, track by track</a></h3>
+                                                                    <h3 class="binduz-er-title"><a href="#">Миссия ди-джея - рассказывать истории американцев азиатского происхождения, трек за треком</a></h3>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-news-share">
@@ -608,14 +577,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Bring iconic Japanese characters to life with</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Оживите культовых японских персонажей с помощью</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -626,14 +595,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Get ready for Hollywood’s big night with Google</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Приготовьтесь к большой голливудской ночи вместе с Google</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -644,14 +613,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Spot misinformation online with these tips</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Выявляйте дезинформацию в Интернете с помощью этих советов</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -668,13 +637,13 @@
                                                         <div class="binduz-er-trending-news-overlay">
                                                             <div class="binduz-er-trending-news-meta">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
                                                                 </div>
                                                                 <div class="binduz-er-trending-news-title">
-                                                                    <h3 class="binduz-er-title"><a href="#">A DJ’s mission to tell Asian American stories, track by track</a></h3>
+                                                                    <h3 class="binduz-er-title"><a href="#">Миссия ди-джея - рассказывать истории американцев азиатского происхождения, трек за треком</a></h3>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-news-share">
@@ -693,14 +662,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Bring iconic Japanese characters to life with</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Оживите культовых японских персонажей с помощью</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -711,14 +680,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Get ready for Hollywood’s big night with Google</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Приготовьтесь к большой голливудской ночи вместе с Google</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -729,14 +698,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Spot misinformation online with these tips</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Выявляйте дезинформацию в Интернете с помощью этих советов</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -753,13 +722,13 @@
                                                         <div class="binduz-er-trending-news-overlay">
                                                             <div class="binduz-er-trending-news-meta">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
                                                                 </div>
                                                                 <div class="binduz-er-trending-news-title">
-                                                                    <h3 class="binduz-er-title"><a href="#">A DJ’s mission to tell Asian American stories, track by track</a></h3>
+                                                                    <h3 class="binduz-er-title"><a href="#">Миссия ди-джея - рассказывать истории американцев азиатского происхождения, трек за треком</a></h3>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-news-share">
@@ -778,14 +747,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Bring iconic Japanese characters to life with</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Оживите культовых японских персонажей с помощью</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -796,14 +765,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Get ready for Hollywood’s big night with Google</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Приготовьтесь к большой голливудской ночи вместе с Google</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -814,14 +783,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Spot misinformation online with these tips</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Выявляйте дезинформацию в Интернете с помощью этих советов</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -838,13 +807,13 @@
                                                         <div class="binduz-er-trending-news-overlay">
                                                             <div class="binduz-er-trending-news-meta">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
                                                                 </div>
                                                                 <div class="binduz-er-trending-news-title">
-                                                                    <h3 class="binduz-er-title"><a href="#">A DJ’s mission to tell Asian American stories, track by track</a></h3>
+                                                                    <h3 class="binduz-er-title"><a href="#">Миссия ди-джея - рассказывать истории американцев азиатского происхождения, трек за треком</a></h3>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-news-share">
@@ -863,14 +832,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Bring iconic Japanese characters to life with</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Оживите культовых японских персонажей с помощью</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -881,14 +850,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Get ready for Hollywood’s big night with Google</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Приготовьтесь к большой голливудской ночи вместе с Google</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -899,14 +868,14 @@
                                                         <div class="binduz-er-content">
                                                             <div class="binduz-er-meta-item">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#">Technology</a>
+                                                                    <a href="#">Технология</a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
-                                                                    <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                                    <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-trending-news-list-title">
-                                                                <h4 class="binduz-er-title"><a href="#">Spot misinformation online with these tips</a></h4>
+                                                                <h4 class="binduz-er-title"><a href="#">Выявляйте дезинформацию в Интернете с помощью этих советов</a></h4>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -922,36 +891,36 @@
                 <div class="  col-lg-3 col-md-12">
                     <div class="binduz-er-sidebar-categories">
                         <div class="binduz-er-sidebar-title">
-                            <h4 class="binduz-er-title">Categories</h4>
+                            <h4 class="binduz-er-title">Категории</h4>
                         </div>
                         <div class="binduz-er-categories-list">
                             <div class="binduz-er-item">
                                 <a href="#">
-                                    <span>Travel</span>
+                                    <span>Путешествия</span>
                                     <span class="binduz-er-number">02</span>
                                 </a>
                             </div>
                             <div class="binduz-er-item">
                                 <a href="#">
-                                    <span>Fashion</span>
+                                    <span>Мода</span>
                                     <span class="binduz-er-number">04</span>
                                 </a>
                             </div>
                             <div class="binduz-er-item">
                                 <a href="#">
-                                    <span>Entertainment</span>
+                                    <span>Развлечения</span>
                                     <span class="binduz-er-number">01</span>
                                 </a>
                             </div>
                             <div class="binduz-er-item">
                                 <a href="#">
-                                    <span>Health</span>
+                                    <span>Здоровье</span>
                                     <span class="binduz-er-number">08</span>
                                 </a>
                             </div>
                             <div class="binduz-er-item">
                                 <a href="#">
-                                    <span>Nature</span>
+                                    <span>Природа</span>
                                     <span class="binduz-er-number">06</span>
                                 </a>
                             </div>
@@ -972,7 +941,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="binduz-er-featured-slider mt-30">
                         <div class="binduz-er-featured-title">
-                            <h3 class="binduz-er-title">Featured</h3>
+                            <h3 class="binduz-er-title">Рекомендуемое</h3>
                         </div>
                         <div class="binduz-er-featured-slider-item">
                             <div class="binduz-er-trending-news-list-box">
@@ -982,14 +951,14 @@
                                 <div class="binduz-er-content">
                                     <div class="binduz-er-meta-item">
                                         <div class="binduz-er-meta-categories">
-                                            <a href="#">Technology</a>
+                                            <a href="#">Технология</a>
                                         </div>
                                         <div class="binduz-er-meta-date">
-                                            <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                            <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                         </div>
                                     </div>
                                     <div class="binduz-er-trending-news-list-title">
-                                        <h4 class="binduz-er-title"><a href="#">Hear educators' stories this Teacher Appreciation Week</a></h4>
+                                        <h4 class="binduz-er-title"><a href="#">Послушайте истории педагогов на этой Неделе благодарности учителям</a></h4>
                                     </div>
                                 </div>
                             </div>
@@ -1000,14 +969,14 @@
                                 <div class="binduz-er-content">
                                     <div class="binduz-er-meta-item">
                                         <div class="binduz-er-meta-categories">
-                                            <a href="#">Technology</a>
+                                            <a href="#">Технология</a>
                                         </div>
                                         <div class="binduz-er-meta-date">
-                                            <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                            <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                         </div>
                                     </div>
                                     <div class="binduz-er-trending-news-list-title">
-                                        <h4 class="binduz-er-title"><a href="#">Escucha las historias de los educadores en esta </a></h4>
+                                        <h4 class="binduz-er-title"><a href="#">Слушайте истории педагогов в этом</a></h4>
                                     </div>
                                 </div>
                             </div>
@@ -1020,13 +989,13 @@
                         <div class="binduz-er-trending-news-overlay">
                             <div class="binduz-er-trending-news-meta">
                                 <div class="binduz-er-meta-categories">
-                                    <a href="#">Technology</a>
+                                    <a href="#">Технология</a>
                                 </div>
                                 <div class="binduz-er-meta-date">
-                                    <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
+                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
                                 </div>
                                 <div class="binduz-er-trending-news-title">
-                                    <h3 class="binduz-er-title"><a href="#">Trash to treasure: How Google thinks about deconstruction</a></h3>
+                                    <h3 class="binduz-er-title"><a href="#">Мусор для сокровищ: как Google думает о деконструкции</a></h3>
                                 </div>
                             </div>
                             <div class="binduz-er-news-share">
@@ -1039,13 +1008,13 @@
                         <div class="binduz-er-trending-news-overlay">
                             <div class="binduz-er-trending-news-meta">
                                 <div class="binduz-er-meta-categories">
-                                    <a href="#">Technology</a>
+                                    <a href="#">Технология</a>
                                 </div>
                                 <div class="binduz-er-meta-date">
-                                    <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
+                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
                                 </div>
                                 <div class="binduz-er-trending-news-title">
-                                    <h3 class="binduz-er-title"><a href="#">Spring Fashion Show at the University of Michigan Has Started.</a></h3>
+                                    <h3 class="binduz-er-title"><a href="#">Весенний показ мод в Мичиганском университете начался.</a></h3>
                                 </div>
                             </div>
                             <div class="binduz-er-news-share">
@@ -1057,31 +1026,31 @@
                 <div class="col-lg-3">
                     <div class="binduz-er-sidebar-social">
                         <div class="binduz-er-sidebar-title">
-                            <h4 class="binduz-er-title">Social Feed</h4>
+                            <h4 class="binduz-er-title">Социальная лента</h4>
                         </div>
                         <div class="binduz-er-social-list">
                             <div class="binduz-er-list">
                                 <a href="#">
-                                    <span><i class="fab fa-facebook-f"></i> <span>15000</span> Likes</span>
-                                    <span>Like</span>
+                                    <span><i class="fab fa-facebook-f"></i> <span>15000</span> Лайков</span>
+                                    <span>Лайк</span>
                                 </a>
                                 <a href="#">
-                                    <span><i class="fab fa-twitter"></i> <span>15000</span> Likes</span>
+                                    <span><i class="fab fa-twitter"></i> <span>15000</span> Лайков</span>
                                     <span>Tweet</span>
                                 </a>
                                 <a href="#">
-                                    <span><i class="fab fa-behance"></i> <span>5k+</span> Follower</span>
-                                    <span>Follow</span>
+                                    <span><i class="fab fa-behance"></i> <span>5k+</span> Фолловеров</span>
+                                    <span>Следить</span>
                                 </a>
                                 <a href="#">
-                                    <span><i class="fab fa-youtube"></i> <span>15000</span> Subscribe</span>
-                                    <span>Subscribe</span>
+                                    <span><i class="fab fa-youtube"></i> <span>15000</span> Подписчиков</span>
+                                    <span>Подписаться</span>
                                 </a>
                             </div>
                         </div>
                         <div class="binduz-er-sidebar-add mt-20">
-                            <h3 class="binduz-er-title">Build your website & <span>grow your business</span></h3>
-                            <a class="binduz-er-main-btn" href="#">Purchase</a>
+                            <h3 class="binduz-er-title">Создайте свой веб-сайт и<span>развивайте свой бизнес</span></h3>
+                            <a class="binduz-er-main-btn" href="#">Покупка</a>
                         </div>
                     </div>
                 </div>
@@ -1099,7 +1068,7 @@
                 <div class="col-lg-8">
                     <div class="binduz-er-video-post-topbar">
                         <div class="binduz-er-video-post-title">
-                            <h3 class="binduz-er-title">Video Post</h3>
+                            <h3 class="binduz-er-title">Видеопосты</h3>
                         </div>
                     </div>
                 </div>
@@ -1107,19 +1076,19 @@
                     <div class="binduz-er-video-post-tab">
                         <ul class="nav nav-pills justify-content-lg-end justify-content-start" id="pills-tab-2" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active" id="pills-21-tab" data-bs-toggle="pill" href="#pills-21" role="tab" aria-controls="pills-21" aria-selected="true">All</a>
+                                <a class="nav-link active" id="pills-21-tab" data-bs-toggle="pill" href="#pills-21" role="tab" aria-controls="pills-21" aria-selected="true">Все</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="pills-22-tab" data-bs-toggle="pill" href="#pills-22" role="tab" aria-controls="pills-22" aria-selected="false">Travel</a>
+                                <a class="nav-link" id="pills-22-tab" data-bs-toggle="pill" href="#pills-22" role="tab" aria-controls="pills-22" aria-selected="false">Путешествия</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="pills-23-tab" data-bs-toggle="pill" href="#pills-23" role="tab" aria-controls="pills-23" aria-selected="false">Fashion</a>
+                                <a class="nav-link" id="pills-23-tab" data-bs-toggle="pill" href="#pills-23" role="tab" aria-controls="pills-23" aria-selected="false">Мода</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="pills-24-tab" data-bs-toggle="pill" href="#pills-24" role="tab" aria-controls="pills-24" aria-selected="false">Health</a>
+                                <a class="nav-link" id="pills-24-tab" data-bs-toggle="pill" href="#pills-24" role="tab" aria-controls="pills-24" aria-selected="false">Здоровье</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="pills-25-tab" data-bs-toggle="pill" href="#pills-25" role="tab" aria-controls="pills-25" aria-selected="false">Nature</a>
+                                <a class="nav-link" id="pills-25-tab" data-bs-toggle="pill" href="#pills-25" role="tab" aria-controls="pills-25" aria-selected="false">Природа</a>
                             </li>
                         </ul>
                     </div>
@@ -1140,14 +1109,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">A Matter of Impact: April updates from Google.org</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Вопрос воздействия: апрельские обновления от Google.org</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1161,14 +1130,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Android Enterprise security delivers for flexible work</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Android Enterprise security обеспечивает гибкую работу</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1186,14 +1155,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Escucha las historias de los educadores en esta Semana de Apreciación del Profesor</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Слушайте истории педагогов на этой неделе оценки учителя</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1211,14 +1180,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">This new emoji has been years in the making</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Этот новый смайлик разрабатывался уже много лет</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1232,14 +1201,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">New resources on the gender gap in computer science </a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Новые ресурсы по гендерному разрыву в информатике</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1261,14 +1230,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">A Matter of Impact: April updates from Google.org</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Вопрос воздействия: апрельские обновления от Google.org</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1282,14 +1251,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Android Enterprise security delivers for flexible work</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Android Enterprise security обеспечивает гибкую работу</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1307,14 +1276,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Escucha las historias de los educadores en esta Semana de Apreciación del Profesor</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Слушайте истории педагогов на этой неделе оценки учителя</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1332,14 +1301,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">This new emoji has been years in the making</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Этот новый смайлик разрабатывался уже много лет</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1353,14 +1322,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">New resources on the gender gap in computer science </a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Новые ресурсы по гендерному разрыву в информатике</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1382,14 +1351,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">A Matter of Impact: April updates from Google.org</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Вопрос воздействия: апрельские обновления от Google.org</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1403,14 +1372,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Android Enterprise security delivers for flexible work</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Android Enterprise security обеспечивает гибкую работу</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1428,14 +1397,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Escucha las historias de los educadores en esta Semana de Apreciación del Profesor</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Слушайте истории педагогов на этой неделе оценки учителя</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1453,14 +1422,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">This new emoji has been years in the making</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Этот новый смайлик разрабатывался уже много лет</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1474,14 +1443,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">New resources on the gender gap in computer science </a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Новые ресурсы по гендерному разрыву в информатике</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1503,14 +1472,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">A Matter of Impact: April updates from Google.org</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Вопрос воздействия: апрельские обновления от Google.org</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1524,14 +1493,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Android Enterprise security delivers for flexible work</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Android Enterprise security обеспечивает гибкую работу</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1549,14 +1518,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Escucha las historias de los educadores en esta Semana de Apreciación del Profesor</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Слушайте истории педагогов на этой неделе оценки учителя</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1574,14 +1543,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">This new emoji has been years in the making</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Этот новый смайлик разрабатывался уже много лет</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1595,14 +1564,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">New resources on the gender gap in computer science </a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Новые ресурсы по гендерному разрыву в информатике</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1624,14 +1593,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">A Matter of Impact: April updates from Google.org</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Вопрос воздействия: апрельские обновления от Google.org</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1645,14 +1614,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Android Enterprise security delivers for flexible work</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Android Enterprise security обеспечивает гибкую работу</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1670,14 +1639,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Escucha las historias de los educadores en esta Semana de Apreciación del Profesor</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Слушайте истории педагогов на этой неделе оценки учителя</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1695,14 +1664,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">This new emoji has been years in the making</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Этот новый смайлик разрабатывался уже много лет</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1716,14 +1685,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">New resources on the gender gap in computer science </a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Новые ресурсы по гендерному разрыву в информатике</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1746,7 +1715,7 @@
                 <div class="col-lg-12">
                     <div class="binduz-er-trending-today-topbar">
                         <div class="binduz-er-trending-today-title">
-                            <h3 class="binduz-er-title">What's trending today</h3>
+                            <h3 class="binduz-er-title">Что сегодня в тренде</h3>
                         </div>
                     </div>
                 </div>
@@ -1761,14 +1730,14 @@
                             <div class="binduz-er-content">
                                 <div class="binduz-er-meta-item">
                                     <div class="binduz-er-meta-categories">
-                                        <a href="#">Technology</a>
+                                        <a href="#">Технология</a>
                                     </div>
                                     <div class="binduz-er-meta-date">
-                                        <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                        <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                     </div>
                                 </div>
                                 <div class="binduz-er-trending-news-list-title">
-                                    <h4 class="binduz-er-title"><a href="#">A Matter of Impact: April updates from Google.org</a></h4>
+                                    <h4 class="binduz-er-title"><a href="#">Вопрос воздействия: апрельские обновления от Google.org</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -1783,14 +1752,14 @@
                             <div class="binduz-er-content">
                                 <div class="binduz-er-meta-item">
                                     <div class="binduz-er-meta-categories">
-                                        <a href="#">Technology</a>
+                                        <a href="#">Технология</a>
                                     </div>
                                     <div class="binduz-er-meta-date">
-                                        <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                        <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                     </div>
                                 </div>
                                 <div class="binduz-er-trending-news-list-title">
-                                    <h4 class="binduz-er-title"><a href="#">Android Enterprise security delivers for flexible work</a></h4>
+                                    <h4 class="binduz-er-title"><a href="#">Android Enterprise security обеспечивает гибкую работу</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -1805,14 +1774,14 @@
                             <div class="binduz-er-content">
                                 <div class="binduz-er-meta-item">
                                     <div class="binduz-er-meta-categories">
-                                        <a href="#">Technology</a>
+                                        <a href="#">Технология</a>
                                     </div>
                                     <div class="binduz-er-meta-date">
-                                        <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                        <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                     </div>
                                 </div>
                                 <div class="binduz-er-trending-news-list-title">
-                                    <h4 class="binduz-er-title"><a href="#">Trash to treasure: How Google thinks about deconstruction</a></h4>
+                                    <h4 class="binduz-er-title"><a href="#">Мусор для сокровищ: как Google думает о деконструкции</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -1827,14 +1796,14 @@
                             <div class="binduz-er-content">
                                 <div class="binduz-er-meta-item">
                                     <div class="binduz-er-meta-categories">
-                                        <a href="#">Technology</a>
+                                        <a href="#">Технология</a>
                                     </div>
                                     <div class="binduz-er-meta-date">
-                                        <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                        <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                     </div>
                                 </div>
                                 <div class="binduz-er-trending-news-list-title">
-                                    <h4 class="binduz-er-title"><a href="#">We pack in here just the things to start a News</a></h4>
+                                    <h4 class="binduz-er-title"><a href="#">Мы упаковываем здесь только то, что нужно для начала новостей</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -1854,7 +1823,7 @@
                 <div class="col-lg-9">
                     <div class="binduz-er-video-post-topbar">
                         <div class="binduz-er-video-post-title">
-                            <h3 class="binduz-er-title">Main Posts</h3>
+                            <h3 class="binduz-er-title">Основные должности</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -1867,14 +1836,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Trash to treasure: How Google thinks about</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Мусор для сокровищ: как Google думает о</a></h4>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in cididunt ut labore et dolore</p>
                                         </div>
                                     </div>
@@ -1890,10 +1859,10 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
@@ -1913,14 +1882,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Five ways we’re making Google the safer way to</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Пять способов, которыми мы делаем Google более безопасным</a></h4>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in cididunt ut labore et dolore</p>
                                         </div>
                                     </div>
@@ -1936,14 +1905,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Bringing digital skills to previously incarcerated</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Привнесение цифровых навыков в ранее заключенные</a></h4>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in cididunt ut labore et dolore</p>
                                         </div>
                                     </div>
@@ -1959,14 +1928,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">When artists and machine intelligence come together</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">Когда художники и машинный интеллект объединяются</a></h4>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in cididunt ut labore et dolore</p>
                                         </div>
                                     </div>
@@ -1982,14 +1951,14 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#">Technology</a>
+                                                <a href="#">Технология</a>
                                             </div>
                                             <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i> 14th February 2020</span>
+                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">AI assists doctors in interpreting skin conditions</a></h4>
+                                            <h4 class="binduz-er-title"><a href="#">ИИ помогает врачам в интерпретации кожных заболеваний</a></h4>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in cididunt ut labore et dolore</p>
                                         </div>
                                     </div>
@@ -2004,7 +1973,7 @@
                 <div class="col-lg-3">
                     <div class="binduz-er-sidebar-about">
                         <div class="binduz-er-sidebar-title">
-                            <h4 class="binduz-er-title">About Me</h4>
+                            <h4 class="binduz-er-title">Обо мне</h4>
                         </div>
                         <div class="binduz-er-sidebar-about-item">
                             <div class="binduz-er-sidebar-about-user d-flex">
@@ -2012,8 +1981,8 @@
                                     <img src="{{ asset('/assets/images/user.jpg') }}" alt="">
                                 </div>
                                 <div class="binduz-er-content">
-                                    <h4 class="binduz-er-title">Miranda Halim</h4>
-                                    <span>Author</span>
+                                    <h4 class="binduz-er-title">Миранда Халим</h4>
+                                    <span>Автор</span>
                                     <ul>
                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -2024,14 +1993,14 @@
                                 </div>
                             </div>
                             <div class="binduz-er-text">
-                                <p>The functional aspect comes first in the work process because it’s the core of the object: What is its purpose? something else?</p>
-                                <a class="binduz-er-main-btn" href="#">Connect With Me</a>
+                                <p>Функциональный аспект стоит на первом месте в рабочем процессе, потому что это ядро объекта: какова его цель? что-то еще?</p>
+                                <a class="binduz-er-main-btn" href="#">Связаться Со Мной</a>
                             </div>
                         </div>
                     </div>
                     <div class="binduz-er-sidebar-latest-post">
                         <div class="binduz-er-sidebar-title">
-                            <h4 class="binduz-er-title">Latest Post</h4>
+                            <h4 class="binduz-er-title">Последние сообщения</h4>
                         </div>
                         <div class="binduz-er-sidebar-latest-post-box">
                             <div class="binduz-er-sidebar-latest-post-item">
@@ -2039,8 +2008,8 @@
                                     <img src="{{ asset('/assets/images/latest-post-1.jpg') }}" alt="latest">
                                 </div>
                                 <div class="binduz-er-content">
-                                    <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
-                                    <h4 class="binduz-er-title"><a href="#">Introducing Android Earthquake Alerts</a></h4>
+                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
+                                    <h4 class="binduz-er-title"><a href="#">Представляем Оповещения о землетрясениях для Android</a></h4>
                                 </div>
                             </div>
                             <div class="binduz-er-sidebar-latest-post-item">
@@ -2048,8 +2017,8 @@
                                     <img src="{{ asset('/assets/images/latest-post-2.jpg') }}" alt="latest">
                                 </div>
                                 <div class="binduz-er-content">
-                                    <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
-                                    <h4 class="binduz-er-title"><a href="#">Loud and clear: AI is improving Assistant </a></h4>
+                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
+                                    <h4 class="binduz-er-title"><a href="#">Громко и ясно: искусственный интеллект совершенствует помощника</a></h4>
                                 </div>
                             </div>
                             <div class="binduz-er-sidebar-latest-post-item">
@@ -2057,8 +2026,8 @@
                                     <img src="{{ asset('/assets/images/latest-post-3.jpg') }}" alt="latest">
                                 </div>
                                 <div class="binduz-er-content">
-                                    <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
-                                    <h4 class="binduz-er-title"><a href="#">Tips and shortcuts for a more productive</a></h4>
+                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
+                                    <h4 class="binduz-er-title"><a href="#">Советы и ярлыки для продуктивности</a></h4>
                                 </div>
                             </div>
                             <div class="binduz-er-sidebar-latest-post-item">
@@ -2066,8 +2035,8 @@
                                     <img src="{{ asset('/assets/images/latest-post-4.jpg') }}" alt="latest">
                                 </div>
                                 <div class="binduz-er-content">
-                                    <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
-                                    <h4 class="binduz-er-title"><a href="#">Sparks of inspiration to the new trend 2021</a></h4>
+                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
+                                    <h4 class="binduz-er-title"><a href="#">Искры вдохновения для нового тренда 2022 года</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -2076,8 +2045,8 @@
                         <div class="binduz-er-logo">
                             <a href="#"><img src="{{ asset('/assets/images/logo-2.png') }}" alt=""></a>
                         </div>
-                        <p>Built with amazing platform & framwork. You can use anyway in blog, news & magazine.</p>
-                        <a class="binduz-er-main-btn" href="#">Purchase Now</a>
+                        <p>Построен с использованием потрясающей платформы и фреймворка. Вы можете использовать его в любом случае в блоге, новостях и журналах.</p>
+                        <a class="binduz-er-main-btn" href="#">Покупайте Сейчас</a>
                     </div>
                 </div>
             </div>
@@ -2136,23 +2105,22 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="binduz-er-footer-widget-style-1">
                                 <div class="binduz-er-footer-title">
-                                    <h3 class="binduz-er-title">Categories</h3>
+                                    <h3 class="binduz-er-title">Категории</h3>
                                 </div>
                                 <div class="binduz-er-footer-menu-list">
                                     <ul>
-                                        <li><a href="#">Architecture</a></li>
-                                        <li><a href="#">New look 2015</a></li>
-                                        <li><a href="#">Gadgets</a></li>
-                                        <li><a href="#">Mobile and Phones</a></li>
-                                        <li><a href="#">Recipes</a></li>
-                                        <li><a href="#">Decorating</a></li>
+                                        <li><a href="#">Архитектура</a></li>
+                                        <li><a href="#">Новый взгляд 2022</a></li>
+                                        <li><a href="#">Гаджеты</a></li>
+                                        <li><a href="#">Мобильные телефоны</a></li>
+                                        <li><a href="#">Рецепты</a></li>
+                                        <li><a href="#">Декорирование</a></li>
                                     </ul>
                                     <ul>
-                                        <li><a href="#">Interiors</a></li>
-                                        <li><a href="#">Street fashion</a></li>
-                                        <li><a href="#">Street fashion</a></li>
-                                        <li><a href="#">Lifestyle</a></li>
-                                        <li><a href="#">Lookback</a></li>
+                                        <li><a href="#">Интерьеры</a></li>
+                                        <li><a href="#">Уличная мода</a></li>
+                                        <li><a href="#">Образ жизни</a></li>
+                                        <li><a href="#">Оглядываясь назад</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -2160,7 +2128,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="binduz-er-footer-widget-style-1">
                                 <div class="binduz-er-footer-title">
-                                    <h3 class="binduz-er-title">Newsletter</h3>
+                                    <h3 class="binduz-er-title">Новостная рассылка</h3>
                                 </div>
                                 <div class="binduz-er-footer-widget-form">
                                     <form action="#">
@@ -2173,7 +2141,7 @@
                                             <input type="email" placeholder="Enter email address">
                                         </div>
                                         <div class="binduz-er-input-box">
-                                            <button type="button"><i class="fal fa-paper-plane"></i> Subscribe Now</button>
+                                            <button type="button"><i class="fal fa-paper-plane"></i>Подпишитесь Сейчас</button>
                                         </div>
                                     </form>
                                 </div>
@@ -2182,7 +2150,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="binduz-er-footer-widget-style-3">
                                 <div class="binduz-er-footer-title">
-                                    <h3 class="binduz-er-title">Recent Feeds</h3>
+                                    <h3 class="binduz-er-title">Последние каналы</h3>
                                 </div>
                                 <div class="binduz-er-footer-widget-feeds">
                                     <div class="binduz-er-sidebar-latest-post-box">
@@ -2191,8 +2159,8 @@
                                                 <img src="{{ asset('/assets/images/latest-post-1.jpg') }}" alt="latest">
                                             </div>
                                             <div class="binduz-er-content">
-                                                <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
-                                                <h4 class="binduz-er-title"><a href="#">Sparks of inspiration to the new trend 2021</a></h4>
+                                                <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
+                                                <h4 class="binduz-er-title"><a href="#">Искры вдохновения для нового тренда 2022 года</a></h4>
                                             </div>
                                         </div>
                                         <div class="binduz-er-sidebar-latest-post-item">
@@ -2200,8 +2168,8 @@
                                                 <img src="{{ asset('/assets/images/latest-post-2.jpg') }}" alt="latest">
                                             </div>
                                             <div class="binduz-er-content">
-                                                <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
-                                                <h4 class="binduz-er-title"><a href="#">Career certificates and more ways we're </a></h4>
+                                                <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
+                                                <h4 class="binduz-er-title"><a href="#">Сертификаты о карьере и другие способы, которыми мы</a></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -2231,7 +2199,7 @@
             </div>
         </div>
         <div class="binduz-er-back-to-top">
-            <p>BACK TO TOP <i class="fal fa-long-arrow-right"></i></p>
+            <p>ВЕРНУТЬСЯ К НАЧАЛУ <i class="fal fa-long-arrow-right"></i></p>
         </div>
     </footer>
     <div class="binduz-er-footer-copyright-area">
@@ -2239,15 +2207,15 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="binduz-er-copyright-text">
-                        <p>Copyright By@<span>QuomodoTheme</span> - 2021</p>
+                        <p>Copyright @<span>QuomodoTheme</span> - 2022</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="binduz-er-copyright-menu float-lg-end float-none">
                         <ul>
-                            <li><a href="#">Privacy & Policy</a></li>
-                            <li><a href="#">Claim A Report</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Конфиденциальность и Политика</a></li>
+                            <li><a href="#">Требовать Отчета</a></li>
+                            <li><a href="#">Карьера</a></li>
                         </ul>
                     </div>
                 </div>
@@ -2260,21 +2228,10 @@
     <!--====== BINDUZ BACK TO TOP PART START ======-->
 
     <div class="binduz-er-back-to-top">
-        <p>BACK TO TOP <i class="fal fa-long-arrow-right"></i></p>
+        <p>ВЕРНУТЬСЯ К НАЧАЛУ <i class="fal fa-long-arrow-right"></i></p>
     </div>
 
     <!--====== BINDUZ BACK TO TOP PART ENDS ======-->
-
-
-
-
-
-
-
-
-
-
-
 
     <!--====== jquery js ======-->
     <script src="{{ asset('/assets/js/vendor/modernizr-3.6.0.min.js') }}"></script>
