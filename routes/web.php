@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+require_once __DIR__ . '/../app/Http/Controllers/PostController.php';
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    $ResultReadPost = new \Controllers\PostController;
+    $ResultReadPost = $ResultReadPost->read_post();
+    return view('index')->with('ResultReadPost', $ResultReadPost);;
 });

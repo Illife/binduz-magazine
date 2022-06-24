@@ -1,3 +1,7 @@
+<?php
+
+
+?>
 <!doctype html>
 <html lang="ru">
 
@@ -226,191 +230,106 @@
     <!--====== BINDUZ HERO PART START ======-->
 
     <div class="hero-slide-active">
-        <div class="binduz-er-hero-area d-flex align-items-center">
-            <div class="binduz-er-bg-cover"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-7">
-                        <div class="binduz-er-hero-news-content">
-                            <div class="binduz-er-hero-meta">
-                                <div class="binduz-er-meta-category">
-                                    <a href="#">Технология</a>
+
+        <?php
+
+        require_once __DIR__ . '/../../../app/Models/Category.php';
+        require_once __DIR__ . '/../../../app/Models/Users.php';
+
+        foreach ($ResultReadPost as $post) { ?>
+
+            <div class="binduz-er-hero-area d-flex align-items-center">
+                <div class="binduz-er-bg-cover carousel_bg">
+                    <style>
+                        .carousel_bg {
+                            background-image: url(<?= $post['img_big'] ?>) !important;
+                        }
+                    </style>
+                </div>
+                <?php
+
+                $category_id = $post['category_id'];
+
+                $ResultReadCategoryByCategoryId = new \Models\Category;
+                $ResultReadCategoryByCategoryId = $ResultReadCategoryByCategoryId->read_category_by_category_id($category_id);
+                foreach ($ResultReadCategoryByCategoryId as $category) {
+                }
+
+                $author_id = $post['author_id'];
+                $ResultReadAuthorByAuthorId = new \Models\Users;
+                $ResultReadAuthorByAuthorId = $ResultReadAuthorByAuthorId->read_author_by_author_id($author_id);
+                foreach ($ResultReadAuthorByAuthorId as $author) {
+                }
+                ?>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-7">
+                            <div class="binduz-er-hero-news-content">
+                                <div class="binduz-er-hero-meta">
+                                    <div class="binduz-er-meta-category">
+                                        <a href="#"><?= $category['name'] ?></a>
+                                    </div>
+                                    <div class="binduz-er-meta-date">
+                                        <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
+                                    </div>
                                 </div>
-                                <div class="binduz-er-meta-date">
-                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
+                                <div class="binduz-er-hero-title">
+                                    <h3 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h3>
                                 </div>
-                            </div>
-                            <div class="binduz-er-hero-title">
-                                <h3 class="binduz-er-title"><a href="#">Искры вдохновения для нового тренда 2022 года</a></h3>
-                            </div>
-                            <div class="binduz-er-meta-author">
-                                <div class="binduz-er-author">
-                                    <img src="{{ asset('/assets/images/user-1.png') }}" alt="">
-                                    Розалина Д.</span></span>
-                                </div>
-                                <div class="binduz-er-meta-list">
-                                    <ul>
-                                        <li><i class="fal fa-eye"></i> 5k</li>
-                                        <li><i class="fal fa-heart"></i> 5k</li>
-                                        <li><i class="fal fa-comments"></i> 5k</li>
-                                    </ul>
+                                <div class="binduz-er-meta-author">
+                                    <div class="binduz-er-author">
+                                        <img src="<?= $author['img'] ?>" alt="">
+                                        <?= $author['name'] ?></span></span>
+                                    </div>
+                                    <div class="binduz-er-meta-list">
+                                        <ul>
+                                            <li><i class="fal fa-eye"></i> 5k</li>
+                                            <li><i class="fal fa-heart"></i> 5k</li>
+                                            <li><i class="fal fa-comments"></i> 5k</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="binduz-er-hero-weather d-flex justify-content-end">
-                            <div class="binduz-er-weather-item">
-                                <img src="{{ asset('/assets/images/icon/icon-1.png') }}" alt="">
-                                <h5 class="binduz-er-title">Мельбурн</h5>
-                                <span>31°C / 25 - 32°C</span>
-                            </div>
-                            <div class="binduz-er-weather-item">
-                                <img src="{{ asset('/assets/images/icon/icon-2.png') }}" alt="">
-                                <h5 class="binduz-er-title">Нью-Йорк</h5>
-                                <span>31°C / 25 - 32°C</span>
+                        <div class="col-lg-7">
+                            <div class="binduz-er-hero-weather d-flex justify-content-end">
+                                <div class="binduz-er-weather-item">
+                                    <img src="{{ asset('/assets/images/icon/icon-1.png') }}" alt="">
+                                    <h5 class="binduz-er-title">Мельбурн</h5>
+                                    <span>31°C / 25 - 32°C</span>
+                                </div>
+                                <div class="binduz-er-weather-item">
+                                    <img src="{{ asset('/assets/images/icon/icon-2.png') }}" alt="">
+                                    <h5 class="binduz-er-title">Нью-Йорк</h5>
+                                    <span>31°C / 25 - 32°C</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="binduz-er-hero-area d-flex align-items-center">
-            <div class="binduz-er-bg-cover item-2"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-7">
-                        <div class="binduz-er-hero-news-content">
-                            <div class="binduz-er-hero-meta">
-                                <div class="binduz-er-meta-category">
-                                    <a href="#">Технология</a>
-                                </div>
-                                <div class="binduz-er-meta-date">
-                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
-                                </div>
-                            </div>
-                            <div class="binduz-er-hero-title">
-                                <h3 class="binduz-er-title"><a href="#">В честь Месяца Наследия Америки в Азиатско Тихоокеанском регионе</a></h3>
-                            </div>
-                            <div class="binduz-er-meta-author">
-                                <div class="binduz-er-author">
-                                    <img src="{{ asset('/assets/images/user-1.png') }}" alt="">
-                                    Розалина Д.</span></span>
-                                </div>
-                                <div class="binduz-er-meta-list">
-                                    <ul>
-                                        <li><i class="fal fa-eye"></i> 5k</li>
-                                        <li><i class="fal fa-heart"></i> 5k</li>
-                                        <li><i class="fal fa-comments"></i> 5k</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="binduz-er-hero-weather d-flex justify-content-end">
-                            <div class="binduz-er-weather-item">
-                                <img src="{{ asset('/assets/images/icon/icon-1.png') }}" alt="">
-                                <h5 class="binduz-er-title">Мельбурн</h5>
-                                <span>31°C / 25 - 32°C</span>
-                            </div>
-                            <div class="binduz-er-weather-item">
-                                <img src="{{ asset('/assets/images/icon/icon-2.png') }}" alt="">
-                                <h5 class="binduz-er-title">Нью-Йорк</h5>
-                                <span>31°C / 25 - 32°C</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="binduz-er-hero-area d-flex align-items-center">
-            <div class="binduz-er-bg-cover item-3"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-7">
-                        <div class="binduz-er-hero-news-content">
-                            <div class="binduz-er-hero-meta">
-                                <div class="binduz-er-meta-category">
-                                    <a href="#">Технология</a>
-                                </div>
-                                <div class="binduz-er-meta-date">
-                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
-                                </div>
-                            </div>
-                            <div class="binduz-er-hero-title">
-                                <h3 class="binduz-er-title"><a href="#">Отстаивание женских<br>видов спорта с WNBA</a></h3>
-                            </div>
-                            <div class="binduz-er-meta-author">
-                                <div class="binduz-er-author">
-                                    <img src="{{ asset('/assets/images/user-1.png') }}" alt="">
-                                    Розалина Д.</span></span>
-                                </div>
-                                <div class="binduz-er-meta-list">
-                                    <ul>
-                                        <li><i class="fal fa-eye"></i> 5k</li>
-                                        <li><i class="fal fa-heart"></i> 5k</li>
-                                        <li><i class="fal fa-comments"></i> 5k</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="binduz-er-hero-weather d-flex justify-content-end">
-                            <div class="binduz-er-weather-item">
-                                <img src="{{ asset('/assets/images/icon/icon-1.png') }}" alt="">
-                                <h5 class="binduz-er-title">Мельбурн</h5>
-                                <span>31°C / 25 - 32°C</span>
-                            </div>
-                            <div class="binduz-er-weather-item">
-                                <img src="{{ asset('/assets/images/icon/icon-2.png') }}" alt="">
-                                <h5 class="binduz-er-title">Нью-Йорк</h5>
-                                <span>31°C / 25 - 32°C</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+        <?php } ?>
+
     </div>
+
     <div class="hero-portal-area">
         <div class="binduz-er-hero-news-portal hero-portal-active">
-            <div class="binduz-er-news-portal-item">
-                <div class="binduz-er-thumb">
-                    <a href="#"><img src="{{ asset('/assets/images/news-portal-1.jpg') }}" alt=""></a>
-                </div>
-                <div class="binduz-er-content">
-                    <div class="binduz-er-post-meta-date">
-                        <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
+
+            <?php foreach ($ResultReadPost as $post) { ?>
+                <div class="binduz-er-news-portal-item">
+                    <div class="binduz-er-thumb">
+                        <a href="#"><img src="<?= $post['img_small'] ?>" alt=""></a>
                     </div>
-                    <h4 class="binduz-er-title"><a href="#">Искры вдохновения для<br>нового тренда 2022</a></h4>
-                </div>
-            </div>
-            <div class="binduz-er-news-portal-item">
-                <div class="binduz-er-thumb">
-                    <a href="#"><img src="{{ asset('/assets/images/news-portal-2.jpg') }}" alt=""></a>
-                </div>
-                <div class="binduz-er-content">
-                    <div class="binduz-er-post-meta-date">
-                        <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
+                    <div class="binduz-er-content">
+                        <div class="binduz-er-post-meta-date">
+                            <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
+                        </div>
+                        <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
                     </div>
-                    <h4 class="binduz-er-title"><a href="#">В честь Азиатско-Тихоокеанского региона<br>Месяц американского наследия</a></h4>
                 </div>
 
-            </div>
-            <div class="binduz-er-news-portal-item">
-                <div class="binduz-er-thumb">
-                    <a href="#"><img src="{{ asset('/assets/images/news-portal-3.jpg') }}" alt=""></a>
-                </div>
-                <div class="binduz-er-content">
-                    <div class="binduz-er-post-meta-date">
-                        <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
-                    </div>
-                    <h4 class="binduz-er-title"><a href="#">Отстаивание женских<br>видов спорта с WNBA</a></h4>
-                </div>
-
-            </div>
+            <?php } ?>
         </div>
     </div>
 
