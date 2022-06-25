@@ -936,7 +936,7 @@
 
     <!--====== BINDUZ VIDEO POST PART ENDS ======-->
 
-    <!--====== BINDUZ TRENDING TODAY PART START ======-->
+    <!-- START TREND -->
 
     <section class="binduz-er-trending-today-area">
         <div class="binduz-er-bg-cover" style="background-image: url(assets/images/trends_1920_499.jpeg) !important;"></div>
@@ -989,9 +989,9 @@
         </div>
     </section>
 
-    <!--====== BINDUZ TRENDING TODAY PART ENDS ======-->
+    <!-- END TREND -->
 
-    <!--====== BINDUZ MAIN POSTS PART START ======-->
+    <!-- START POSITIONS -->
 
     <section class="binduz-er-main-posts-area">
         <div class="container">
@@ -1003,147 +1003,44 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="binduz-er-main-posts-item">
-                                <div class="binduz-er-trending-news-list-box">
-                                    <div class="binduz-er-thumb">
-                                        <img src="{{ asset('/assets/images/main-post-thumb-1.jpg') }}" alt="">
-                                    </div>
-                                    <div class="binduz-er-content">
-                                        <div class="binduz-er-meta-item">
-                                            <div class="binduz-er-meta-categories">
-                                                <a href="#">Технология</a>
-                                            </div>
-                                            <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
-                                            </div>
+                        <?php
+
+                        foreach ($ResultReadPostByPositions as $post) {
+                            $category_id = $post['category_id'];
+
+                            $ResultReadCategoryByCategoryId = new \Models\Category;
+                            $ResultReadCategoryByCategoryId = $ResultReadCategoryByCategoryId->read_category_by_category_id($category_id);
+                            foreach ($ResultReadCategoryByCategoryId as $category) {
+                            }
+
+                        ?>
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="binduz-er-main-posts-item">
+                                    <div class="binduz-er-trending-news-list-box">
+                                        <div class="binduz-er-thumb">
+                                            <img src="<?= $post['img_640_400'] ?>" alt="">
                                         </div>
-                                        <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Мусор для сокровищ: как Google думает о</a></h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in cididunt ut labore et dolore</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="binduz-er-main-posts-item">
-                                <div class="binduz-er-trending-news-list-box">
-                                    <div class="binduz-er-thumb">
-                                        <img src="{{ asset('/assets/images/main-post-thumb-2.jpg') }}" alt="">
-                                    </div>
-                                    <div class="binduz-er-content">
-                                        <div class="binduz-er-meta-item">
-                                            <div class="binduz-er-meta-categories">
-                                                <a href="#">Технология</a>
+                                        <div class="binduz-er-content">
+                                            <div class="binduz-er-meta-item">
+                                                <div class="binduz-er-meta-categories">
+                                                    <a href="#"><?= $category['name'] ?></a>
+                                                </div>
+                                                <div class="binduz-er-meta-date">
+                                                    <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
+                                                </div>
                                             </div>
-                                            <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
+                                            <div class="binduz-er-trending-news-list-title">
+                                                <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                                <p><?= $post['description'] ?></p>
                                             </div>
-                                        </div>
-                                        <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Finding the intersection of social justice and tech</a></h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in cididunt ut labore et dolore</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="binduz-er-main-posts-item">
-                                <div class="binduz-er-trending-news-list-box">
-                                    <div class="binduz-er-thumb">
-                                        <img src="{{ asset('/assets/images/main-post-thumb-3.jpg') }}" alt="">
-                                    </div>
-                                    <div class="binduz-er-content">
-                                        <div class="binduz-er-meta-item">
-                                            <div class="binduz-er-meta-categories">
-                                                <a href="#">Технология</a>
-                                            </div>
-                                            <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
-                                            </div>
-                                        </div>
-                                        <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Пять способов, которыми мы делаем Google более безопасным</a></h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in cididunt ut labore et dolore</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="binduz-er-main-posts-item">
-                                <div class="binduz-er-trending-news-list-box">
-                                    <div class="binduz-er-thumb">
-                                        <img src="{{ asset('/assets/images/main-post-thumb-4.jpg') }}" alt="">
-                                    </div>
-                                    <div class="binduz-er-content">
-                                        <div class="binduz-er-meta-item">
-                                            <div class="binduz-er-meta-categories">
-                                                <a href="#">Технология</a>
-                                            </div>
-                                            <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
-                                            </div>
-                                        </div>
-                                        <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Привнесение цифровых навыков в ранее заключенные</a></h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in cididunt ut labore et dolore</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="binduz-er-main-posts-item">
-                                <div class="binduz-er-trending-news-list-box">
-                                    <div class="binduz-er-thumb">
-                                        <img src="{{ asset('/assets/images/main-post-thumb-5.jpg') }}" alt="">
-                                    </div>
-                                    <div class="binduz-er-content">
-                                        <div class="binduz-er-meta-item">
-                                            <div class="binduz-er-meta-categories">
-                                                <a href="#">Технология</a>
-                                            </div>
-                                            <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
-                                            </div>
-                                        </div>
-                                        <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">Когда художники и машинный интеллект объединяются</a></h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in cididunt ut labore et dolore</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="binduz-er-main-posts-item">
-                                <div class="binduz-er-trending-news-list-box">
-                                    <div class="binduz-er-thumb">
-                                        <img src="{{ asset('/assets/images/main-post-thumb-6.jpg') }}" alt="">
-                                    </div>
-                                    <div class="binduz-er-content">
-                                        <div class="binduz-er-meta-item">
-                                            <div class="binduz-er-meta-categories">
-                                                <a href="#">Технология</a>
-                                            </div>
-                                            <div class="binduz-er-meta-date">
-                                                <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
-                                            </div>
-                                        </div>
-                                        <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#">ИИ помогает врачам в интерпретации кожных заболеваний</a></h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in cididunt ut labore et dolore</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
                     <div class="binduz-er-add pt-10">
-                        <img src="{{ asset('/assets/images/space-thumb.jpg') }}" alt="">
+                        <img src="{{ asset('/assets/images/space_1020_187.png') }}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -1154,7 +1051,7 @@
                         <div class="binduz-er-sidebar-about-item">
                             <div class="binduz-er-sidebar-about-user d-flex">
                                 <div class="binduz-er-thumb">
-                                    <img src="{{ asset('/assets/images/user.jpg') }}" alt="">
+                                    <img src="{{ asset('/assets/images/user_160_160.jpeg') }}" alt="">
                                 </div>
                                 <div class="binduz-er-content">
                                     <h4 class="binduz-er-title">Миранда Халим</h4>
@@ -1179,45 +1076,24 @@
                             <h4 class="binduz-er-title">Последние сообщения</h4>
                         </div>
                         <div class="binduz-er-sidebar-latest-post-box">
-                            <div class="binduz-er-sidebar-latest-post-item">
-                                <div class="binduz-er-thumb">
-                                    <img src="{{ asset('/assets/images/latest-post-1.jpg') }}" alt="latest">
+                            <?php
+
+                            foreach ($ResultReadPostLast as $post) {
+
+                            ?>
+                                <div class="binduz-er-sidebar-latest-post-item">
+                                    <div class="binduz-er-thumb">
+                                        <img src="<?= $post['img_160_160'] ?>" alt="latest">
+                                    </div>
+                                    <div class="binduz-er-content">
+                                        <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
+                                        <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                    </div>
                                 </div>
-                                <div class="binduz-er-content">
-                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
-                                    <h4 class="binduz-er-title"><a href="#">Представляем Оповещения о землетрясениях для Android</a></h4>
-                                </div>
-                            </div>
-                            <div class="binduz-er-sidebar-latest-post-item">
-                                <div class="binduz-er-thumb">
-                                    <img src="{{ asset('/assets/images/latest-post-2.jpg') }}" alt="latest">
-                                </div>
-                                <div class="binduz-er-content">
-                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
-                                    <h4 class="binduz-er-title"><a href="#">Громко и ясно: искусственный интеллект совершенствует помощника</a></h4>
-                                </div>
-                            </div>
-                            <div class="binduz-er-sidebar-latest-post-item">
-                                <div class="binduz-er-thumb">
-                                    <img src="{{ asset('/assets/images/latest-post-3.jpg') }}" alt="latest">
-                                </div>
-                                <div class="binduz-er-content">
-                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
-                                    <h4 class="binduz-er-title"><a href="#">Советы и ярлыки для продуктивности</a></h4>
-                                </div>
-                            </div>
-                            <div class="binduz-er-sidebar-latest-post-item">
-                                <div class="binduz-er-thumb">
-                                    <img src="{{ asset('/assets/images/latest-post-4.jpg') }}" alt="latest">
-                                </div>
-                                <div class="binduz-er-content">
-                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
-                                    <h4 class="binduz-er-title"><a href="#">Искры вдохновения для нового тренда 2022 года</a></h4>
-                                </div>
-                            </div>
+                            <?php } ?>
                         </div>
                     </div>
-                    <div class="binduz-er-sidebar-add-box mt-40">
+                    <div class="binduz-er-sidebar-add-box mt-40" style="background-image: url(assets/images/laravel_640_698.png)!important;">
                         <div class="binduz-er-logo">
                             <a href="#"><img src="{{ asset('/assets/images/logo-2.png') }}" alt=""></a>
                         </div>
@@ -1229,7 +1105,7 @@
         </div>
     </section>
 
-    <!--====== BINDUZ MAIN POSTS PART ENDS ======-->
+    <!-- END POSITIONS -->
 
     <!--====== BINDUZ SOCIAL SHARE PART START ======-->
 

@@ -102,4 +102,20 @@ class Post extends Dbconnect
         $ResultReadPostByTrend = $conn->query($SqlReadPostByTrend);
         return $ResultReadPostByTrend;
     }
+
+    public function read_post_by_positions()
+    {
+        $SqlReadPostByPositions = "SELECT * FROM post LIMIT 6";
+        $conn = $this->dbconnect();
+        $ResultReadPostByPositions = $conn->query($SqlReadPostByPositions);
+        return $ResultReadPostByPositions;
+    }
+
+    public function read_post_last()
+    {
+        $SqlReadPostLast = "SELECT * FROM post ORDER BY ID DESC LIMIT 4";
+        $conn = $this->dbconnect();
+        $ResultReadPostLast = $conn->query($SqlReadPostLast);
+        return $ResultReadPostLast;
+    }
 }

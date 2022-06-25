@@ -61,4 +61,18 @@ class PostController
         $ResultReadPostByTrend = $ResultReadPostByTrend->read_post_by_trend();
         return $ResultReadPostByTrend;
     }
+
+    public function read_post_by_positions()
+    {
+        $ResultReadPostByPositions = new \Models\Post;
+        $ResultReadPostByPositions = $ResultReadPostByPositions->read_post_by_positions();
+        return $ResultReadPostByPositions;
+    }
+
+    public function read_post_last()
+    {
+        $ResultReadPostLast = new \Models\Post;
+        $ResultReadPostLast = $ResultReadPostLast->read_post_last();
+        return $ResultReadPostLast;
+    }
 }
