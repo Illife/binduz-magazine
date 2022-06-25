@@ -26,4 +26,11 @@ class PostController
         $ResultReadPostByNotActual = $ResultReadPostByNotActual->read_post_by_not_actual();
         return $ResultReadPostByNotActual;
     }
+
+    public function read_post_by_reccomended()
+    {
+        $ResultReadPostByReccomended = new \Models\Post;
+        $ResultReadPostByReccomended = $ResultReadPostByReccomended->read_post_by_reccomended();
+        return $ResultReadPostByReccomended;
+    }
 }

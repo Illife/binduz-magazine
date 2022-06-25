@@ -29,5 +29,12 @@ Route::get('/', function () {
     $ResultReadPostByNotActual = new \Controllers\PostController;
     $ResultReadPostByNotActual = $ResultReadPostByNotActual->read_post_by_not_actual();
 
-    return view('index')->with('ResultReadPost', $ResultReadPost)->with('ResultReadCategory', $ResultReadCategory)->with('ResultReadPostByActual', $ResultReadPostByActual)->with('ResultReadPostByNotActual', $ResultReadPostByNotActual);
+    $ResultReadPostByReccomended = new \Controllers\PostController;
+    $ResultReadPostByReccomended = $ResultReadPostByReccomended->read_post_by_reccomended();
+
+    return view('index')->with('ResultReadPost', $ResultReadPost)
+        ->with('ResultReadCategory', $ResultReadCategory)
+        ->with('ResultReadPostByActual', $ResultReadPostByActual)
+        ->with('ResultReadPostByNotActual', $ResultReadPostByNotActual)
+        ->with('ResultReadPostByReccomended', $ResultReadPostByReccomended);
 });

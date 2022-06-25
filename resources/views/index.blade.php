@@ -565,84 +565,70 @@
                             <h3 class="binduz-er-title">Рекомендуемое</h3>
                         </div>
                         <div class="binduz-er-featured-slider-item">
-                            <div class="binduz-er-trending-news-list-box">
-                                <div class="binduz-er-thumb">
-                                    <img src="{{ asset('/assets/images/feature-news-thuimb.jpg') }}" alt="">
-                                </div>
-                                <div class="binduz-er-content">
-                                    <div class="binduz-er-meta-item">
-                                        <div class="binduz-er-meta-categories">
-                                            <a href="#">Технология</a>
-                                        </div>
-                                        <div class="binduz-er-meta-date">
-                                            <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
-                                        </div>
+                            <?php foreach ($ResultReadPostByReccomended as $post) {
+
+                                $category_id = $post['category_id'];
+
+                                $ResultReadCategoryByCategoryId = new \Models\Category;
+                                $ResultReadCategoryByCategoryId = $ResultReadCategoryByCategoryId->read_category_by_category_id($category_id);
+                                foreach ($ResultReadCategoryByCategoryId as $category) {
+                                }
+
+                            ?>
+                                <div class="binduz-er-trending-news-list-box">
+                                    <div class="binduz-er-thumb">
+                                        <img src="<?= $post['img_436_240'] ?>" alt="">
                                     </div>
-                                    <div class="binduz-er-trending-news-list-title">
-                                        <h4 class="binduz-er-title"><a href="#">Послушайте истории педагогов на этой Неделе благодарности учителям</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="binduz-er-trending-news-list-box">
-                                <div class="binduz-er-thumb">
-                                    <img src="{{ asset('/assets/images/feature-news-thuimb-2.jpg') }}" alt="">
-                                </div>
-                                <div class="binduz-er-content">
-                                    <div class="binduz-er-meta-item">
-                                        <div class="binduz-er-meta-categories">
-                                            <a href="#">Технология</a>
+                                    <div class="binduz-er-content">
+                                        <div class="binduz-er-meta-item">
+                                            <div class="binduz-er-meta-categories">
+                                                <a href="#"><?= $category['name'] ?></a>
+                                            </div>
+                                            <div class="binduz-er-meta-date">
+                                                <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
+                                            </div>
                                         </div>
-                                        <div class="binduz-er-meta-date">
-                                            <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
+                                        <div class="binduz-er-trending-news-list-title">
+                                            <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
                                         </div>
                                     </div>
-                                    <div class="binduz-er-trending-news-list-title">
-                                        <h4 class="binduz-er-title"><a href="#">Слушайте истории педагогов в этом</a></h4>
-                                    </div>
                                 </div>
-                            </div>
+                            <?php } ?>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6">
-                    <div class="binduz-er-trending-news-item mb-30">
-                        <img src="{{ asset('/assets/images/featured-trending-thumb-1.jpg') }}" alt="">
-                        <div class="binduz-er-trending-news-overlay">
-                            <div class="binduz-er-trending-news-meta">
-                                <div class="binduz-er-meta-categories">
-                                    <a href="#">Технология</a>
+                    <?php foreach ($ResultReadPostByReccomended as $post) {
+
+                        $category_id = $post['category_id'];
+
+                        $ResultReadCategoryByCategoryId = new \Models\Category;
+                        $ResultReadCategoryByCategoryId = $ResultReadCategoryByCategoryId->read_category_by_category_id($category_id);
+                        foreach ($ResultReadCategoryByCategoryId as $category) {
+                        }
+
+                    ?>
+                        <div class="binduz-er-trending-news-item mb-30">
+                            <img src="<?= $post['img_555_234'] ?>" alt="">
+                            <div class="binduz-er-trending-news-overlay">
+                                <div class="binduz-er-trending-news-meta">
+                                    <div class="binduz-er-meta-categories">
+                                        <a href="#"><?= $category['name'] ?></a>
+                                    </div>
+                                    <div class="binduz-er-meta-date">
+                                        <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
+                                    </div>
+                                    <div class="binduz-er-trending-news-title">
+                                        <h3 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h3>
+                                    </div>
                                 </div>
-                                <div class="binduz-er-meta-date">
-                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
+                                <div class="binduz-er-news-share">
+                                    <a href="#"><i class="fal fa-share"></i></a>
                                 </div>
-                                <div class="binduz-er-trending-news-title">
-                                    <h3 class="binduz-er-title"><a href="#">Мусор для сокровищ: как Google думает о деконструкции</a></h3>
-                                </div>
-                            </div>
-                            <div class="binduz-er-news-share">
-                                <a href="#"><i class="fal fa-share"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="binduz-er-trending-news-item mb-30">
-                        <img src="{{ asset('/assets/images/featured-trending-thumb-2.jpg') }}" alt="">
-                        <div class="binduz-er-trending-news-overlay">
-                            <div class="binduz-er-trending-news-meta">
-                                <div class="binduz-er-meta-categories">
-                                    <a href="#">Технология</a>
-                                </div>
-                                <div class="binduz-er-meta-date">
-                                    <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
-                                </div>
-                                <div class="binduz-er-trending-news-title">
-                                    <h3 class="binduz-er-title"><a href="#">Весенний показ мод в Мичиганском университете начался.</a></h3>
-                                </div>
-                            </div>
-                            <div class="binduz-er-news-share">
-                                <a href="#"><i class="fal fa-share"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
                 <div class="col-lg-3">
                     <div class="binduz-er-sidebar-social">
@@ -669,7 +655,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="binduz-er-sidebar-add mt-20">
+                        <div class="binduz-er-sidebar-add mt-20" style="background-image: url(assets/images/bus_638_280.jpg);">
                             <h3 class="binduz-er-title">Создайте свой веб-сайт и<span>развивайте свой бизнес</span></h3>
                             <a class="binduz-er-main-btn" href="#">Покупка</a>
                         </div>

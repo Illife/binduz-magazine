@@ -38,4 +38,12 @@ class Post extends Dbconnect
         $ResultReadPostByNotActualByCategory = $conn->query($SqlReadPostByNotActualByCategory);
         return $ResultReadPostByNotActualByCategory;
     }
+
+    public function read_post_by_reccomended()
+    {
+        $SqlReadPostByReccomended = "SELECT * FROM post WHERE `reccomended` = 'yes'";
+        $conn = $this->dbconnect();
+        $ResultReadPostByReccomended = $conn->query($SqlReadPostByReccomended);
+        return $ResultReadPostByReccomended;
+    }
 }
