@@ -32,9 +32,21 @@ Route::get('/', function () {
     $ResultReadPostByReccomended = new \Controllers\PostController;
     $ResultReadPostByReccomended = $ResultReadPostByReccomended->read_post_by_reccomended();
 
+    $ResultReadPostByVideoLeft = new \Controllers\PostController;
+    $ResultReadPostByVideoLeft = $ResultReadPostByVideoLeft->read_post_by_video_left();
+
+    $ResultReadPostByVideoCenter = new \Controllers\PostController;
+    $ResultReadPostByVideoCenter = $ResultReadPostByVideoCenter->read_post_by_video_center();
+
+    $ResultReadPostByVideoRight = new \Controllers\PostController;
+    $ResultReadPostByVideoRight = $ResultReadPostByVideoRight->read_post_by_video_right();
+
     return view('index')->with('ResultReadPost', $ResultReadPost)
         ->with('ResultReadCategory', $ResultReadCategory)
         ->with('ResultReadPostByActual', $ResultReadPostByActual)
         ->with('ResultReadPostByNotActual', $ResultReadPostByNotActual)
-        ->with('ResultReadPostByReccomended', $ResultReadPostByReccomended);
+        ->with('ResultReadPostByReccomended', $ResultReadPostByReccomended)
+        ->with('ResultReadPostByVideoLeft', $ResultReadPostByVideoLeft)
+        ->with('ResultReadPostByVideoCenter', $ResultReadPostByVideoCenter)
+        ->with('ResultReadPostByVideoRight', $ResultReadPostByVideoRight);
 });

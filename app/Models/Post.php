@@ -17,7 +17,7 @@ class Post extends Dbconnect
 
     public function read_post_by_actual()
     {
-        $SqlReadPostByActual = "SELECT * FROM post WHERE `status` = 'actual'";
+        $SqlReadPostByActual = "SELECT * FROM post WHERE `status` = 'actual' LIMIT 3";
         $conn = $this->dbconnect();
         $ResultReadPostByActual = $conn->query($SqlReadPostByActual);
         return $ResultReadPostByActual;
@@ -25,7 +25,7 @@ class Post extends Dbconnect
 
     public function read_post_by_not_actual()
     {
-        $SqlReadPostByNotActual = "SELECT * FROM post WHERE `status` = 'not_actual'";
+        $SqlReadPostByNotActual = "SELECT * FROM post WHERE `status` = 'not_actual' LIMIT 3";
         $conn = $this->dbconnect();
         $ResultReadPostByNotActual = $conn->query($SqlReadPostByNotActual);
         return $ResultReadPostByNotActual;
@@ -33,7 +33,7 @@ class Post extends Dbconnect
 
     public function read_post_by_not_actual_by_category($category_id)
     {
-        $SqlReadPostByNotActualByCategory = "SELECT * FROM post WHERE `status` = 'not_actual' AND category_id = $category_id";
+        $SqlReadPostByNotActualByCategory = "SELECT * FROM post WHERE `status` = 'not_actual' AND category_id = $category_id LIMIT 3";
         $conn = $this->dbconnect();
         $ResultReadPostByNotActualByCategory = $conn->query($SqlReadPostByNotActualByCategory);
         return $ResultReadPostByNotActualByCategory;
@@ -45,5 +45,53 @@ class Post extends Dbconnect
         $conn = $this->dbconnect();
         $ResultReadPostByReccomended = $conn->query($SqlReadPostByReccomended);
         return $ResultReadPostByReccomended;
+    }
+
+    public function read_post_by_video_left()
+    {
+        $SqlReadPostByVideoLeft = "SELECT * FROM post WHERE `video` = 'left' LIMIT 2";
+        $conn = $this->dbconnect();
+        $ResultReadPostByVideoLeft = $conn->query($SqlReadPostByVideoLeft);
+        return $ResultReadPostByVideoLeft;
+    }
+
+    public function read_post_by_video_center()
+    {
+        $SqlReadPostByVideoCenter = "SELECT * FROM post WHERE `video` = 'center' LIMIT 1";
+        $conn = $this->dbconnect();
+        $ResultReadPostByVideoCenter = $conn->query($SqlReadPostByVideoCenter);
+        return $ResultReadPostByVideoCenter;
+    }
+
+    public function read_post_by_video_right()
+    {
+        $SqlReadPostByVideoRight = "SELECT * FROM post WHERE `video` = 'right' LIMIT 2";
+        $conn = $this->dbconnect();
+        $ResultReadPostByVideoRight = $conn->query($SqlReadPostByVideoRight);
+        return $ResultReadPostByVideoRight;
+    }
+
+    public function read_post_by_video_left_by_category($category_id)
+    {
+        $SqlReadPostByVideoLeftByCategory = "SELECT * FROM post WHERE `video` = 'left' AND category_id=$category_id LIMIT 2";
+        $conn = $this->dbconnect();
+        $ResultReadPostByVideoLeftByCategory = $conn->query($SqlReadPostByVideoLeftByCategory);
+        return $ResultReadPostByVideoLeftByCategory;
+    }
+
+    public function read_post_by_video_center_by_category($category_id)
+    {
+        $SqlReadPostByVideoCenterByCategory = "SELECT * FROM post WHERE `video` = 'center' AND category_id=$category_id LIMIT 1";
+        $conn = $this->dbconnect();
+        $ResultReadPostByVideoCenterByCategory = $conn->query($SqlReadPostByVideoCenterByCategory);
+        return $ResultReadPostByVideoCenterByCategory;
+    }
+
+    public function read_post_by_video_right_by_category($category_id)
+    {
+        $SqlReadPostByVideoRightByCategory = "SELECT * FROM post WHERE `video` = 'right' AND category_id=$category_id LIMIT 2";
+        $conn = $this->dbconnect();
+        $ResultReadPostByVideoRightByCategory = $conn->query($SqlReadPostByVideoRightByCategory);
+        return $ResultReadPostByVideoRightByCategory;
     }
 }

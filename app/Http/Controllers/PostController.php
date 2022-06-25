@@ -33,4 +33,25 @@ class PostController
         $ResultReadPostByReccomended = $ResultReadPostByReccomended->read_post_by_reccomended();
         return $ResultReadPostByReccomended;
     }
+
+    public function read_post_by_video_left()
+    {
+        $ResultReadPostByVideoLeft = new \Models\Post;
+        $ResultReadPostByVideoLeft = $ResultReadPostByVideoLeft->read_post_by_video_left();
+        return $ResultReadPostByVideoLeft;
+    }
+
+    public function read_post_by_video_center()
+    {
+        $ResultReadPostByVideoCenter = new \Models\Post;
+        $ResultReadPostByVideoCenter = $ResultReadPostByVideoCenter->read_post_by_video_center();
+        return $ResultReadPostByVideoCenter;
+    }
+
+    public function read_post_by_video_right()
+    {
+        $ResultReadPostByVideoRight = new \Models\Post;
+        $ResultReadPostByVideoRight = $ResultReadPostByVideoRight->read_post_by_video_right();
+        return $ResultReadPostByVideoRight;
+    }
 }
