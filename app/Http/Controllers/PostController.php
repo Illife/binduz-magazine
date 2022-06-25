@@ -12,4 +12,18 @@ class PostController
         $ResultReadPost = $ResultReadPost->read_post();
         return $ResultReadPost;
     }
+
+    public function read_post_by_actual()
+    {
+        $ResultReadPostByActual = new \Models\Post;
+        $ResultReadPostByActual = $ResultReadPostByActual->read_post_by_actual();
+        return $ResultReadPostByActual;
+    }
+
+    public function read_post_by_not_actual()
+    {
+        $ResultReadPostByNotActual = new \Models\Post;
+        $ResultReadPostByNotActual = $ResultReadPostByNotActual->read_post_by_not_actual();
+        return $ResultReadPostByNotActual;
+    }
 }

@@ -14,4 +14,12 @@ class Category extends Dbconnect
         $ResultReadCategoryByCategoryId = $conn->query($SqlReadCategoryByCategoryId);
         return $ResultReadCategoryByCategoryId;
     }
+
+    public function read_category()
+    {
+        $SqlReadCategory = "SELECT * FROM category";
+        $conn = $this->dbconnect();
+        $ResultReadCategory = $conn->query($SqlReadCategory);
+        return $ResultReadCategory;
+    }
 }

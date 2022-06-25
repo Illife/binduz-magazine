@@ -6,10 +6,10 @@ require_once __DIR__ . '/../../Models/Category.php';
 
 class CategoryController
 {
-    public function read_category_by_category_id($category_id)
+    public function read_category()
     {
-        // $ResultReadCategoryByCategoryId = new \Models\Category;
-        // $ResultReadCategoryByCategoryId = $ResultReadCategoryByCategoryId->read_category_by_category_id($category_id);
-        // return $ResultReadCategoryByCategoryId;
+        $ResultReadCategory = new \Models\Category;
+        $ResultReadCategory = $ResultReadCategory->read_category();
+        return $ResultReadCategory;
     }
 }
