@@ -54,4 +54,11 @@ class PostController
         $ResultReadPostByVideoRight = $ResultReadPostByVideoRight->read_post_by_video_right();
         return $ResultReadPostByVideoRight;
     }
+
+    public function read_post_by_trend()
+    {
+        $ResultReadPostByTrend = new \Models\Post;
+        $ResultReadPostByTrend = $ResultReadPostByTrend->read_post_by_trend();
+        return $ResultReadPostByTrend;
+    }
 }

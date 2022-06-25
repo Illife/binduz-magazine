@@ -41,6 +41,9 @@ Route::get('/', function () {
     $ResultReadPostByVideoRight = new \Controllers\PostController;
     $ResultReadPostByVideoRight = $ResultReadPostByVideoRight->read_post_by_video_right();
 
+    $ResultReadPostByTrend = new \Controllers\PostController;
+    $ResultReadPostByTrend = $ResultReadPostByTrend->read_post_by_trend();
+
     return view('index')->with('ResultReadPost', $ResultReadPost)
         ->with('ResultReadCategory', $ResultReadCategory)
         ->with('ResultReadPostByActual', $ResultReadPostByActual)
@@ -48,5 +51,6 @@ Route::get('/', function () {
         ->with('ResultReadPostByReccomended', $ResultReadPostByReccomended)
         ->with('ResultReadPostByVideoLeft', $ResultReadPostByVideoLeft)
         ->with('ResultReadPostByVideoCenter', $ResultReadPostByVideoCenter)
-        ->with('ResultReadPostByVideoRight', $ResultReadPostByVideoRight);
+        ->with('ResultReadPostByVideoRight', $ResultReadPostByVideoRight)
+        ->with('ResultReadPostByTrend', $ResultReadPostByTrend);
 });

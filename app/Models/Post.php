@@ -94,4 +94,12 @@ class Post extends Dbconnect
         $ResultReadPostByVideoRightByCategory = $conn->query($SqlReadPostByVideoRightByCategory);
         return $ResultReadPostByVideoRightByCategory;
     }
+
+    public function read_post_by_trend()
+    {
+        $SqlReadPostByTrend = "SELECT * FROM post LIMIT 4";
+        $conn = $this->dbconnect();
+        $ResultReadPostByTrend = $conn->query($SqlReadPostByTrend);
+        return $ResultReadPostByTrend;
+    }
 }

@@ -939,7 +939,7 @@
     <!--====== BINDUZ TRENDING TODAY PART START ======-->
 
     <section class="binduz-er-trending-today-area">
-        <div class="binduz-er-bg-cover"></div>
+        <div class="binduz-er-bg-cover" style="background-image: url(assets/images/trends_1920_499.jpeg) !important;"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -951,94 +951,40 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="binduz-er-trending-today-item">
-                        <div class="binduz-er-trending-news-list-box">
-                            <div class="binduz-er-thumb">
-                                <img src="{{ asset('/assets/images/trending-today-thumb-1.png') }}" alt="">
-                            </div>
-                            <div class="binduz-er-content">
-                                <div class="binduz-er-meta-item">
-                                    <div class="binduz-er-meta-categories">
-                                        <a href="#">Технология</a>
-                                    </div>
-                                    <div class="binduz-er-meta-date">
-                                        <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
-                                    </div>
+                <?php
+
+                foreach ($ResultReadPostByTrend as $post) {
+                    $category_id = $post['category_id'];
+
+                    $ResultReadCategoryByCategoryId = new \Models\Category;
+                    $ResultReadCategoryByCategoryId = $ResultReadCategoryByCategoryId->read_category_by_category_id($category_id);
+                    foreach ($ResultReadCategoryByCategoryId as $category) {
+                    }
+
+                ?>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="binduz-er-trending-today-item">
+                            <div class="binduz-er-trending-news-list-box">
+                                <div class="binduz-er-thumb">
+                                    <img src="<?= $post['img_310_200'] ?>" alt="">
                                 </div>
-                                <div class="binduz-er-trending-news-list-title">
-                                    <h4 class="binduz-er-title"><a href="#">Вопрос воздействия: апрельские обновления от Google.org</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="binduz-er-trending-today-item">
-                        <div class="binduz-er-trending-news-list-box">
-                            <div class="binduz-er-thumb">
-                                <img src="{{ asset('/assets/images/trending-today-thumb-2.png') }}" alt="">
-                            </div>
-                            <div class="binduz-er-content">
-                                <div class="binduz-er-meta-item">
-                                    <div class="binduz-er-meta-categories">
-                                        <a href="#">Технология</a>
+                                <div class="binduz-er-content">
+                                    <div class="binduz-er-meta-item">
+                                        <div class="binduz-er-meta-categories">
+                                            <a href="#"><?= $category['name'] ?></a>
+                                        </div>
+                                        <div class="binduz-er-meta-date">
+                                            <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
+                                        </div>
                                     </div>
-                                    <div class="binduz-er-meta-date">
-                                        <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
+                                    <div class="binduz-er-trending-news-list-title">
+                                        <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
                                     </div>
-                                </div>
-                                <div class="binduz-er-trending-news-list-title">
-                                    <h4 class="binduz-er-title"><a href="#">Android Enterprise security обеспечивает гибкую работу</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="binduz-er-trending-today-item">
-                        <div class="binduz-er-trending-news-list-box">
-                            <div class="binduz-er-thumb">
-                                <img src="{{ asset('/assets/images/trending-today-thumb-3.png') }}" alt="">
-                            </div>
-                            <div class="binduz-er-content">
-                                <div class="binduz-er-meta-item">
-                                    <div class="binduz-er-meta-categories">
-                                        <a href="#">Технология</a>
-                                    </div>
-                                    <div class="binduz-er-meta-date">
-                                        <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
-                                    </div>
-                                </div>
-                                <div class="binduz-er-trending-news-list-title">
-                                    <h4 class="binduz-er-title"><a href="#">Мусор для сокровищ: как Google думает о деконструкции</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="binduz-er-trending-today-item">
-                        <div class="binduz-er-trending-news-list-box">
-                            <div class="binduz-er-thumb">
-                                <img src="{{ asset('/assets/images/trending-today-thumb-4.png') }}" alt="">
-                            </div>
-                            <div class="binduz-er-content">
-                                <div class="binduz-er-meta-item">
-                                    <div class="binduz-er-meta-categories">
-                                        <a href="#">Технология</a>
-                                    </div>
-                                    <div class="binduz-er-meta-date">
-                                        <span><i class="fal fa-calendar-alt"></i>14 июня 2022 года</span>
-                                    </div>
-                                </div>
-                                <div class="binduz-er-trending-news-list-title">
-                                    <h4 class="binduz-er-title"><a href="#">Мы упаковываем здесь только то, что нужно для начала новостей</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
         </div>
     </section>
