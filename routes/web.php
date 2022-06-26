@@ -90,3 +90,14 @@ Route::get('/about-us', function () {
     return view('about-us')->with('ResultReadPostLimit3', $ResultReadPostLimit3)
         ->with('ResultReadPostLimit3Offset3', $ResultReadPostLimit3Offset3);
 });
+
+Route::get('/contact', function () {
+    $ResultReadPostLimit3 = new \Controllers\PostController;
+    $ResultReadPostLimit3 = $ResultReadPostLimit3->read_post_limit_3();
+
+    $ResultReadPostLimit3Offset3 = new \Controllers\PostController;
+    $ResultReadPostLimit3Offset3 = $ResultReadPostLimit3Offset3->read_post_limit_3_offset_3();
+
+    return view('contact')->with('ResultReadPostLimit3', $ResultReadPostLimit3)
+        ->with('ResultReadPostLimit3Offset3', $ResultReadPostLimit3Offset3);
+});

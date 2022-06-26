@@ -62,13 +62,13 @@
                         <div id="menu" class="text-left ">
                             <ul class="binduz-er-news-offcanvas_main_menu">
                                 <li class="binduz-er-news-menu-item-has-children binduz-er-news-active">
-                                    <a href="#"><?= PATH ?>/</a>
+                                    <a href="<?= PATH ?>/">Главная</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
                                     <a href="<?= PATH ?>/author">Автор</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="#"><?= PATH ?>/details</a>
+                                    <a href="<?= PATH ?>/details">Детали блога</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
                                     <a href="<?= PATH ?>/about-us">О нас</a>
@@ -165,13 +165,13 @@
                                     <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                         <ul class="navbar-nav mr-auto">
                                             <li class="nav-item active">
-                                                <a class="nav-link" href="<?= PATH ?>/">Главная <i class="fa fa-angle-down"></i></a>
+                                                <a class="nav-link" href="<?= PATH ?>/">Главная</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link" href="<?= PATH ?>/author">Автор</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="<?= PATH ?>/details">Детали блога<i class="fa fa-angle-down"></i></a>
+                                                <a class="nav-link" href="<?= PATH ?>/details">Детали блога</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link" href="<?= PATH ?>/about-us">О нас</a>
