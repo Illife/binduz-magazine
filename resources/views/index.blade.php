@@ -67,9 +67,6 @@
                                     <a href="<?= PATH ?>/">Главная</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="<?= PATH ?>/archived">Архивировано</a>
-                                </li>
-                                <li class="binduz-er-news-menu-item-has-children">
                                     <a href="<?= PATH ?>/author">Автор</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
@@ -192,9 +189,6 @@
                                             <a class="nav-link" href="<?= PATH ?>/">Главная<i class="fa"></i></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="<?= PATH ?>/archived">Архивировано</a>
-                                        </li>
-                                        <li class="nav-item">
                                             <a class="nav-link" href="<?= PATH ?>/author">Автор</a>
                                         </li>
                                         <li class="nav-item">
@@ -262,7 +256,7 @@
                             <div class="binduz-er-hero-news-content">
                                 <div class="binduz-er-hero-meta">
                                     <div class="binduz-er-meta-category">
-                                        <a href="#"><?= $category['name'] ?></a>
+                                        <a href="<?= PATH ?>/category"><?= $category['name'] ?></a>
                                     </div>
                                     <div class="binduz-er-meta-date">
                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -407,7 +401,7 @@
                                                         <div class="binduz-er-trending-news-overlay">
                                                             <div class="binduz-er-trending-news-meta">
                                                                 <div class="binduz-er-meta-categories">
-                                                                    <a href="#"><?= $category['name'] ?></a>
+                                                                    <a href="<?= PATH ?>/category"><?= $category['name'] ?></a>
                                                                 </div>
                                                                 <div class="binduz-er-meta-date">
                                                                     <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -445,7 +439,7 @@
                                                             <div class="binduz-er-content">
                                                                 <div class="binduz-er-meta-item">
                                                                     <div class="binduz-er-meta-categories">
-                                                                        <a href="#"><?= $category['name'] ?></a>
+                                                                        <a href="<?= PATH ?>/category"><?= $category['name'] ?></a>
                                                                     </div>
                                                                     <div class="binduz-er-meta-date">
                                                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -485,7 +479,7 @@
                                                             <div class="binduz-er-trending-news-overlay">
                                                                 <div class="binduz-er-trending-news-meta">
                                                                     <div class="binduz-er-meta-categories">
-                                                                        <a href="#"><?= $category_actual['name'] ?></a>
+                                                                        <a href="<?= PATH ?>/category"><?= $category_actual['name'] ?></a>
                                                                     </div>
                                                                     <div class="binduz-er-meta-date">
                                                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -528,7 +522,7 @@
                                                                 <div class="binduz-er-content">
                                                                     <div class="binduz-er-meta-item">
                                                                         <div class="binduz-er-meta-categories">
-                                                                            <a href="#"><?= $category['name'] ?></a>
+                                                                            <a href="<?= PATH ?>/category"><?= $category['name'] ?></a>
                                                                         </div>
                                                                         <div class="binduz-er-meta-date">
                                                                             <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -570,7 +564,7 @@
                         <div class="binduz-er-categories-list">
                             <?php foreach ($ResultReadCategoryLimit5 as $category) { ?>
                                 <div class="binduz-er-item" style="background-image: url(<?= $category['img'] ?>)!important;">
-                                    <a href="#">
+                                    <a href="<?= PATH ?>/category">
                                         <span><?= $category['name'] ?></span>
                                         <span class="binduz-er-number">02</span>
                                     </a>
@@ -614,7 +608,7 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#"><?= $category['name'] ?></a>
+                                                <a href="<?= PATH ?>/category"><?= $category['name'] ?></a>
                                             </div>
                                             <div class="binduz-er-meta-date">
                                                 <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -646,7 +640,7 @@
                             <div class="binduz-er-trending-news-overlay">
                                 <div class="binduz-er-trending-news-meta">
                                     <div class="binduz-er-meta-categories">
-                                        <a href="#"><?= $category['name'] ?></a>
+                                        <a href="<?= PATH ?>/category"><?= $category['name'] ?></a>
                                     </div>
                                     <div class="binduz-er-meta-date">
                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -750,7 +744,7 @@
                                         <div class="binduz-er-content">
                                             <div class="binduz-er-meta-item">
                                                 <div class="binduz-er-meta-categories">
-                                                    <a href="#"><?= $category['name'] ?></a>
+                                                    <a href="<?= PATH ?>/category"><?= $category['name'] ?></a>
                                                 </div>
                                                 <div class="binduz-er-meta-date">
                                                     <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -785,7 +779,7 @@
                                         <div class="binduz-er-content">
                                             <div class="binduz-er-meta-item">
                                                 <div class="binduz-er-meta-categories">
-                                                    <a href="#"><?= $category['name'] ?></a>
+                                                    <a href="<?= PATH ?>/category"><?= $category['name'] ?></a>
                                                 </div>
                                                 <div class="binduz-er-meta-date">
                                                     <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -821,7 +815,7 @@
                                         <div class="binduz-er-content">
                                             <div class="binduz-er-meta-item">
                                                 <div class="binduz-er-meta-categories">
-                                                    <a href="#"><?= $category['name'] ?></a>
+                                                    <a href="<?= PATH ?>/category"><?= $category['name'] ?></a>
                                                 </div>
                                                 <div class="binduz-er-meta-date">
                                                     <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -876,7 +870,7 @@
                                             <div class="binduz-er-content">
                                                 <div class="binduz-er-meta-item">
                                                     <div class="binduz-er-meta-categories">
-                                                        <a href="#"><?= $category_left['name'] ?></a>
+                                                        <a href="<?= PATH ?>/category"><?= $category_left['name'] ?></a>
                                                     </div>
                                                     <div class="binduz-er-meta-date">
                                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -925,7 +919,7 @@
                                             <div class="binduz-er-content">
                                                 <div class="binduz-er-meta-item">
                                                     <div class="binduz-er-meta-categories">
-                                                        <a href="#"><?= $category_center['name'] ?></a>
+                                                        <a href="<?= PATH ?>/category"><?= $category_center['name'] ?></a>
                                                     </div>
                                                     <div class="binduz-er-meta-date">
                                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -965,7 +959,7 @@
                                             <div class="binduz-er-content">
                                                 <div class="binduz-er-meta-item">
                                                     <div class="binduz-er-meta-categories">
-                                                        <a href="#"><?= $category_right['name'] ?></a>
+                                                        <a href="<?= PATH ?>/category"><?= $category_right['name'] ?></a>
                                                     </div>
                                                     <div class="binduz-er-meta-date">
                                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -1033,7 +1027,7 @@
                                 <div class="binduz-er-content">
                                     <div class="binduz-er-meta-item">
                                         <div class="binduz-er-meta-categories">
-                                            <a href="#"><?= $category['name'] ?></a>
+                                            <a href="<?= PATH ?>/category"><?= $category['name'] ?></a>
                                         </div>
                                         <div class="binduz-er-meta-date">
                                             <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -1085,7 +1079,7 @@
                                         <div class="binduz-er-content">
                                             <div class="binduz-er-meta-item">
                                                 <div class="binduz-er-meta-categories">
-                                                    <a href="#"><?= $category['name'] ?></a>
+                                                    <a href="<?= PATH ?>/category"><?= $category['name'] ?></a>
                                                 </div>
                                                 <div class="binduz-er-meta-date">
                                                     <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -1243,12 +1237,12 @@
                                 <div class="binduz-er-footer-menu-list">
                                     <ul>
                                         <?php foreach ($ResultReadCategoryLimit6 as $category) { ?>
-                                            <li><a href="#"><?= $category['name'] ?></a></li>
+                                            <li><a href="<?= PATH ?>/category"><?= $category['name'] ?></a></li>
                                         <?php } ?>
                                     </ul>
                                     <ul>
                                         <?php foreach ($ResultReadCategoryLimit6Offset6 as $category) { ?>
-                                            <li><a href="#"><?= $category['name'] ?></a></li>
+                                            <li><a href="<?= PATH ?>/category"><?= $category['name'] ?></a></li>
                                         <?php } ?>
                                     </ul>
                                 </div>

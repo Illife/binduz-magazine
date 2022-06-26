@@ -78,3 +78,7 @@ Route::get('/', function () {
         ->with('ResultReadCategoryLimit6Offset6', $ResultReadCategoryLimit6Offset6)
         ->with('ResultReadPostLast2', $ResultReadPostLast2);
 });
+
+Route::get('/about-us', function () {
+    return view('about-us');
+});
