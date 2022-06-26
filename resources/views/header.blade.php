@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Binduz - News Magazine Html Template</title>
+    <title>Laravel 9, пэт-проект по созданию блога</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
@@ -62,40 +62,19 @@
                         <div id="menu" class="text-left ">
                             <ul class="binduz-er-news-offcanvas_main_menu">
                                 <li class="binduz-er-news-menu-item-has-children binduz-er-news-active">
-                                    <a href="#">Home</a>
-                                    <ul class="binduz-er-news-sub-menu">
-                                        <li><a href="index.html">Home 1</a></li>
-                                        <li><a href="index-2.html">Home 2</a></li>
-                                        <li><a href="index-3.html">Home 3</a></li>
-                                        <li><a href="index-4.html">Home 4</a></li>
-                                        <li><a href="index-5.html">Home 5</a></li>
-                                        <li><a href="index-6.html">Home 6</a></li>
-                                        <li><a href="index-7.html">Home 7</a></li>
-                                        <li><a href="index-8.html">Home 8</a></li>
-                                        <li><a href="index-9.html">Home 9</a></li>
-                                        <li><a href="index-10.html">Home 10</a></li>
-                                        <li><a href="index-11.html">Home 11</a></li>
-                                        <li><a href="index-12.html">Home 12</a></li>
-                                    </ul>
+                                    <a href="#">Главная</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="archived.html">Archived </a>
+                                    <a href="author.html">Автор</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="author.html">Author</a>
+                                    <a href="#">Детали блога</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="#"> Pages</a>
-                                    <ul class="binduz-er-news-sub-menu">
-                                        <li><a href="blog-details-1.html">Blog Details 1</a></li>
-                                        <li><a href="blog-details-2.html">Blog Details 2</a></li>
-                                    </ul>
+                                    <a href="about-us.html">О нас</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="about-us.html"> About</a>
-                                </li>
-                                <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="contact.html"> Contact</a>
+                                    <a href="contact.html">Контакты</a>
                                 </li>
                             </ul>
                         </div>
@@ -105,11 +84,11 @@
                                     <img src="assets/images/logo.png" alt="">
                                 </a>
                             </div>
-                            <p>I’m Michal Škvarenina, a multi-disciplinary designer currently working at Wild and as a freelance designer.</p>
+                            <p>Я Михал Шкваренина, многопрофильный дизайнер, в настоящее время работающий в Wild в качестве внештатного дизайнера.</p>
                             <ul>
-                                <li><i class="fas fa-phone"></i> +212 34 45 45 98</li>
-                                <li><i class="fas fa-home"></i> Angle Bd Abdelmoumen & rue soumaya, Résidence</li>
-                                <li><i class="fas fa-envelope"></i> hello@example.com</li>
+                                <li><i class="fas fa-phone"></i>+7 920 445 45 98</li>
+                                <li><i class="fas fa-home"></i>ул. Казакова, 28, Москва</li>
+                                <li><i class="fas fa-envelope"></i>hello@example.com</li>
                             </ul>
                         </div>
                     </div>
@@ -127,7 +106,7 @@
                     </div>
                     <div class=" col-6">
                         <div class="binduz-er-news-search-close float-end">
-                            <button class="binduz-er-news-search-close-btn">Close <span></span><span></span></button>
+                            <button class="binduz-er-news-search-close-btn">Закрыть <span></span><span></span></button>
                         </div> <!-- search close -->
                     </div>
                 </div> <!-- row -->
@@ -153,16 +132,6 @@
         <div class=" container">
             <div class="row align-items-center">
                 <div class=" col-lg-6 col-md-7">
-                    <div class="binduz-er-top-header-lang">
-                        <div class="binduz-er-select-item">
-                            <select id="cars">
-                                <option value="volvo" selected>English</option>
-                                <option value="saab">Bangla</option>
-                                <option value="vw">Urdhu</option>
-                                <option value="audi">Hindi</option>
-                            </select>
-                        </div>
-                    </div>
                     <div class="binduz-er-top-header-weather">
                         <ul>
                             <li><a href="#"><i class="fal fa-cloud"></i> 22°F</a></li>
@@ -172,9 +141,9 @@
                 </div>
                 <div class=" col-lg-6 col-md-5">
                     <div class="binduz-er-topbar-headline float-end">
-                        <p><span><i class="fas fa-bolt"></i> Trending News:</span> <a href="#">Miranda halim was viral after finish his workout.</a></p>
-                        <p><span><i class="fas fa-bolt"></i> Trending News:</span> <a href="#">Miranda halim was viral after finish his workout.</a></p>
-                        <p><span><i class="fas fa-bolt"></i> Trending News:</span> <a href="#">Miranda halim was viral after finish his workout.</a>.</p>
+                        <p><span><i class="fas fa-bolt"></i>Актуальные новости:</span> <a href="#">Миранда халим заразилась вирусом после окончания своей тренировки</a></p>
+                        <p><span><i class="fas fa-bolt"></i>Актуальные новости:</span> <a href="#">Празднование Азиатско Тихоокеанского американского искусства и культуры</a></p>
+                        <p><span><i class="fas fa-bolt"></i>Актуальные новости:</span> <a href="#">В честь Месяца американского наследия в Азиатско Тихоокеанском регионе в Google</a></p>
                     </div>
                 </div>
 
@@ -196,40 +165,19 @@
                                     <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                         <ul class="navbar-nav mr-auto">
                                             <li class="nav-item active">
-                                                <a class="nav-link" href="index.html">Home <i class="fa fa-angle-down"></i></a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="index.html">Home 1</a></li>
-                                                    <li><a href="index-2.html">Home 2</a></li>
-                                                    <li><a href="index-3.html">Home 3</a></li>
-                                                    <li><a href="index-4.html">Home 4</a></li>
-                                                    <li><a href="index-5.html">Home 5</a></li>
-                                                    <li><a href="index-6.html">Home 6</a></li>
-                                                    <li><a href="index-7.html">Home 7</a></li>
-                                                    <li><a href="index-8.html">Home 8</a></li>
-                                                    <li><a href="index-9.html">Home 9</a></li>
-                                                    <li><a href="index-10.html">Home 10</a></li>
-                                                    <li><a href="index-11.html">Home 11</a></li>
-                                                    <li><a href="index-12.html">Home 12</a></li>
-                                                </ul>
+                                                <a class="nav-link" href="index.html">Главная <i class="fa fa-angle-down"></i></a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="archived.html">Archived </a>
+                                                <a class="nav-link" href="author.html">Автор</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="author.html">Author</a>
+                                                <a class="nav-link" href="#">Детали блога<i class="fa fa-angle-down"></i></a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#">Pages<i class="fa fa-angle-down"></i></a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="blog-details-1.html">Blog Details 1</a></li>
-                                                    <li><a href="blog-details-2.html">Blog Details 2</a></li>
-                                                </ul>
+                                                <a class="nav-link" href="about-us.html">О нас</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="about-us.html">About</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="contact.html">Contact</a>
+                                                <a class="nav-link" href="contact.html">Контакты</a>
                                             </li>
                                         </ul>
                                     </div> <!-- navbar collapse -->
@@ -256,9 +204,8 @@
                     <div class="binduz-er-breadcrumb-box">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">О нас</li>
                             </ol>
                         </nav>
                     </div>

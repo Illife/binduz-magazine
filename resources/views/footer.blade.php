@@ -10,7 +10,7 @@
                             <div class="binduz-er-logo">
                                 <a href="#"><img src="assets/images/logo-7.png" alt=""></a>
                             </div>
-                            <p>Michael Madigan on Sunday was confronted with the reality that he lacks support from nearly a third.</p>
+                            <p>Майкл Мэдиган в воскресенье столкнулся с реальностью, что ему не хватает поддержки почти трети избирателей</p>
                             <ul>
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -22,7 +22,7 @@
                     <div class=" col-lg-5">
                         <div class="binduz-er-footer-gallery ml-50">
                             <div class="binduz-er-footer-title">
-                                <h4 class="binduz-er-title">Photo Showcase</h4>
+                                <h4 class="binduz-er-title">Фото-витрина</h4>
                             </div>
                             <div class="binduz-er-footer-gallery-widget d-flex">
                                 <div class="binduz-er-item">
@@ -63,24 +63,24 @@
                     <div class=" col-lg-4">
                         <div class="binduz-er-footer-navigation binduz-er-footer-navigation-4">
                             <div class="binduz-er-footer-title">
-                                <h3 class="binduz-er-title">Company Info</h3>
+                                <h3 class="binduz-er-title">Информация о компании</h3>
                             </div>
                             <div class="binduz-er-footer-list">
                                 <ul>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Terms of Service</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Local print ads</a></li>
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Условия обслуживания</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="#">Местная печатная реклама</a></li>
                                     <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Media kit</a></li>
+                                    <li><a href="#">Медиа-комплект</a></li>
                                 </ul>
                                 <ul>
-                                    <li><a href="#">Careers</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Archives</a></li>
-                                    <li><a href="#">Coupons</a></li>
-                                    <li><a href="#">Manage Web Notifications</a></li>
-                                    <li><a href="#">Chicago Tribune Store</a></li>
+                                    <li><a href="#">Карьеры</a></li>
+                                    <li><a href="#">Политика конфиденциальности</a></li>
+                                    <li><a href="#">Архивы</a></li>
+                                    <li><a href="#">Купоны</a></li>
+                                    <li><a href="#">Управление веб-уведомлениями</a></li>
+                                    <li><a href="#">Магазин Chicago Tribune</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -95,15 +95,15 @@
         <div class="row align-items-center">
             <div class=" col-lg-6">
                 <div class="binduz-er-copyright-text">
-                    <p>Copyright By@<span>QuomodoTheme</span> - 2021</p>
+                    <p>Copyright @<span>QuomodoTheme</span> - 2022</p>
                 </div>
             </div>
             <div class=" col-lg-6">
                 <div class="binduz-er-copyright-menu float-lg-end float-none">
                     <ul>
-                        <li><a href="#">Privacy & Policy</a></li>
-                        <li><a href="#">Claim A Report</a></li>
-                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Конфиденциальность и Политика</a></li>
+                        <li><a href="#">Требовать Отчета</a></li>
+                        <li><a href="#">Карьера</a></li>
                     </ul>
                 </div>
             </div>

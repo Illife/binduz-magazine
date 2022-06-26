@@ -88,9 +88,9 @@
                             </div>
                             <p>Я Михал Шкваренина, многопрофильный дизайнер, в настоящее время работающий в Wild в качестве внештатного дизайнера.</p>
                             <ul>
-                                <li><i class="fas fa-phone"></i> +7 920 445 45 98</li>
-                                <li><i class="fas fa-home"></i> ул. Казакова, 28, Москва</li>
-                                <li><i class="fas fa-envelope"></i> hello@example.com</li>
+                                <li><i class="fas fa-phone"></i>+7 920 445 45 98</li>
+                                <li><i class="fas fa-home"></i>ул. Казакова, 28, Москва</li>
+                                <li><i class="fas fa-envelope"></i>hello@example.com</li>
                             </ul>
                         </div>
                     </div>
@@ -144,9 +144,9 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="binduz-er-topbar-headline">
-                        <p><span><i class="fas fa-bolt"></i> Актуальные новости:</span> <a href="https://iz.ru/1354316/2022-06-23/rossiian-predupredili-o-novykh-opasnykh-pandemiiakh">Миранда халим заразилась вирусом после окончания своей тренировки.</a></p>
-                        <p><span><i class="fas fa-bolt"></i> Актуальные новости:</span> <a href="https://translated.turbopages.org/proxy_u/en-ru.ru.33d05692-62b7e6f9-a9617ea7-74722d776562/https/www.npr.org/2022/05/02/1095812576/aapi-asian-pacific-heritage-month-origin-may-why">Празднование Азиатско Тихоокеанского американского искусства и культуры</a></p>
-                        <p><span><i class="fas fa-bolt"></i> Актуальные новости:</span> <a href="https://translated.turbopages.org/proxy_u/en-ru.ru.db46b8eb-62b7e722-c4a518c4-74722d776562/https/en.wikipedia.org/wiki/Asian_American_and_Pacific_Islander_Heritage_Month">В честь Месяца американского наследия в Азиатско Тихоокеанском регионе в Google</a></p>
+                        <p><span><i class="fas fa-bolt"></i>Актуальные новости:</span> <a href="https://iz.ru/1354316/2022-06-23/rossiian-predupredili-o-novykh-opasnykh-pandemiiakh">Миранда халим заразилась вирусом после окончания своей тренировки</a></p>
+                        <p><span><i class="fas fa-bolt"></i>Актуальные новости:</span> <a href="https://translated.turbopages.org/proxy_u/en-ru.ru.33d05692-62b7e6f9-a9617ea7-74722d776562/https/www.npr.org/2022/05/02/1095812576/aapi-asian-pacific-heritage-month-origin-may-why">Празднование Азиатско Тихоокеанского американского искусства и культуры</a></p>
+                        <p><span><i class="fas fa-bolt"></i>Актуальные новости:</span> <a href="https://translated.turbopages.org/proxy_u/en-ru.ru.db46b8eb-62b7e722-c4a518c4-74722d776562/https/en.wikipedia.org/wiki/Asian_American_and_Pacific_Islander_Heritage_Month">В честь Месяца американского наследия в Азиатско Тихоокеанском регионе в Google</a></p>
                     </div>
                 </div>
                 <div class="col-lg-6">
