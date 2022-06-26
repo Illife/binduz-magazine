@@ -64,7 +64,7 @@
                 <div class="binduz-er-about-play-thumb">
                     <img src="assets/images/dov_670_520.jpg" alt="">
                     <div class="binduz-er-play">
-                        <a class="binduz-er-video-popup" href="#"><i class="fas fa-play"></i></a>
+                        <a class="binduz-er-video-popup" href="https://www.youtube.com/watch?v=D9QxQyx43ig"><i class="fas fa-play"></i></a>
                     </div>
                 </div>
             </div>

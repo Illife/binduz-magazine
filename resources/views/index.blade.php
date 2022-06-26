@@ -182,7 +182,7 @@
                     <div class="col-lg-12">
                         <div class="navigation">
                             <nav class="navbar navbar-expand-lg">
-                                <div class="navbar-brand logo"><a href="/"><img src="{{ asset('/assets/images/logo.png') }}" alt=""></a></div> <!-- logo -->
+                                <div class="navbar-brand logo"><a href="<?= PATH ?>/"><img src="{{ asset('/assets/images/logo.png') }}" alt=""></a></div> <!-- logo -->
                                 <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                     <ul class="navbar-nav m-auto">
                                         <li class="nav-item active">
@@ -1339,9 +1339,9 @@
                 <div class="col-lg-6">
                     <div class="binduz-er-copyright-menu float-lg-end float-none">
                         <ul>
-                            <li><a href="#">Конфиденциальность и Политика</a></li>
-                            <li><a href="#">Требовать Отчета</a></li>
-                            <li><a href="#">Карьера</a></li>
+                            <li><a href="https://ezybrand.ru/blog/polzovatelskoe-soglashenie-politika-konfidenczialnosti-i-soglasie-na-obrabotku-personalnyh-dannyh/">Конфиденциальность и Политика</a></li>
+                            <li><a href="https://kartaslov.ru/%D0%BA%D0%B0%D0%BA-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D0%B8%D1%88%D0%B5%D1%82%D1%81%D1%8F-%D1%81%D0%BB%D0%BE%D0%B2%D0%BE%D1%81%D0%BE%D1%87%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D0%B5/%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D1%82%D1%8C+%D0%BE%D1%82%D1%87%D1%91%D1%82%D0%B0">Требовать Отчета</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D1%8C%D0%B5%D1%80%D0%B0">Карьера</a></li>
                         </ul>
                     </div>
                 </div>
