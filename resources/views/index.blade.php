@@ -1,5 +1,4 @@
 <?php
-
 ?>
 <!doctype html>
 <html lang="ru">
@@ -44,7 +43,7 @@
 
 <body>
 
-    <!-- HEADER START -->
+    <!-- HEADER MOBILE START -->
 
     <div class="binduz-er-news-off_canvars_overlay"></div>
     <div class="binduz-er-news-offcanvas_menu">
@@ -57,36 +56,36 @@
                         </div>
                         <div class="binduz-er-news-header-social">
                             <ul class="text-center">
-                                <li><a href="#">facebook</a></li>
-                                <li><a href="#">Twitter</a></li>
-                                <li><a href="#">Skype</a></li>
+                                <li><a href="https://www.facebook.com/">facebook</a></li>
+                                <li><a href="https://twitter.com/">Twitter</a></li>
+                                <li><a href="https://www.skype.com/">Skype</a></li>
                             </ul>
                         </div>
                         <div id="menu" class="text-left ">
                             <ul class="binduz-er-news-offcanvas_main_menu">
                                 <li class="binduz-er-news-menu-item-has-children binduz-er-news-active">
-                                    <a href="#">Главная</a>
+                                    <a href="<?= PATH ?>/">Главная</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="archived.html">Архивировано</a>
+                                    <a href="<?= PATH ?>/archived">Архивировано</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="author.html">Автор</a>
+                                    <a href="<?= PATH ?>/author">Автор</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="#">Детали блога</a>
+                                    <a href="<?= PATH ?>/details">Детали блога</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="about-us.html">О нас</a>
+                                    <a href="<?= PATH ?>/about-us">О нас</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="contact.html">Контакты</a>
+                                    <a href="<?= PATH ?>/contact">Контакты</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="binduz-er-news-offcanvas_footer">
                             <div class="binduz-er-news-logo text-center mb-30 mt-30">
-                                <a href="index.html">
+                                <a href="<?= PATH ?>/">
                                     <img src="{{ asset('/assets/images/logo.png') }}" alt="">
                                 </a>
                             </div>
@@ -103,7 +102,7 @@
         </div>
     </div>
 
-    <!-- HEADER END -->
+    <!-- HEADER MOBILE END -->
 
     <!--====== SEARCH PART START ======-->
 
@@ -140,7 +139,7 @@
 
     <!--====== SEARCH PART ENDS ======-->
 
-    <!--====== BINDUZ TOP HEADER PART START ======-->
+    <!-- TOP HEADER START -->
 
     <div class="binduz-er-top-header-area">
         <div class="binduz-er-bg-cover"></div>
@@ -148,20 +147,20 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="binduz-er-topbar-headline">
-                        <p><span><i class="fas fa-bolt"></i> Актуальные новости:</span> <a href="#">Миранда халим заразилась вирусом после окончания своей тренировки.</a></p>
-                        <p><span><i class="fas fa-bolt"></i> Актуальные новости:</span> <a href="#">Празднование Азиатско Тихоокеанского американского искусства и культуры</a></p>
-                        <p><span><i class="fas fa-bolt"></i> Актуальные новости:</span> <a href="#">В честь Месяца американского наследия в Азиатско Тихоокеанском регионе в Google</a></p>
+                        <p><span><i class="fas fa-bolt"></i> Актуальные новости:</span> <a href="https://iz.ru/1354316/2022-06-23/rossiian-predupredili-o-novykh-opasnykh-pandemiiakh">Миранда халим заразилась вирусом после окончания своей тренировки.</a></p>
+                        <p><span><i class="fas fa-bolt"></i> Актуальные новости:</span> <a href="https://translated.turbopages.org/proxy_u/en-ru.ru.33d05692-62b7e6f9-a9617ea7-74722d776562/https/www.npr.org/2022/05/02/1095812576/aapi-asian-pacific-heritage-month-origin-may-why">Празднование Азиатско Тихоокеанского американского искусства и культуры</a></p>
+                        <p><span><i class="fas fa-bolt"></i> Актуальные новости:</span> <a href="https://translated.turbopages.org/proxy_u/en-ru.ru.db46b8eb-62b7e722-c4a518c4-74722d776562/https/en.wikipedia.org/wiki/Asian_American_and_Pacific_Islander_Heritage_Month">В честь Месяца американского наследия в Азиатско Тихоокеанском регионе в Google</a></p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="binduz-er-topbar-social d-flex justify-content-end align-items-center">
                         <div class="binduz-er-news-social">
                             <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.behance.net/"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
                             </ul>
                         </div>
                         <div class="binduz-er-news-subscribe-btn">
@@ -172,6 +171,8 @@
             </div>
         </div>
     </div>
+
+    <!-- TOP HEADER START -->
 
     <!--====== BINDUZ TOP HEADER PART ENDS ======-->
 
@@ -188,22 +189,22 @@
                                 <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                     <ul class="navbar-nav m-auto">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="/">Главная<i class="fa"></i></a>
+                                            <a class="nav-link" href="<?= PATH ?>/">Главная<i class="fa"></i></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="archived.html">Архивировано</a>
+                                            <a class="nav-link" href="<?= PATH ?>/archived">Архивировано</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="author.html">Автор</a>
+                                            <a class="nav-link" href="<?= PATH ?>/author">Автор</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Детали блога<i class="fa"></i></a>
+                                            <a class="nav-link" href="<?= PATH ?>/details">Детали блога<i class="fa"></i></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="about-us.html">О нас</a>
+                                            <a class="nav-link" href="<?= PATH ?>/about-us">О нас</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="contact.html">Контакты</a>
+                                            <a class="nav-link" href="<?= PATH ?>/contact">Контакты</a>
                                         </li>
                                     </ul>
                                 </div> <!-- navbar collapse -->
@@ -268,7 +269,7 @@
                                     </div>
                                 </div>
                                 <div class="binduz-er-hero-title">
-                                    <h3 class="binduz-er-title"><a href="#">
+                                    <h3 class="binduz-er-title"><a href="<?= PATH ?>/details">
 
                                             <?php
 
@@ -324,13 +325,13 @@
             <?php foreach ($ResultReadPost as $post) { ?>
                 <div class="binduz-er-news-portal-item">
                     <div class="binduz-er-thumb">
-                        <a href="#"><img src="<?= $post['img_120_60'] ?>" alt=""></a>
+                        <a href="<?= PATH ?>/details"><img src="<?= $post['img_120_60'] ?>" alt=""></a>
                     </div>
                     <div class="binduz-er-content">
                         <div class="binduz-er-post-meta-date">
                             <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                         </div>
-                        <h4 class="binduz-er-title"><a href="#">
+                        <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
                                 <?php
 
                                 $post_title = $post['title'];
@@ -412,7 +413,7 @@
                                                                     <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                                                                 </div>
                                                                 <div class="binduz-er-trending-news-title">
-                                                                    <h3 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h3>
+                                                                    <h3 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h3>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-news-share">
@@ -451,7 +452,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="binduz-er-trending-news-list-title">
-                                                                    <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h4>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -490,7 +491,7 @@
                                                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                                                                     </div>
                                                                     <div class="binduz-er-trending-news-title">
-                                                                        <h3 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h3>
+                                                                        <h3 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h3>
                                                                     </div>
                                                                 </div>
                                                                 <div class="binduz-er-news-share">
@@ -534,7 +535,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="binduz-er-trending-news-list-title">
-                                                                        <h4 class="binduz-er-title"><a href="#">
+                                                                        <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
                                                                                 <?php
 
                                                                                 $post_title = $post['title'];
@@ -620,7 +621,7 @@
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                            <h4 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -651,7 +652,7 @@
                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                                     </div>
                                     <div class="binduz-er-trending-news-title">
-                                        <h3 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h3>
+                                        <h3 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h3>
                                     </div>
                                 </div>
                                 <div class="binduz-er-news-share">
@@ -668,19 +669,19 @@
                         </div>
                         <div class="binduz-er-social-list">
                             <div class="binduz-er-list">
-                                <a href="#">
+                                <a href="https://www.facebook.com/">
                                     <span><i class="fab fa-facebook-f"></i> <span>15000</span> Лайков</span>
                                     <span>Лайк</span>
                                 </a>
-                                <a href="#">
+                                <a href="https://twitter.com/">
                                     <span><i class="fab fa-twitter"></i> <span>15000</span> Лайков</span>
                                     <span>Tweet</span>
                                 </a>
-                                <a href="#">
+                                <a href="https://www.behance.net/">
                                     <span><i class="fab fa-behance"></i> <span>5k+</span> Фолловеров</span>
                                     <span>Следить</span>
                                 </a>
-                                <a href="#">
+                                <a href="https://www.youtube.com/">
                                     <span><i class="fab fa-youtube"></i> <span>15000</span> Подписчиков</span>
                                     <span>Подписаться</span>
                                 </a>
@@ -688,7 +689,7 @@
                         </div>
                         <div class="binduz-er-sidebar-add mt-20" style="background-image: url(assets/images/bus_638_280.jpg);">
                             <h3 class="binduz-er-title">Создайте свой веб-сайт и<span>развивайте свой бизнес</span></h3>
-                            <a class="binduz-er-main-btn" href="#">Покупка</a>
+                            <a class="binduz-er-main-btn" href="https://web-help24.ru/spets/?utm_source=yandex&utm_medium=cpc&utm_campaign=72113802&utm_content=11972100158&utm_term=%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81+%D1%81%D0%B0%D0%B9%D1%82&etext=2202.pgqJl06Pg19Pc9B2tl1jTWLtVYCZQXw-XCkLwXaFMyb8Wx5VO1jyo9dQlNut_oeFBYC4pjGsFVMp4gx0k4WoNqVm5ir90fK-PBtMEm_m8yesDk93WedOEkl_nY8NnzWybnV2c2JuYXZ0b29jdG9udQ.c576ecd63aa91301671c9e59e4b69a7151e466b8&yclid=3560920387384575289&v=f9308c5d0596">Покупка</a>
                         </div>
                     </div>
                 </div>
@@ -756,7 +757,7 @@
                                                 </div>
                                             </div>
                                             <div class="binduz-er-trending-news-list-title">
-                                                <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                                <h4 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -791,7 +792,7 @@
                                                 </div>
                                             </div>
                                             <div class="binduz-er-trending-news-list-title">
-                                                <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                                <h4 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -827,7 +828,7 @@
                                                 </div>
                                             </div>
                                             <div class="binduz-er-trending-news-list-title">
-                                                <h4 class="binduz-er-title"><a href="#">
+                                                <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
                                                         <?php
 
                                                         $post_title = $post['title'];
@@ -882,7 +883,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="binduz-er-trending-news-list-title">
-                                                    <h4 class="binduz-er-title"><a href="#">
+                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
                                                             <?php
 
                                                             $post_title = $post['title'];
@@ -931,7 +932,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="binduz-er-trending-news-list-title">
-                                                    <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -971,7 +972,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="binduz-er-trending-news-list-title">
-                                                    <h4 class="binduz-er-title"><a href="#">
+                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
                                                             <?php
 
                                                             $post_title = $post['title'];
@@ -1039,7 +1040,7 @@
                                         </div>
                                     </div>
                                     <div class="binduz-er-trending-news-list-title">
-                                        <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                        <h4 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h4>
                                     </div>
                                 </div>
                             </div>
@@ -1091,7 +1092,7 @@
                                                 </div>
                                             </div>
                                             <div class="binduz-er-trending-news-list-title">
-                                                <h4 class="binduz-er-title"><a href="#">
+                                                <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
                                                         <?php
 
                                                         $post_title = $post['title'];
@@ -1128,17 +1129,17 @@
                                     <h4 class="binduz-er-title">Миранда Халим</h4>
                                     <span>Автор</span>
                                     <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.behance.net/"><i class="fab fa-behance"></i></a></li>
+                                        <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="binduz-er-text">
                                 <p>Функциональный аспект стоит на первом месте в рабочем процессе, потому что это ядро объекта: какова его цель? что-то еще?</p>
-                                <a class="binduz-er-main-btn" href="#">Связаться Со Мной</a>
+                                <a class="binduz-er-main-btn" href="https://vk.com/cholmiranda">Связаться Со Мной</a>
                             </div>
                         </div>
                     </div>
@@ -1158,7 +1159,7 @@
                                     </div>
                                     <div class="binduz-er-content">
                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
-                                        <h4 class="binduz-er-title"><a href="#">
+                                        <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
                                                 <?php
 
                                                 $post_title = $post['title'];
@@ -1176,10 +1177,10 @@
                     </div>
                     <div class="binduz-er-sidebar-add-box mt-40" style="background-image: url(assets/images/laravel_640_698.png)!important;">
                         <div class="binduz-er-logo">
-                            <a href="#"><img src="{{ asset('/assets/images/logo-2.png') }}" alt=""></a>
+                            <a href="<?= PATH ?>/"><img src="{{ asset('/assets/images/logo-2.png') }}" alt=""></a>
                         </div>
                         <p>Построен с использованием потрясающей платформы и фреймворка. Вы можете использовать его в любом случае в блоге, новостях и журналах.</p>
-                        <a class="binduz-er-main-btn" href="#">Покупайте Сейчас</a>
+                        <a class="binduz-er-main-btn" href="https://laravel.com/">Покупайте Сейчас</a>
                     </div>
                 </div>
             </div>
@@ -1193,33 +1194,33 @@
     <div class="binduz-er-social-share-area">
         <div class="binduz-er-social-share-box d-flex">
             <div class="binduz-er-social-share-item">
-                <a href="#">
+                <a href="https://www.instagram.com/">
                     <i class="fab fa-instagram"></i>
                     <span>Instagram <span>Feeds</span></span>
                 </a>
             </div>
             <div class="binduz-er-social-share-item binduz-facebook">
-                <a href="#">
+                <a href="https://www.facebook.com/">
                     <i class="fab fa-facebook-f"></i>
                     <span>Facebook <span>Share</span></span>
                 </a>
             </div>
             <div class="binduz-er-social-share-item binduz-twitter">
-                <a href="#">
+                <a href="https://twitter.com/">
                     <i class="fab fa-twitter"></i>
                     <span>Twitter <span>Feeds</span></span>
                 </a>
             </div>
             <div class="binduz-er-social-share-item binduz-pinterest">
-                <a href="#">
+                <a href="https://www.pinterest.com/">
                     <i class="fab fa-pinterest-p"></i>
-                    <span>Instagram <span>Feeds</span></span>
+                    <span>Pinterest <span>Feeds</span></span>
                 </a>
             </div>
             <div class="binduz-er-social-share-item binduz-dribbble">
-                <a href="#">
+                <a href="https://dribbble.com/">
                     <i class="fab fa-dribbble"></i>
-                    <span>Instagram <span>Feeds</span></span>
+                    <span>Dribble <span>Feeds</span></span>
                 </a>
             </div>
         </div>
@@ -1289,7 +1290,7 @@
                                                 </div>
                                                 <div class="binduz-er-content">
                                                     <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
-                                                    <h4 class="binduz-er-title"><a href="#">
+                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
                                                             <?php
 
                                                             $post_title = $post['title'];
@@ -1312,17 +1313,17 @@
                 <div class="col-lg-3">
                     <div class="binduz-er-footer-widget-info">
                         <div class="binduz-er-logo">
-                            <a href="#"><img src="{{ asset('/assets/images/logo-2.png') }}" alt=""></a>
+                            <a href="<?= PATH ?>/"><img src="{{ asset('/assets/images/logo-2.png') }}" alt=""></a>
                         </div>
                         <div class="binduz-er-text">
                             <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspend isse ultrices gravida.</p>
                         </div>
                         <div class="binduz-er-social">
                             <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.behance.net/"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
