@@ -44,7 +44,7 @@
 
 <body>
 
-    <!--====== OFFCANVAS MENU PART START ======-->
+    <!-- HEADER START -->
 
     <div class="binduz-er-news-off_canvars_overlay"></div>
     <div class="binduz-er-news-offcanvas_menu">
@@ -103,7 +103,7 @@
         </div>
     </div>
 
-    <!--====== OFFCANVAS MENU PART ENDS ======-->
+    <!-- HEADER END -->
 
     <!--====== SEARCH PART START ======-->
 
@@ -175,7 +175,7 @@
 
     <!--====== BINDUZ TOP HEADER PART ENDS ======-->
 
-    <!--====== BINDUZ HEADER PART START ======-->
+    <!-- HEADER START -->
 
     <header class="binduz-er-header-area">
         <div class="binduz-er-header-nav">
@@ -224,7 +224,7 @@
         </div>
     </header>
 
-    <!--====== BINDUZ HEADER PART ENDS ======-->
+    <!-- HEADER END -->
 
     <!--====== BINDUZ HERO PART START ======-->
 
@@ -268,7 +268,18 @@
                                     </div>
                                 </div>
                                 <div class="binduz-er-hero-title">
-                                    <h3 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h3>
+                                    <h3 class="binduz-er-title"><a href="#">
+
+                                            <?php
+
+                                            $post_title = $post['title'];
+                                            $post_title = substr($post_title, 0, 60);
+                                            $post_title = rtrim($post_title, "!,.-");
+                                            $post_title = substr($post_title, 0, strrpos($post_title, ' '));
+                                            echo $post_title . "… ";
+
+                                            ?>
+                                        </a></h3>
                                 </div>
                                 <div class="binduz-er-meta-author">
                                     <div class="binduz-er-author">
@@ -319,7 +330,17 @@
                         <div class="binduz-er-post-meta-date">
                             <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                         </div>
-                        <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                        <h4 class="binduz-er-title"><a href="#">
+                                <?php
+
+                                $post_title = $post['title'];
+                                $post_title = substr($post_title, 0, 40);
+                                $post_title = rtrim($post_title, "!,.-");
+                                $post_title = substr($post_title, 0, strrpos($post_title, ' '));
+                                echo $post_title . "… ";
+
+                                ?>
+                            </a></h4>
                     </div>
                 </div>
 
@@ -513,7 +534,17 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="binduz-er-trending-news-list-title">
-                                                                        <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                                                        <h4 class="binduz-er-title"><a href="#">
+                                                                                <?php
+
+                                                                                $post_title = $post['title'];
+                                                                                $post_title = substr($post_title, 0, 60);
+                                                                                $post_title = rtrim($post_title, "!,.-");
+                                                                                $post_title = substr($post_title, 0, strrpos($post_title, ' '));
+                                                                                echo $post_title . "… ";
+
+                                                                                ?>
+                                                                            </a></h4>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -796,7 +827,17 @@
                                                 </div>
                                             </div>
                                             <div class="binduz-er-trending-news-list-title">
-                                                <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                                <h4 class="binduz-er-title"><a href="#">
+                                                        <?php
+
+                                                        $post_title = $post['title'];
+                                                        $post_title = substr($post_title, 0, 110);
+                                                        $post_title = rtrim($post_title, "!,.-");
+                                                        $post_title = substr($post_title, 0, strrpos($post_title, ' '));
+                                                        echo $post_title . "… ";
+
+                                                        ?>
+                                                    </a></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -841,7 +882,17 @@
                                                     </div>
                                                 </div>
                                                 <div class="binduz-er-trending-news-list-title">
-                                                    <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                                    <h4 class="binduz-er-title"><a href="#">
+                                                            <?php
+
+                                                            $post_title = $post['title'];
+                                                            $post_title = substr($post_title, 0, 110);
+                                                            $post_title = rtrim($post_title, "!,.-");
+                                                            $post_title = substr($post_title, 0, strrpos($post_title, ' '));
+                                                            echo $post_title . "… ";
+
+                                                            ?>
+                                                        </a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -920,7 +971,17 @@
                                                     </div>
                                                 </div>
                                                 <div class="binduz-er-trending-news-list-title">
-                                                    <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                                    <h4 class="binduz-er-title"><a href="#">
+                                                            <?php
+
+                                                            $post_title = $post['title'];
+                                                            $post_title = substr($post_title, 0, 110);
+                                                            $post_title = rtrim($post_title, "!,.-");
+                                                            $post_title = substr($post_title, 0, strrpos($post_title, ' '));
+                                                            echo $post_title . "… ";
+
+                                                            ?>
+                                                        </a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -1030,7 +1091,17 @@
                                                 </div>
                                             </div>
                                             <div class="binduz-er-trending-news-list-title">
-                                                <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                                <h4 class="binduz-er-title"><a href="#">
+                                                        <?php
+
+                                                        $post_title = $post['title'];
+                                                        $post_title = substr($post_title, 0, 90);
+                                                        $post_title = rtrim($post_title, "!,.-");
+                                                        $post_title = substr($post_title, 0, strrpos($post_title, ' '));
+                                                        echo $post_title . "… ";
+
+                                                        ?>
+                                                    </a></h4>
                                                 <p><?= $post['description'] ?></p>
                                             </div>
                                         </div>
@@ -1087,7 +1158,17 @@
                                     </div>
                                     <div class="binduz-er-content">
                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
-                                        <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                        <h4 class="binduz-er-title"><a href="#">
+                                                <?php
+
+                                                $post_title = $post['title'];
+                                                $post_title = substr($post_title, 0, 70);
+                                                $post_title = rtrim($post_title, "!,.-");
+                                                $post_title = substr($post_title, 0, strrpos($post_title, ' '));
+                                                echo $post_title . "… ";
+
+                                                ?>
+                                            </a></h4>
                                     </div>
                                 </div>
                             <?php } ?>
@@ -1208,7 +1289,17 @@
                                                 </div>
                                                 <div class="binduz-er-content">
                                                     <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
-                                                    <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                                    <h4 class="binduz-er-title"><a href="#">
+                                                            <?php
+
+                                                            $post_title = $post['title'];
+                                                            $post_title = substr($post_title, 0, 70);
+                                                            $post_title = rtrim($post_title, "!,.-");
+                                                            $post_title = substr($post_title, 0, strrpos($post_title, ' '));
+                                                            echo $post_title . "… ";
+
+                                                            ?>
+                                                        </a></h4>
                                                 </div>
                                             </div>
                                         <?php } ?>
