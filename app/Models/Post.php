@@ -118,4 +118,12 @@ class Post extends Dbconnect
         $ResultReadPostLast = $conn->query($SqlReadPostLast);
         return $ResultReadPostLast;
     }
+
+    public function read_post_last_2()
+    {
+        $SqlReadPostLast2 = "SELECT * FROM post ORDER BY ID DESC LIMIT 2";
+        $conn = $this->dbconnect();
+        $ResultReadPostLast2 = $conn->query($SqlReadPostLast2);
+        return $ResultReadPostLast2;
+    }
 }

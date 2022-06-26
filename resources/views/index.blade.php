@@ -329,7 +329,7 @@
 
     <!--====== BINDUZ HERO PART ENDS ======-->
 
-    <!--====== BINDUZ TRENDING PART START ======-->
+    <!-- CURRENT_NEWS START -->
 
     <section class="binduz-er-trending-area">
         <div class="container">
@@ -536,7 +536,7 @@
                             <h4 class="binduz-er-title">Категории</h4>
                         </div>
                         <div class="binduz-er-categories-list">
-                            <?php foreach ($ResultReadCategory as $category) { ?>
+                            <?php foreach ($ResultReadCategoryLimit5 as $category) { ?>
                                 <div class="binduz-er-item" style="background-image: url(<?= $category['img'] ?>)!important;">
                                     <a href="#">
                                         <span><?= $category['name'] ?></span>
@@ -552,7 +552,7 @@
         </div>
     </section>
 
-    <!--====== BINDUZ TRENDING PART ENDS ======-->
+    <!-- CURRENT_NEWS END -->
 
     <!--====== BINDUZ FEATURED PART START ======-->
 
@@ -1107,7 +1107,7 @@
 
     <!-- END POSITIONS -->
 
-    <!--====== BINDUZ SOCIAL SHARE PART START ======-->
+    <!-- START SOCIAL -->
 
     <div class="binduz-er-social-share-area">
         <div class="binduz-er-social-share-box d-flex">
@@ -1144,10 +1144,9 @@
         </div>
     </div>
 
-    <!--====== BINDUZ SOCIAL SHARE PART ENDS ======-->
+    <!-- END SOCIAL -->
 
-
-    <!--====== BINDUZ FOOTER PART START ======-->
+    <!-- START FOOTER -->
 
     <footer class="binduz-er-footer-area">
         <div class="container">
@@ -1161,18 +1160,14 @@
                                 </div>
                                 <div class="binduz-er-footer-menu-list">
                                     <ul>
-                                        <li><a href="#">Архитектура</a></li>
-                                        <li><a href="#">Новый взгляд 2022</a></li>
-                                        <li><a href="#">Гаджеты</a></li>
-                                        <li><a href="#">Мобильные телефоны</a></li>
-                                        <li><a href="#">Рецепты</a></li>
-                                        <li><a href="#">Декорирование</a></li>
+                                        <?php foreach ($ResultReadCategoryLimit6 as $category) { ?>
+                                            <li><a href="#"><?= $category['name'] ?></a></li>
+                                        <?php } ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#">Интерьеры</a></li>
-                                        <li><a href="#">Уличная мода</a></li>
-                                        <li><a href="#">Образ жизни</a></li>
-                                        <li><a href="#">Оглядываясь назад</a></li>
+                                        <?php foreach ($ResultReadCategoryLimit6Offset6 as $category) { ?>
+                                            <li><a href="#"><?= $category['name'] ?></a></li>
+                                        <?php } ?>
                                     </ul>
                                 </div>
                             </div>
@@ -1186,11 +1181,11 @@
                                     <form action="#">
                                         <div class="binduz-er-input-box">
                                             <i class="fal fa-user"></i>
-                                            <input type="text" placeholder="Enter your name">
+                                            <input type="text" placeholder="Введите ваше имя">
                                         </div>
                                         <div class="binduz-er-input-box">
                                             <i class="fal fa-envelope"></i>
-                                            <input type="email" placeholder="Enter email address">
+                                            <input type="email" placeholder="Введите адрес электронной почты">
                                         </div>
                                         <div class="binduz-er-input-box">
                                             <button type="button"><i class="fal fa-paper-plane"></i>Подпишитесь Сейчас</button>
@@ -1206,24 +1201,17 @@
                                 </div>
                                 <div class="binduz-er-footer-widget-feeds">
                                     <div class="binduz-er-sidebar-latest-post-box">
-                                        <div class="binduz-er-sidebar-latest-post-item">
-                                            <div class="binduz-er-thumb">
-                                                <img src="{{ asset('/assets/images/latest-post-1.jpg') }}" alt="latest">
+                                        <?php foreach ($ResultReadPostLast2 as $post) { ?>
+                                            <div class="binduz-er-sidebar-latest-post-item">
+                                                <div class="binduz-er-thumb">
+                                                    <img src="<?= $post['img_160_160'] ?>" alt="latest">
+                                                </div>
+                                                <div class="binduz-er-content">
+                                                    <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
+                                                    <h4 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h4>
+                                                </div>
                                             </div>
-                                            <div class="binduz-er-content">
-                                                <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
-                                                <h4 class="binduz-er-title"><a href="#">Искры вдохновения для нового тренда 2022 года</a></h4>
-                                            </div>
-                                        </div>
-                                        <div class="binduz-er-sidebar-latest-post-item">
-                                            <div class="binduz-er-thumb">
-                                                <img src="{{ asset('/assets/images/latest-post-2.jpg') }}" alt="latest">
-                                            </div>
-                                            <div class="binduz-er-content">
-                                                <span><i class="fal fa-calendar-alt"></i>24 июня 2022 года</span>
-                                                <h4 class="binduz-er-title"><a href="#">Сертификаты о карьере и другие способы, которыми мы</a></h4>
-                                            </div>
-                                        </div>
+                                        <?php } ?>
                                     </div>
                                 </div>
                             </div>
@@ -1275,7 +1263,7 @@
         </div>
     </div>
 
-    <!--====== BINDUZ FOOTER PART ENDS ======-->
+    <!-- END FOOTER -->
 
     <!--====== BINDUZ BACK TO TOP PART START ======-->
 

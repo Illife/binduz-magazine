@@ -75,4 +75,11 @@ class PostController
         $ResultReadPostLast = $ResultReadPostLast->read_post_last();
         return $ResultReadPostLast;
     }
+
+    public function read_post_last_2()
+    {
+        $ResultReadPostLast2 = new \Models\Post;
+        $ResultReadPostLast2 = $ResultReadPostLast2->read_post_last_2();
+        return $ResultReadPostLast2;
+    }
 }

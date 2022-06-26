@@ -22,4 +22,28 @@ class Category extends Dbconnect
         $ResultReadCategory = $conn->query($SqlReadCategory);
         return $ResultReadCategory;
     }
+
+    public function read_category_limit_5()
+    {
+        $SqlReadCategoryLimit5 = "SELECT * FROM category LIMIT 5";
+        $conn = $this->dbconnect();
+        $ResultReadCategoryLimit5 = $conn->query($SqlReadCategoryLimit5);
+        return $ResultReadCategoryLimit5;
+    }
+
+    public function read_category_limit_6()
+    {
+        $SqlReadCategoryLimit6 = "SELECT * FROM category LIMIT 6";
+        $conn = $this->dbconnect();
+        $ResultReadCategoryLimit6 = $conn->query($SqlReadCategoryLimit6);
+        return $ResultReadCategoryLimit6;
+    }
+
+    public function read_category_limit_6_offset_6()
+    {
+        $SqlReadCategoryLimit6Offset6 = "SELECT * FROM category LIMIT 6 OFFSET 6";
+        $conn = $this->dbconnect();
+        $ResultReadCategoryLimit6Offset6 = $conn->query($SqlReadCategoryLimit6Offset6);
+        return $ResultReadCategoryLimit6Offset6;
+    }
 }
