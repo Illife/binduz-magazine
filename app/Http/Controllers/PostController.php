@@ -82,4 +82,18 @@ class PostController
         $ResultReadPostLast2 = $ResultReadPostLast2->read_post_last_2();
         return $ResultReadPostLast2;
     }
+
+    public function read_post_limit_3()
+    {
+        $ResultReadPostLimit3 = new \Models\Post;
+        $ResultReadPostLimit3 = $ResultReadPostLimit3->read_post_limit_3();
+        return $ResultReadPostLimit3;
+    }
+
+    public function read_post_limit_3_offset_3()
+    {
+        $ResultReadPostLimit3Offset3 = new \Models\Post;
+        $ResultReadPostLimit3Offset3 = $ResultReadPostLimit3Offset3->read_post_limit_3_offset_3();
+        return $ResultReadPostLimit3Offset3;
+    }
 }

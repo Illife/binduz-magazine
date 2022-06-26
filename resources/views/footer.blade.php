@@ -25,38 +25,22 @@
                                 <h4 class="binduz-er-title">Фото-витрина</h4>
                             </div>
                             <div class="binduz-er-footer-gallery-widget d-flex">
-                                <div class="binduz-er-item">
-                                    <a href="#">
-                                        <img src="assets/images/footer-gallery-1.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="binduz-er-item">
-                                    <a href="#">
-                                        <img src="assets/images/footer-gallery-2.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="binduz-er-item">
-                                    <a href="#">
-                                        <img src="assets/images/footer-gallery-3.jpg" alt="">
-                                    </a>
-                                </div>
+                                <?php foreach ($ResultReadPostLimit3 as $post) { ?>
+                                    <div class="binduz-er-item">
+                                        <a href="<?= PATH ?>/details">
+                                            <img src="<?= $post['img_90_90'] ?>" alt="">
+                                        </a>
+                                    </div>
+                                <?php } ?>
                             </div>
                             <div class="binduz-er-footer-gallery-widget d-flex">
-                                <div class="binduz-er-item">
-                                    <a href="#">
-                                        <img src="assets/images/footer-gallery-4.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="binduz-er-item">
-                                    <a href="#">
-                                        <img src="assets/images/footer-gallery-5.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="binduz-er-item">
-                                    <a href="#">
-                                        <img src="assets/images/footer-gallery-6.jpg" alt="">
-                                    </a>
-                                </div>
+                                <?php foreach ($ResultReadPostLimit3Offset3 as $post) { ?>
+                                    <div class="binduz-er-item">
+                                        <a href="<?= PATH ?>/details">
+                                            <img src="<?= $post['img_90_90'] ?>" alt="">
+                                        </a>
+                                    </div>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>

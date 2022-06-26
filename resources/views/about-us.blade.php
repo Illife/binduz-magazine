@@ -5,7 +5,7 @@
         <div class="row">
             <div class=" col-lg-12">
                 <div class="binduz-er-about-us-thumb">
-                    <img src="assets/images/about-thumb.jpg" alt="">
+                    <img src="assets/images/about-us_1370_700.jpg" alt="">
                 </div>
             </div>
             <div class=" col-lg-6">
@@ -62,7 +62,7 @@
         <div class="row mt-60 align-items-center">
             <div class=" col-lg-6">
                 <div class="binduz-er-about-play-thumb">
-                    <img src="assets/images/about-play-thumb.png" alt="">
+                    <img src="assets/images/dov_670_520.jpg" alt="">
                     <div class="binduz-er-play">
                         <a class="binduz-er-video-popup" href="#"><i class="fas fa-play"></i></a>
                     </div>

@@ -126,4 +126,20 @@ class Post extends Dbconnect
         $ResultReadPostLast2 = $conn->query($SqlReadPostLast2);
         return $ResultReadPostLast2;
     }
+
+    public function read_post_limit_3()
+    {
+        $SqlReadPostLimit3 = "SELECT * FROM post LIMIT 3";
+        $conn = $this->dbconnect();
+        $ResultReadPostLimit3 = $conn->query($SqlReadPostLimit3);
+        return $ResultReadPostLimit3;
+    }
+
+    public function read_post_limit_3_offset_3()
+    {
+        $SqlReadPostLimit3Offset3 = "SELECT * FROM post LIMIT 3 OFFSET 3";
+        $conn = $this->dbconnect();
+        $ResultReadPostLimit3Offset3 = $conn->query($SqlReadPostLimit3Offset3);
+        return $ResultReadPostLimit3Offset3;
+    }
 }
