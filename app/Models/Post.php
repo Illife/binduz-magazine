@@ -150,4 +150,12 @@ class Post extends Dbconnect
         $ResultReadPostByAuthorId = $conn->query($SqlReadPostByAuthorId);
         return $ResultReadPostByAuthorId;
     }
+
+    public function read_post_by_category($category_id)
+    {
+        $SqlReadPostByCategoryId = "SELECT * FROM post WHERE category_id = $category_id";
+        $conn = $this->dbconnect();
+        $ResultReadPostByCategoryId = $conn->query($SqlReadPostByCategoryId);
+        return $ResultReadPostByCategoryId;
+    }
 }

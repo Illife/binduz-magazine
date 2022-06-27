@@ -262,7 +262,7 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="<?= PATH ?>/category"><?= $category['name'] ?></a>
+                                                <a href="<?= PATH ?>/category?category_id=<?= $category['id'] ?>"><?= $category['name'] ?></a>
                                             </div>
                                             <div class="binduz-er-meta-date">
                                                 <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
