@@ -114,9 +114,9 @@
                 <div class="row">
                     <div class=" col-lg-12">
                         <div class="binduz-er-news-search-form">
-                            <form action="#">
-                                <input type="text" placeholder="Search for Products">
-                                <button><i class="fa fa-search"></i></button>
+                            <form action="<?= PATH ?>/handlers/handler_search.php" method="post">
+                                <input type="text" placeholder="Поиск сообщений" name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
                     </div>

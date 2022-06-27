@@ -1,39 +1,4 @@
 @include('header')
-
-<div class="binduz-er-author-user-area">
-    <div class=" container">
-        <div class="row">
-            <div class=" col-lg-12">
-                <div class="binduz-er-author-box">
-                    <div class="binduz-er-thumb">
-                        <img src="assets/images/rosalina_480_480.jpg" alt="">
-                        <span>30 постов</span>
-                    </div>
-                    <div class="binduz-er-content">
-                        <p>В вашем списке мест, где люди могут получить доступ к вашему веб-приложению, Teams, вероятно, находится под номером “нет в списке”. Но оказывается, что предоставление доступа к вашему приложению там, где ваши пользователи уже работают, имеет некоторые серьезные преимущества. В этой статье мы рассмотрим, как Teams создает веб-приложения для каждой компании</p>
-                        <div class="binduz-er-meta-author">
-                            <span>Розалина Д. Уильям <span>- Основатель</span></span>
-                        </div>
-                    </div>
-                    <div class="binduz-er-author-contact d-flex align-content-center">
-                        <ul>
-                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="https://www.behance.net/"><i class="fab fa-behance"></i></a></li>
-                            <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
-                        <div class="binduz-er-contact-link">
-                            <a href="https://vk.com/write312642915">Свяжитесь Со Мной</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--====== BINDUZ AUTHOR USER PART ENDS ======-->
-
 <!--====== BINDUZ AUTHOR USER PART START ======-->
 
 <section class="binduz-er-author-item-area pb-20">
@@ -42,18 +7,22 @@
             <div class=" col-lg-9">
                 <?php
 
-                $author_id = $_GET['id'];
-                $ResultReadPostByAuthorId = new \Models\Post;
-                $ResultReadPostByAuthorId = $ResultReadPostByAuthorId->read_post_by_author_id($author_id);
-                foreach ($ResultReadPostByAuthorId as $post) {
+                $search = $_GET['search'];
 
+                $ResultReadPostSearch = new \Models\Post;
+                $ResultReadPostSearch = $ResultReadPostSearch->read_post_search($search);
+
+                foreach ($ResultReadPostSearch as $post) {
                     $category_id = $post['category_id'];
-
                     $ResultReadCategoryByCategoryId = new \Models\Category;
                     $ResultReadCategoryByCategoryId = $ResultReadCategoryByCategoryId->read_category_by_category_id($category_id);
                     foreach ($ResultReadCategoryByCategoryId as $category) {
                     }
-
+                    $author_id = $post['author_id'];
+                    $ResultReadAuthorByAuthorId = new \Models\Users;
+                    $ResultReadAuthorByAuthorId = $ResultReadAuthorByAuthorId->read_author_by_author_id($author_id);
+                    foreach ($ResultReadAuthorByAuthorId as $author) {
+                    }
                 ?>
                     <div class="binduz-er-author-item mb-40">
                         <div class="binduz-er-thumb">
@@ -62,7 +31,7 @@
                         <div class="binduz-er-content">
                             <div class="binduz-er-meta-item">
                                 <div class="binduz-er-meta-categories">
-                                    <a href="#"><?= $category['name'] ?></a>
+                                    <a href="<?= PATH ?>/category?category_id=<?= $category['id'] ?>"><?= $category['name'] ?></a>
                                 </div>
                                 <div class="binduz-er-meta-date">
                                     <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -71,13 +40,6 @@
                             <h3 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>"><?= $post['title'] ?></a></h3>
                             <div class="binduz-er-meta-author">
                                 <div class="binduz-er-author">
-                                    <?php
-                                    $ResultReadAuthorByAuthorId = new \Models\Users;
-                                    $ResultReadAuthorByAuthorId = $ResultReadAuthorByAuthorId->read_author_by_author_id($author_id);
-                                    foreach ($ResultReadAuthorByAuthorId as $author) {
-                                    }
-
-                                    ?>
                                     <img src="<?= $author['img'] ?>" alt="">
                                     <?= $author['name'] ?></span></span>
                                 </div>
@@ -115,10 +77,10 @@
                     </div>
 
                     <div class="binduz-er-author-sidebar-search-bar">
-                        <form action="<?= PATH ?>/handlers/handler_search.php" method="post">
+                        <form action="#">
                             <div class="binduz-er-input-box">
-                                <input type="text" placeholder="Поиск здесь..." name="search">
-                                <button type="submit"><i class="fal fa-search"></i></button>
+                                <input type="text" placeholder="Поиск здесь...">
+                                <button type="button"><i class="fal fa-search"></i></button>
                             </div>
                         </form>
                     </div>
@@ -244,6 +206,8 @@
                             $ResultReadCategoryByCategoryId = $ResultReadCategoryByCategoryId->read_category_by_category_id($category_id);
                             foreach ($ResultReadCategoryByCategoryId as $category) {
                             }
+
+                            $author_id = $post['author_id'];
                             $ResultReadAuthorByAuthorId = new \Models\Users;
                             $ResultReadAuthorByAuthorId = $ResultReadAuthorByAuthorId->read_author_by_author_id($author_id);
                             foreach ($ResultReadAuthorByAuthorId as $author) {
@@ -293,5 +257,4 @@
 </section>
 
 <!--====== BINDUZ AUTHOR USER PART ENDS ======-->
-
 @include('footer')

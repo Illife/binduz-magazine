@@ -76,10 +76,10 @@
                     </div>
 
                     <div class="binduz-er-author-sidebar-search-bar">
-                        <form action="#">
+                        <form action="<?= PATH ?>/handlers/handler_search.php" method="post">
                             <div class="binduz-er-input-box">
-                                <input type="text" placeholder="Поиск здесь...">
-                                <button type="button"><i class="fal fa-search"></i></button>
+                                <input type="text" placeholder="Поиск здесь..." name="search">
+                                <button type="submit"><i class="fal fa-search"></i></button>
                             </div>
                         </form>
                     </div>

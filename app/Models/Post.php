@@ -166,4 +166,11 @@ class Post extends Dbconnect
         $ResultReadPostById = $conn->query($SqlReadPostById);
         return $ResultReadPostById;
     }
+    public function read_post_search($search)
+    {
+        $SqlReadPostSearch = "SELECT * FROM `post` WHERE `title` LIKE '%{$search}%'";
+        $conn = $this->dbconnect();
+        $ResultReadPostSearch = $conn->query($SqlReadPostSearch);
+        return $ResultReadPostSearch;
+    }
 }
