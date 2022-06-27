@@ -32,7 +32,7 @@ foreach ($ResultReadAuthorByAuthorId as $author) {
                     <div class="binduz-er-content">
                         <div class="binduz-er-meta-item">
                             <div class="binduz-er-meta-categories">
-                                <a href="#"><?= $category['name'] ?></a>
+                                <a href="<?= PATH ?>/category?category_id=<?= $category['id'] ?>"><?= $category['name'] ?></a>
                             </div>
                             <div class="binduz-er-meta-date">
                                 <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
@@ -120,36 +120,50 @@ foreach ($ResultReadAuthorByAuthorId as $author) {
                         <div class="binduz-er-social-share-tag d-block d-sm-flex justify-content-between align-items-center">
                             <div class="binduz-er-tag">
                                 <ul>
-                                    <li><a href="#">Популярный</a></li>
-                                    <li><a href="#">Дизайн</a></li>
-                                    <li><a href="#">UX</a></li>
+                                    <li><a href="https://ru.wiktionary.org/wiki/%D0%BF%D0%BE%D0%BF%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B9">Популярный</a></li>
+                                    <li><a href="https://veryimportantlot.com/ru/news/blog/dizajn">Дизайн</a></li>
+                                    <li><a href="https://habr.com/ru/post/321312/">UX</a></li>
                                 </ul>
                             </div>
                             <div class="binduz-er-social">
                                 <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-typo3"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-staylinked"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+                                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="http://www.typo3.ru/"><i class="fab fa-typo3"></i></a></li>
+                                    <li><a href="https://www.staylinked.com/"><i class="fab fa-staylinked"></i></a></li>
+                                    <li><a href="https://www.tumblr.com/explore/trending?source=homepage_explore"><i class="fab fa-tumblr"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="binduz-er-blog-post-prev-next d-flex justify-content-between align-items-center">
                             <div class="binduz-er-post-prev-next">
-                                <a href="#">
+                                <a href="<?= PATH ?>/details?post_id=<?= $post['id'] - 1; ?>">
                                     <span>Предыдущее Сообщение</span>
-                                    <h4 class="binduz-er-title">Советы По Минимализму</h4>
+                                    <?php
+                                    $id = $_GET['post_id'] - 1;
+                                    $ResultReadPostById = new \Models\Post;
+                                    $ResultReadPostById = $ResultReadPostById->read_post_by_id($id);
+                                    foreach ($ResultReadPostById as $post) {
+                                    }
+                                    ?>
+                                    <h4 class="binduz-er-title"><?= $post['title'] ?></h4>
                                 </a>
                             </div>
                             <div class="binduz-er-post-prev-next text-end">
-                                <a href="#">
+                                <a href="<?= PATH ?>/details?post_id=<?= $post['id'] + 1; ?>">
                                     <span>Следующий пост</span>
-                                    <h4 class="binduz-er-title">Меньше Значит Больше</h4>
+                                    <?php
+                                    $id = $_GET['post_id'] + 1;
+                                    $ResultReadPostById = new \Models\Post;
+                                    $ResultReadPostById = $ResultReadPostById->read_post_by_id($id);
+                                    foreach ($ResultReadPostById as $post) {
+                                    }
+                                    ?>
+                                    <h4 class="binduz-er-title"><?= $post['title'] ?></h4>
                                 </a>
                             </div>
                             <div class="binduz-er-post-bars">
-                                <a href="#"><img src="assets/images/icon/post-bars.png" alt=""></a>
+                                <a href="<?= PATH ?>/"><img src="assets/images/icon/post-bars.png" alt=""></a>
                             </div>
                         </div>
 
@@ -179,13 +193,13 @@ foreach ($ResultReadAuthorByAuthorId as $author) {
                                             <div class="binduz-er-content">
                                                 <div class="binduz-er-meta-item">
                                                     <div class="binduz-er-meta-categories">
-                                                        <a href="#"><?= $category['name'] ?></a>
+                                                        <a href="<?= PATH ?>/category?category_id=<?= $category['id'] ?>"><?= $category['name'] ?></a>
                                                     </div>
                                                     <div class="binduz-er-meta-date">
                                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                                                     </div>
                                                 </div>
-                                                <h5 class="binduz-er-title"><a href="#">
+                                                <h5 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
                                                         <?php
 
                                                         $post_title = $post['title'];
