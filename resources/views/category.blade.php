@@ -13,26 +13,34 @@
                 $ResultReadPostByCategoryId = $ResultReadPostByCategoryId->read_post_by_category($category_id);
 
                 foreach ($ResultReadPostByCategoryId as $post) {
-
+                    $ResultReadCategoryByCategoryId = new \Models\Category;
+                    $ResultReadCategoryByCategoryId = $ResultReadCategoryByCategoryId->read_category_by_category_id($category_id);
+                    foreach ($ResultReadCategoryByCategoryId as $category) {
+                    }
+                    $author_id = $post['author_id'];
+                    $ResultReadAuthorByAuthorId = new \Models\Users;
+                    $ResultReadAuthorByAuthorId = $ResultReadAuthorByAuthorId->read_author_by_author_id($author_id);
+                    foreach ($ResultReadAuthorByAuthorId as $author) {
+                    }
                 ?>
                     <div class="binduz-er-author-item mb-40">
                         <div class="binduz-er-thumb">
-                            <img src="assets/images/author-item-6.jpg" alt="">
+                            <img src="<?= $post['img_2020_1040'] ?>" alt="">
                         </div>
                         <div class="binduz-er-content">
                             <div class="binduz-er-meta-item">
                                 <div class="binduz-er-meta-categories">
-                                    <a href="#">Technology</a>
+                                    <a href="<?= PATH ?>/category?category_id=<?= $category['id'] ?>"><?= $category['name'] ?></a>
                                 </div>
                                 <div class="binduz-er-meta-date">
-                                    <span><i class="fal fa-calendar-alt"></i>24th February 2020</span>
+                                    <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                                 </div>
                             </div>
-                            <h3 class="binduz-er-title"><a href="#">A new certification for health insurance advertisers in the U.S.</a></h3>
+                            <h3 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h3>
                             <div class="binduz-er-meta-author">
                                 <div class="binduz-er-author">
-                                    <img src="assets/images/user-2.jpg" alt="">
-                                    <span>By <span>Rosalina D.</span></span>
+                                    <img src="<?= $author['img'] ?>" alt="">
+                                    <?= $author['name'] ?></span></span>
                                 </div>
                                 <div class="binduz-er-meta-list">
                                     <ul>
