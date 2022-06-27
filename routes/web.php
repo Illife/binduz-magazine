@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 require_once __DIR__ . '/../app/Http/Controllers/PostController.php';
 require_once __DIR__ . '/../app/Http/Controllers/CategoryController.php';
+require_once __DIR__ . '/../app/Models/Users.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -110,7 +111,18 @@ Route::get('/author', function () {
     $ResultReadPostLimit3Offset3 = new \Controllers\PostController;
     $ResultReadPostLimit3Offset3 = $ResultReadPostLimit3Offset3->read_post_limit_3_offset_3();
 
+    $ResultReadPostByTrend = new \Controllers\PostController;
+    $ResultReadPostByTrend = $ResultReadPostByTrend->read_post_by_trend();
+
+    $ResultReadPostLast = new \Controllers\PostController;
+    $ResultReadPostLast = $ResultReadPostLast->read_post_last();
+
+    $ResultReadPostByVideoCenter = new \Controllers\PostController;
+    $ResultReadPostByVideoCenter = $ResultReadPostByVideoCenter->read_post_by_video_center();
 
     return view('author')->with('ResultReadPostLimit3', $ResultReadPostLimit3)
-        ->with('ResultReadPostLimit3Offset3', $ResultReadPostLimit3Offset3);
+        ->with('ResultReadPostLimit3Offset3', $ResultReadPostLimit3Offset3)
+        ->with('ResultReadPostByTrend', $ResultReadPostByTrend)
+        ->with('ResultReadPostLast', $ResultReadPostLast)
+        ->with('ResultReadPostByVideoCenter', $ResultReadPostByVideoCenter);
 });

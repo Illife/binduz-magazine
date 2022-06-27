@@ -142,4 +142,12 @@ class Post extends Dbconnect
         $ResultReadPostLimit3Offset3 = $conn->query($SqlReadPostLimit3Offset3);
         return $ResultReadPostLimit3Offset3;
     }
+
+    public function read_post_by_author_id($author_id)
+    {
+        $SqlReadPostByAuthorId = "SELECT * FROM post WHERE `author_id` = $author_id";
+        $conn = $this->dbconnect();
+        $ResultReadPostByAuthorId = $conn->query($SqlReadPostByAuthorId);
+        return $ResultReadPostByAuthorId;
+    }
 }

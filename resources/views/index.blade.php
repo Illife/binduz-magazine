@@ -67,9 +67,6 @@
                                     <a href="<?= PATH ?>/">Главная</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="<?= PATH ?>/author">Автор</a>
-                                </li>
-                                <li class="binduz-er-news-menu-item-has-children">
                                     <a href="<?= PATH ?>/details">Детали блога</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
@@ -189,9 +186,6 @@
                                             <a class="nav-link" href="<?= PATH ?>/">Главная<i class="fa"></i></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="<?= PATH ?>/author">Автор</a>
-                                        </li>
-                                        <li class="nav-item">
                                             <a class="nav-link" href="<?= PATH ?>/details">Детали блога<i class="fa"></i></a>
                                         </li>
                                         <li class="nav-item">
@@ -277,7 +271,7 @@
                                         </a></h3>
                                 </div>
                                 <div class="binduz-er-meta-author">
-                                    <a href="<?= PATH ?>/author" class="binduz-er-author">
+                                    <a href="<?= PATH ?>/author?id=<?= $author['id'] ?>" class="binduz-er-author">
                                         <img src="<?= $author['img'] ?>" alt="">
                                         <?= $author['name'] ?></span></span>
                                     </a>
