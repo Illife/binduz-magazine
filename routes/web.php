@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 require_once __DIR__ . '/../app/Http/Controllers/PostController.php';
 require_once __DIR__ . '/../app/Http/Controllers/CategoryController.php';
 require_once __DIR__ . '/../app/Models/Users.php';
+require_once __DIR__ . '/../config/config.php';
 
 /*
 |--------------------------------------------------------------------------
