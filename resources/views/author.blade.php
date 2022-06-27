@@ -17,13 +17,13 @@
                     </div>
                     <div class="binduz-er-author-contact d-flex align-content-center">
                         <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.behance.net/"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
                         </ul>
                         <div class="binduz-er-contact-link">
-                            <a href="#">Свяжитесь Со Мной</a>
+                            <a href="https://vk.com/write312642915">Свяжитесь Со Мной</a>
                         </div>
                     </div>
                 </div>
@@ -107,17 +107,17 @@
                         <span>Старший репортер</span>
                         <h4 class="binduz-er-title">Миранда Х. Хиликсер</h4>
                         <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.behance.net/"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
                         </ul>
                     </div>
 
                     <div class="binduz-er-author-sidebar-search-bar">
                         <form action="#">
                             <div class="binduz-er-input-box">
-                                <input type="text" placeholder="Search from here...">
+                                <input type="text" placeholder="Поиск здесь...">
                                 <button type="button"><i class="fal fa-search"></i></button>
                             </div>
                         </form>
@@ -146,7 +146,7 @@
                                             </div>
                                             <div class="binduz-er-content">
                                                 <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
-                                                <h4 class="binduz-er-title"><a href="#">
+                                                <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
                                                         <?php
 
                                                         $post_title = $post['title'];
@@ -172,7 +172,7 @@
                                             <div class="binduz-er-content">
                                                 <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                                                 <h4 class="binduz-er-title">
-                                                    <a href="#">
+                                                    <a href="<?= PATH ?>/details">
                                                         <?php
 
                                                         $post_title = $post['title'];
@@ -210,19 +210,19 @@
                         </div>
                         <div class="binduz-er-social-list">
                             <div class="binduz-er-list">
-                                <a href="#">
+                                <a href="https://www.facebook.com/">
                                     <span><i class="fab fa-facebook-f"></i> <span>15000</span> Лайков</span>
                                     <span>Лайк</span>
                                 </a>
-                                <a href="#">
+                                <a href="https://twitter.com/">
                                     <span><i class="fab fa-twitter"></i> <span>15000</span> Лайков</span>
                                     <span>Tweet</span>
                                 </a>
-                                <a href="#">
+                                <a href="https://www.behance.net/">
                                     <span><i class="fab fa-behance"></i> <span>5k+</span> Фолловеров</span>
                                     <span>Следить</span>
                                 </a>
-                                <a href="#">
+                                <a href="https://www.youtube.com/">
                                     <span><i class="fab fa-youtube"></i> <span>15000</span> Подписчиков</span>
                                     <span>Подписаться</span>
                                 </a>
@@ -262,13 +262,13 @@
                                     <div class="binduz-er-content">
                                         <div class="binduz-er-meta-item">
                                             <div class="binduz-er-meta-categories">
-                                                <a href="#"><?= $category['name'] ?></a>
+                                                <a href="<?= PATH ?>/category"><?= $category['name'] ?></a>
                                             </div>
                                             <div class="binduz-er-meta-date">
                                                 <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                                             </div>
                                         </div>
-                                        <h5 class="binduz-er-title"><a href="#"><?= $post['title'] ?></a></h5>
+                                        <h5 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h5>
                                         <div class="binduz-er-meta-author">
                                             <?= $author['name'] ?></span></span>
                                         </div>
@@ -283,7 +283,7 @@
                     <div class="binduz-er-sidebar-social binduz-er-populer-news-sidebar-add d-none d-lg-block">
                         <div class="binduz-er-sidebar-add mt-40" style="background-image: url(assets/images/bus_319_140.jpg);">
                             <h3 class="binduz-er-title">Создайте свой веб-сайт и <span>развивайте свой бизнес</span></h3>
-                            <a class="binduz-er-main-btn" href="#">Покупка</a>
+                            <a class="binduz-er-main-btn" href="https://web-help24.ru/spets/?utm_source=yandex&utm_medium=cpc&utm_campaign=72113802&utm_content=11972100158&utm_term=%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81+%D1%81%D0%B0%D0%B9%D1%82&etext=2202.pgqJl06Pg19Pc9B2tl1jTWLtVYCZQXw-XCkLwXaFMyb8Wx5VO1jyo9dQlNut_oeFBYC4pjGsFVMp4gx0k4WoNqVm5ir90fK-PBtMEm_m8yesDk93WedOEkl_nY8NnzWybnV2c2JuYXZ0b29jdG9udQ.c576ecd63aa91301671c9e59e4b69a7151e466b8&yclid=3560920387384575289&v=f9308c5d0596">Покупка</a>
                         </div>
                     </div>
                 </div>
