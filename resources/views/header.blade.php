@@ -168,9 +168,6 @@
                                                 <a class="nav-link" href="<?= PATH ?>/">Главная</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="<?= PATH ?>/author">Автор</a>
-                                            </li>
-                                            <li class="nav-item">
                                                 <a class="nav-link" href="<?= PATH ?>/details">Детали блога</a>
                                             </li>
                                             <li class="nav-item">
