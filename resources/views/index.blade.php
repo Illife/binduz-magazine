@@ -277,10 +277,10 @@
                                         </a></h3>
                                 </div>
                                 <div class="binduz-er-meta-author">
-                                    <div class="binduz-er-author">
+                                    <a href="<?= PATH ?>/author" class="binduz-er-author">
                                         <img src="<?= $author['img'] ?>" alt="">
                                         <?= $author['name'] ?></span></span>
-                                    </div>
+                                    </a>
                                     <div class="binduz-er-meta-list">
                                         <ul>
                                             <li><i class="fal fa-eye"></i> 5k</li>
