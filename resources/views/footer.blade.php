@@ -27,7 +27,7 @@
                             <div class="binduz-er-footer-gallery-widget d-flex">
                                 <?php foreach ($ResultReadPostLimit3 as $post) { ?>
                                     <div class="binduz-er-item">
-                                        <a href="<?= PATH ?>/details">
+                                        <a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
                                             <img src="<?= $post['img_90_90'] ?>" alt="">
                                         </a>
                                     </div>
@@ -36,7 +36,7 @@
                             <div class="binduz-er-footer-gallery-widget d-flex">
                                 <?php foreach ($ResultReadPostLimit3Offset3 as $post) { ?>
                                     <div class="binduz-er-item">
-                                        <a href="<?= PATH ?>/details">
+                                        <a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
                                             <img src="<?= $post['img_90_90'] ?>" alt="">
                                         </a>
                                     </div>

@@ -1,28 +1,48 @@
 @include('header')
 <!--====== BINDUZ AUTHOR USER PART START ======-->
+<?php
 
+$id = $_GET['post_id'];
+$ResultReadPostById = new \Models\Post;
+$ResultReadPostById = $ResultReadPostById->read_post_by_id($id);
+foreach ($ResultReadPostById as $post) {
+}
+
+$category_id = $post['category_id'];
+$ResultReadCategoryByCategoryId = new \Models\Category;
+$ResultReadCategoryByCategoryId = $ResultReadCategoryByCategoryId->read_category_by_category_id($category_id);
+foreach ($ResultReadCategoryByCategoryId as $category) {
+}
+
+$author_id = $post['author_id'];
+$ResultReadAuthorByAuthorId = new \Models\Users;
+$ResultReadAuthorByAuthorId = $ResultReadAuthorByAuthorId->read_author_by_author_id($author_id);
+foreach ($ResultReadAuthorByAuthorId as $author) {
+}
+
+?>
 <section class="binduz-er-author-item-area pb-20">
     <div class=" container">
         <div class="row">
             <div class=" col-lg-9">
                 <div class="binduz-er-author-item mb-40">
                     <div class="binduz-er-thumb">
-                        <img src="assets/images/author-item-1.jpg" alt="">
+                        <img src="<?= $post['img_2020_1040'] ?>" alt="">
                     </div>
                     <div class="binduz-er-content">
                         <div class="binduz-er-meta-item">
                             <div class="binduz-er-meta-categories">
-                                <a href="#">Technology</a>
+                                <a href="#"><?= $category['name'] ?></a>
                             </div>
                             <div class="binduz-er-meta-date">
-                                <span><i class="fal fa-calendar-alt"></i>24th February 2020</span>
+                                <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                             </div>
                         </div>
-                        <h3 class="binduz-er-title">How to pot you web app to microsoft clone teams is really ready for take fight.</h3>
+                        <h3 class="binduz-er-title"><?= $post['title'] ?></h3>
                         <div class="binduz-er-meta-author">
                             <div class="binduz-er-author">
-                                <img src="assets/images/user-2.jpg" alt="">
-                                <span>By <span>Rosalina D.</span></span>
+                                <img src="<?= $author['img'] ?>" alt="">
+                                <?= $author['name'] ?></span></span>
                             </div>
                             <div class="binduz-er-meta-list">
                                 <ul>
@@ -34,71 +54,74 @@
                         </div>
                     </div>
                     <div class="binduz-er-blog-details-box">
+
+
+
                         <div class="binduz-er-text">
-                            <p>On your list of places where people might access your web app, Teams is probably number “not-on-the-list”. But it turns out that making your app accessible where your users are already working has some profound for benefits. In this article, we’ll look athow Teams makes web apps for every company</p>
-                            <p>Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from thebody large pocket at the front full button detail cotton blend cute functional. Bodycon skirts bright primary colours punchy palette pleated cheerleader vibe stripe trims staple court shoe chunky mid block.</p>
+                            <p>В вашем списке мест, где люди могут получить доступ к вашему веб-приложению, Teams, вероятно, находится под номером “нет в списке”. Но оказывается, что предоставление доступа к вашему приложению там, где ваши пользователи уже работают, имеет некоторые серьезные преимущества. В этой статье мы рассмотрим, как Teams создает веб-приложения для каждой компании</p>
+                            <p>Структурированная лента с захватом, невидимые формованные чашечки для поддержки, прочно удерживающие спортивную деталь переднего вкладыша powermesh. Тепло и комфорт свободно свисают с тела, большой карман спереди, полная пуговица, хлопчатобумажная смесь, симпатичная и функциональная. Облегающие юбки ярких основных цветов, яркая палитра, плиссированные юбки в стиле чирлидерш, отделка в полоску, туфли-лодочки из штапельного материала, массивный средний блок.</p>
                         </div>
                         <div class="row">
                             <div class=" col-lg-6">
                                 <div class="binduz-er-blog-details-thumb mt-25">
-                                    <img src="assets/images/blog-details-thumb-1.jpg" alt="">
+                                    <img src="assets/images/binduz1_880_600.jpg" alt="">
                                 </div>
                             </div>
                             <div class=" col-lg-6">
                                 <div class="binduz-er-blog-details-thumb mt-25">
-                                    <img src="assets/images/blog-details-thumb-2.jpg" alt="">
+                                    <img src="assets/images/binduz2_880_600.jpg" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="binduz-er-text mt-50">
-                            <p>A shortage of several hundred ventilators in New York City, the epicentre of the outbreak in the US, prompted Mr Cuomo to say that he will order the machines be taken from various parts of the state and give them to harder-hit areas. New York saw its highest single-day increase in deaths, up by 562 to 2,935 - nearly half of all virus-related US deaths recorded yesterday. The White House may advise those in virus hotspots to wear face coverings in public to help stem the spread.</p>
+                            <p>Нехватка нескольких сотен аппаратов искусственной вентиляции легких в Нью-Йорке, эпицентре вспышки в США, побудила г-на Куомо заявить, что он распорядится забрать аппараты из разных частей штата и передать их в наиболее пострадавшие районы. В Нью-Йорке зафиксирован самый высокий за один день рост числа смертей - на 562 до 2935 - почти половина всех смертей, связанных с вирусом, зарегистрированных вчера в США. Белый дом может посоветовать тем, кто находится в горячих точках распространения вируса, носить маски на публике, чтобы помочь остановить распространение.</p>
                         </div>
                         <div class="binduz-er-quote-text">
-                            <p>Lining concealed back zip fasten swing style high waisted double layer full pattern floral creating your app package.</p>
+                            <p>Подкладка потайная молния сзади застегивается на молнию в стиле качелей с высокой талией, двухслойный полный цветочный узор, создающий ваш пакет приложений.</p>
                             <span>By <span>Rosalina D.</span></span>
                         </div>
                         <div class="binduz-er-text mt-50">
-                            <p>When creating your app package, you can choose to create it manually or use App Studio, which is a useful app inside Teams that helps developers make Teams apps (yes, meta indeed stalled the App Studio app in you).</p>
+                            <p>При создании пакета приложений вы можете создать его вручную или использовать App Studio, полезное приложение внутри Teams, которое помогает разработчикам создавать приложения Teams (да, meta действительно остановила приложение App Studio в вас).</p>
                             <ul>
-                                <li>Once you have installed the App Studio app in your Teams client</li>
-                                <li>App Studio will guide you through</li>
-                                <li>Web services up and running, you’ll need to create an app package that can be distributed and installed</li>
+                                <li>После установки приложения App Studio в вашем клиенте Teams</li>
+                                <li>App Studio проведет вас</li>
+                                <li>Для запуска и запуска веб-служб вам необходимо создать пакет приложений, который можно распространять и устанавливать</li>
                             </ul>
                         </div>
                         <div class="row align-items-center pt-60">
                             <div class=" col-lg-3">
                                 <div class="binduz-er-blog-details-thumb">
-                                    <img src="assets/images/blog-details-thumb-3.jpg" alt="">
+                                    <img src="assets/images/app1_420_340.webp" alt="">
                                 </div>
                             </div>
                             <div class=" col-lg-6">
                                 <div class="binduz-er-blog-details-thumb-text text pl-10 pr-25 pt-20 pb-20">
-                                    <p>When creating your app package, you can choose to create it manually or use App Studio, which is a useful app inside Teams that helps developers make Teams apps.</p>
+                                    <p>При создании пакета приложений вы можете создать его вручную или использовать App Studio, полезное приложение внутри Teams, которое помогает разработчикам создавать приложения Teams.</p>
                                 </div>
                             </div>
                             <div class=" col-lg-3">
                                 <div class="binduz-er-blog-details-thumb">
-                                    <img src="assets/images/blog-details-thumb-4.jpg" alt="">
+                                    <img src="assets/images/app2_420_340.webp" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="binduz-er-text pt-50">
-                            <p>Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from thebody large pocket at the front full button detail cotton blend cute functional. Bodycon skirts bright primary colours punchy palette pleated cheerleader vibe stripe trims staple court shoe chunky mid block.</p>
+                            <p>Структурированная лента с захватом, невидимые формованные чашечки для поддержки, прочно удерживающие спортивную деталь переднего вкладыша powermesh. Тепло и комфорт свободно свисают с тела, большой карман спереди, полная пуговица, хлопчатобумажная смесь, симпатичная и функциональная. Облегающие юбки ярких основных цветов, яркая палитра, плиссированные юбки в стиле чирлидерш, отделка в полоску, туфли-лодочки из штапельного материала, массивный средний блок.</p>
                         </div>
                         <div class="binduz-er-blog-details-thumb-play mt-50">
-                            <img src="assets/images/blog-details-thumb-5.jpg" alt="">
+                            <img src="assets/images/details_1820_1000.jpg" alt="">
                             <div class="binduz-er-play">
-                                <a class="binduz-er-video-popup" href="#"><i class="fas fa-play"></i></a>
+                                <a class="binduz-er-video-popup" href="<?= $post['video_link'] ?>"><i class="fas fa-play"></i></a>
                             </div>
                         </div>
                         <div class="binduz-er-text mt-50">
-                            <p>A shortage of several hundred ventilators in New York City, the epicentre of the outbreak in the US, prompted Mr Cuomo to say that he will order the machines be taken from various parts of the state and give them to harder-hit areas. New York saw its highest single-day increase in deaths, up by 562 to 2,935 - nearly half of all virus-related US deaths recorded yesterday. The White House may advise those in virus hotspots to wear face coverings in public to help stem the spread.</p>
+                            <p>Нехватка нескольких сотен аппаратов искусственной вентиляции легких в Нью-Йорке, эпицентре вспышки в США, побудила г-на Куомо заявить, что он распорядится забрать аппараты из разных частей штата и передать их в наиболее пострадавшие районы. В Нью-Йорке зафиксирован самый высокий за один день рост числа смертей - на 562 до 2935 - почти половина всех смертей, связанных с вирусом, зарегистрированных вчера в США. Белый дом может посоветовать тем, кто находится в горячих точках распространения вируса, носить маски на публике, чтобы помочь остановить распространение.</p>
                         </div>
                         <div class="binduz-er-social-share-tag d-block d-sm-flex justify-content-between align-items-center">
                             <div class="binduz-er-tag">
                                 <ul>
-                                    <li><a href="#">Popular</a></li>
-                                    <li><a href="#">Desgin</a></li>
+                                    <li><a href="#">Популярный</a></li>
+                                    <li><a href="#">Дизайн</a></li>
                                     <li><a href="#">UX</a></li>
                                 </ul>
                             </div>
@@ -115,120 +138,91 @@
                         <div class="binduz-er-blog-post-prev-next d-flex justify-content-between align-items-center">
                             <div class="binduz-er-post-prev-next">
                                 <a href="#">
-                                    <span>Prev Post</span>
-                                    <h4 class="binduz-er-title">Tips On Minimalist</h4>
+                                    <span>Предыдущее Сообщение</span>
+                                    <h4 class="binduz-er-title">Советы По Минимализму</h4>
                                 </a>
                             </div>
                             <div class="binduz-er-post-prev-next text-end">
                                 <a href="#">
-                                    <span>Next Post</span>
-                                    <h4 class="binduz-er-title">Less Is More</h4>
+                                    <span>Следующий пост</span>
+                                    <h4 class="binduz-er-title">Меньше Значит Больше</h4>
                                 </a>
                             </div>
                             <div class="binduz-er-post-bars">
                                 <a href="#"><img src="assets/images/icon/post-bars.png" alt=""></a>
                             </div>
                         </div>
+
+
+
                         <div class="binduz-er-blog-related-post">
                             <div class="binduz-er-related-post-title">
-                                <h3 class="binduz-er-title">Related Post</h3>
+                                <h3 class="binduz-er-title">Похожие посты</h3>
                             </div>
                             <div class="binduz-er-blog-related-post-slide">
-                                <div class="binduz-er-video-post binduz-er-recently-viewed-item">
-                                    <div class="binduz-er-latest-news-item">
-                                        <div class="binduz-er-thumb">
-                                            <img src="assets/images/editors-pack-thumb-1.jpg" alt="">
-                                        </div>
-                                        <div class="binduz-er-content">
-                                            <div class="binduz-er-meta-item">
-                                                <div class="binduz-er-meta-categories">
-                                                    <a href="#">Technology</a>
-                                                </div>
-                                                <div class="binduz-er-meta-date">
-                                                    <span><i class="fal fa-calendar-alt"></i>24th February 2020</span>
-                                                </div>
+                                <?php
+
+                                $ResultReadPostByTrend = new \Models\Post;
+                                $ResultReadPostByTrend = $ResultReadPostByTrend->read_post_by_trend();
+                                foreach ($ResultReadPostByTrend as $post) {
+                                    $category_id = $post['category_id'];
+                                    $ResultReadCategoryByCategoryId = new \Models\Category;
+                                    $ResultReadCategoryByCategoryId = $ResultReadCategoryByCategoryId->read_category_by_category_id($category_id);
+                                    foreach ($ResultReadCategoryByCategoryId as $category) {
+                                    }
+                                ?>
+                                    <div class="binduz-er-video-post binduz-er-recently-viewed-item">
+                                        <div class="binduz-er-latest-news-item">
+                                            <div class="binduz-er-thumb">
+                                                <img src="<?= $post['img_310_200'] ?>" alt="">
                                             </div>
-                                            <h5 class="binduz-er-title"><a href="#">This new emoji has been years in the making</a></h5>
+                                            <div class="binduz-er-content">
+                                                <div class="binduz-er-meta-item">
+                                                    <div class="binduz-er-meta-categories">
+                                                        <a href="#"><?= $category['name'] ?></a>
+                                                    </div>
+                                                    <div class="binduz-er-meta-date">
+                                                        <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
+                                                    </div>
+                                                </div>
+                                                <h5 class="binduz-er-title"><a href="#">
+                                                        <?php
+
+                                                        $post_title = $post['title'];
+                                                        $post_title = substr($post_title, 0, 60);
+                                                        $post_title = rtrim($post_title, "!,.-");
+                                                        $post_title = substr($post_title, 0, strrpos($post_title, ' '));
+                                                        echo $post_title . "… ";
+
+                                                        ?>
+                                                    </a></h5>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="binduz-er-video-post binduz-er-recently-viewed-item">
-                                    <div class="binduz-er-latest-news-item">
-                                        <div class="binduz-er-thumb">
-                                            <img src="assets/images/editors-pack-thumb-2.jpg" alt="">
-                                        </div>
-                                        <div class="binduz-er-content">
-                                            <div class="binduz-er-meta-item">
-                                                <div class="binduz-er-meta-categories">
-                                                    <a href="#">Technology</a>
-                                                </div>
-                                                <div class="binduz-er-meta-date">
-                                                    <span><i class="fal fa-calendar-alt"></i>24th February 2020</span>
-                                                </div>
-                                            </div>
-                                            <h5 class="binduz-er-title"><a href="#">A dietitian’s website and blog stir up more business</a></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="binduz-er-video-post binduz-er-recently-viewed-item">
-                                    <div class="binduz-er-latest-news-item">
-                                        <div class="binduz-er-thumb">
-                                            <img src="assets/images/editors-pack-thumb-3.jpg" alt="">
-                                        </div>
-                                        <div class="binduz-er-content">
-                                            <div class="binduz-er-meta-item">
-                                                <div class="binduz-er-meta-categories">
-                                                    <a href="#">Technology</a>
-                                                </div>
-                                                <div class="binduz-er-meta-date">
-                                                    <span><i class="fal fa-calendar-alt"></i>24th February 2020</span>
-                                                </div>
-                                            </div>
-                                            <h5 class="binduz-er-title"><a href="#">New resources on the gender gap in computer science</a></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="binduz-er-video-post binduz-er-recently-viewed-item">
-                                    <div class="binduz-er-latest-news-item">
-                                        <div class="binduz-er-thumb">
-                                            <img src="assets/images/editors-pack-thumb-4.jpg" alt="">
-                                        </div>
-                                        <div class="binduz-er-content">
-                                            <div class="binduz-er-meta-item">
-                                                <div class="binduz-er-meta-categories">
-                                                    <a href="#">Technology</a>
-                                                </div>
-                                                <div class="binduz-er-meta-date">
-                                                    <span><i class="fal fa-calendar-alt"></i>24th February 2020</span>
-                                                </div>
-                                            </div>
-                                            <h5 class="binduz-er-title"><a href="#">Android Enterprise security delivers for flexible work</a></h5>
-                                        </div>
-                                    </div>
-                                </div>
+                                <?php } ?>
                             </div>
                         </div>
                         <div class="binduz-er-blog-post-form">
                             <form action="#">
                                 <div class="binduz-er-blog-post-title">
-                                    <h3 class="binduz-er-title">Leave a Reply</h3>
+                                    <h3 class="binduz-er-title">Оставить сообщение</h3>
                                 </div>
                                 <div class="row">
                                     <div class=" col-lg-6">
                                         <div class="binduz-er-input-box">
-                                            <input type="text" placeholder="Enter full name">
+                                            <input type="text" placeholder="Введите полное имя">
                                         </div>
                                         <div class="binduz-er-input-box">
-                                            <input type="email" placeholder="Email address">
+                                            <input type="email" placeholder="Email">
                                         </div>
                                         <div class="binduz-er-input-box">
                                             <div class="binduz-er-input-box binduz-er-select-item">
                                                 <select>
-                                                    <option data-display="Select Subject">Web Development</option>
-                                                    <option value="1">Ui/Ux Designer</option>
-                                                    <option value="2">Another option</option>
-                                                    <option value="3">A disabled option</option>
-                                                    <option value="4">Potato</option>
+                                                    <option data-display="Select Subject">Веб-разработка</option>
+                                                    <option value="1">Дизайнер Ui/Ux</option>
+                                                    <option value="2">Другой вариант</option>
+                                                    <option value="3">Отключенная опция</option>
+                                                    <option value="4">Картофель</option>
                                                 </select>
                                                 <i class="fal fa-arrow-down"></i>
                                             </div>
@@ -236,12 +230,12 @@
                                     </div>
                                     <div class=" col-lg-6">
                                         <div class="binduz-er-input-box">
-                                            <textarea name="#" id="#" cols="30" rows="10" placeholder="Enter message"></textarea>
+                                            <textarea name="#" id="#" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
                                         </div>
                                     </div>
                                     <div class=" col-lg-12">
                                         <div class="binduz-er-input-box text-end mt-15">
-                                            <button type="button" class="binduz-er-main-btn">Post Comment</button>
+                                            <button type="button" class="binduz-er-main-btn">Отправить запрос</button>
                                         </div>
                                     </div>
                                 </div>
@@ -250,30 +244,32 @@
                     </div>
                 </div>
             </div>
+
             <div class=" col-lg-3">
                 <div class="binduz-er-populer-news-sidebar">
+
                     <div class="binduz-er-archived-sidebar-about">
                         <div class="binduz-er-user">
-                            <img src="assets/images/archived-about.png" alt="">
+                            <img src="assets/images/miranda_140_140.jpg" alt="">
                             <div class="binduz-er-icon">
                                 <i class="fal fa-newspaper"></i>
                             </div>
 
                         </div>
-                        <span>Senior Reportar</span>
-                        <h4 class="binduz-er-title">Miranda H. Hilixer</h4>
+                        <span>Старший репортер</span>
+                        <h4 class="binduz-er-title">Миранда Х. Хиликсер</h4>
                         <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.behance.net/"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
                         </ul>
                     </div>
 
                     <div class="binduz-er-author-sidebar-search-bar">
                         <form action="#">
                             <div class="binduz-er-input-box">
-                                <input type="text" placeholder="Search from here...">
+                                <input type="text" placeholder="Поиск здесь...">
                                 <button type="button"><i class="fal fa-search"></i></button>
                             </div>
                         </form>
@@ -283,92 +279,66 @@
                         <div class="binduz-er-popular-news-title">
                             <ul class="nav nav-pills mb-3" id="pills-tab-2" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Most Popular</a>
+                                    <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Cамые популярные</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Most Recent</a>
+                                    <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Самые последние</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="tab-content" id="pills-tabContent-2">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                                 <div class="binduz-er-sidebar-latest-post-box">
-                                    <div class="binduz-er-sidebar-latest-post-item">
-                                        <div class="binduz-er-thumb">
-                                            <img src="assets/images/latest-post-1.jpg" alt="latest">
+
+                                    <?php foreach ($ResultReadPostByTrend as $post) { ?>
+
+                                        <div class="binduz-er-sidebar-latest-post-item">
+                                            <div class="binduz-er-thumb">
+                                                <img src="<?= $post['img_160_160'] ?>" alt="latest">
+                                            </div>
+                                            <div class="binduz-er-content">
+                                                <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
+                                                <h4 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
+                                                        <?php
+
+                                                        $post_title = $post['title'];
+                                                        $post_title = substr($post_title, 0, 60);
+                                                        $post_title = rtrim($post_title, "!,.-");
+                                                        $post_title = substr($post_title, 0, strrpos($post_title, ' '));
+                                                        echo $post_title . "… ";
+
+                                                        ?>
+                                                    </a></h4>
+                                            </div>
                                         </div>
-                                        <div class="binduz-er-content">
-                                            <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
-                                            <h4 class="binduz-er-title"><a href="#">Why creating inclusive classrooms matters</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="binduz-er-sidebar-latest-post-item">
-                                        <div class="binduz-er-thumb">
-                                            <img src="assets/images/latest-post-2.jpg" alt="latest">
-                                        </div>
-                                        <div class="binduz-er-content">
-                                            <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
-                                            <h4 class="binduz-er-title"><a href="#">Celebrating Asian Pacific American art and</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="binduz-er-sidebar-latest-post-item">
-                                        <div class="binduz-er-thumb">
-                                            <img src="assets/images/latest-post-3.jpg" alt="latest">
-                                        </div>
-                                        <div class="binduz-er-content">
-                                            <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
-                                            <h4 class="binduz-er-title"><a href="#">From overcoming burnout to finding new</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="binduz-er-sidebar-latest-post-item">
-                                        <div class="binduz-er-thumb">
-                                            <img src="assets/images/latest-post-4.jpg" alt="latest">
-                                        </div>
-                                        <div class="binduz-er-content">
-                                            <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
-                                            <h4 class="binduz-er-title"><a href="#">Sparks of inspiration to the new trend 2021</a></h4>
-                                        </div>
-                                    </div>
+                                    <?php } ?>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                                 <div class="binduz-er-sidebar-latest-post-box">
-                                    <div class="binduz-er-sidebar-latest-post-item">
-                                        <div class="binduz-er-thumb">
-                                            <img src="assets/images/latest-post-1.jpg" alt="latest">
+                                    <?php foreach ($ResultReadPostLast as $post) { ?>
+                                        <div class="binduz-er-sidebar-latest-post-item">
+                                            <div class="binduz-er-thumb">
+                                                <img src="<?= $post['img_160_160'] ?>" alt="latest">
+                                            </div>
+                                            <div class="binduz-er-content">
+                                                <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
+                                                <h4 class="binduz-er-title">
+                                                    <a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
+                                                        <?php
+
+                                                        $post_title = $post['title'];
+                                                        $post_title = substr($post_title, 0, 60);
+                                                        $post_title = rtrim($post_title, "!,.-");
+                                                        $post_title = substr($post_title, 0, strrpos($post_title, ' '));
+                                                        echo $post_title . "… ";
+
+                                                        ?>
+                                                    </a>
+                                                </h4>
+                                            </div>
                                         </div>
-                                        <div class="binduz-er-content">
-                                            <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
-                                            <h4 class="binduz-er-title"><a href="#">Why creating inclusive classrooms matters</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="binduz-er-sidebar-latest-post-item">
-                                        <div class="binduz-er-thumb">
-                                            <img src="assets/images/latest-post-2.jpg" alt="latest">
-                                        </div>
-                                        <div class="binduz-er-content">
-                                            <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
-                                            <h4 class="binduz-er-title"><a href="#">Celebrating Asian Pacific American art and</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="binduz-er-sidebar-latest-post-item">
-                                        <div class="binduz-er-thumb">
-                                            <img src="assets/images/latest-post-3.jpg" alt="latest">
-                                        </div>
-                                        <div class="binduz-er-content">
-                                            <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
-                                            <h4 class="binduz-er-title"><a href="#">From overcoming burnout to finding new</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="binduz-er-sidebar-latest-post-item">
-                                        <div class="binduz-er-thumb">
-                                            <img src="assets/images/latest-post-4.jpg" alt="latest">
-                                        </div>
-                                        <div class="binduz-er-content">
-                                            <span><i class="fal fa-calendar-alt"></i> 24th February 2020</span>
-                                            <h4 class="binduz-er-title"><a href="#">Sparks of inspiration to the new trend 2021</a></h4>
-                                        </div>
-                                    </div>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>
@@ -377,10 +347,10 @@
                     <div class="binduz-er-populer-news-sidebar-newsletter binduz-er-author-page-newsletter mt-40">
                         <div class="binduz-er-newsletter-box text-center">
                             <img src="assets/images/icon/icon-3.png" alt="">
-                            <h3 class="binduz-er-title">Get Every Newsletter</h3>
-                            <p>We are not gonna make spamming</p>
+                            <h3 class="binduz-er-title">Получайте Каждую Новостную Рассылку</h3>
+                            <p>Мы не собираемся рассылать спам</p>
                             <div class="binduz-er-input-box">
-                                <input type="text" placeholder="Enter your email">
+                                <input type="text" placeholder="Введите свой email">
                                 <button><i class="fal fa-long-arrow-right"></i></button>
                             </div>
                         </div>
@@ -388,25 +358,25 @@
 
                     <div class="binduz-er-populer-news-social binduz-er-author-page-social mt-40">
                         <div class="binduz-er-popular-news-title">
-                            <h3 class="binduz-er-title">Social Connects</h3>
+                            <h3 class="binduz-er-title">Социальные сети</h3>
                         </div>
                         <div class="binduz-er-social-list">
                             <div class="binduz-er-list">
-                                <a href="#">
-                                    <span><i class="fab fa-facebook-f"></i> <span>15000</span> Likes</span>
-                                    <span>Like</span>
+                                <a href="https://www.facebook.com/">
+                                    <span><i class="fab fa-facebook-f"></i> <span>15000</span> Лайков</span>
+                                    <span>Лайк</span>
                                 </a>
-                                <a href="#">
-                                    <span><i class="fab fa-twitter"></i> <span>15000</span> Likes</span>
+                                <a href="https://twitter.com/">
+                                    <span><i class="fab fa-twitter"></i> <span>15000</span> Лайков</span>
                                     <span>Tweet</span>
                                 </a>
-                                <a href="#">
-                                    <span><i class="fab fa-behance"></i> <span>5k+</span> Follower</span>
-                                    <span>Follow</span>
+                                <a href="https://www.behance.net/">
+                                    <span><i class="fab fa-behance"></i> <span>5k+</span> Фолловеров</span>
+                                    <span>Следить</span>
                                 </a>
-                                <a href="#">
-                                    <span><i class="fab fa-youtube"></i> <span>15000</span> Subscribe</span>
-                                    <span>Subscribe</span>
+                                <a href="https://www.youtube.com/">
+                                    <span><i class="fab fa-youtube"></i> <span>15000</span> Подписчиков</span>
+                                    <span>Подписаться</span>
                                 </a>
                             </div>
                         </div>
@@ -414,38 +384,60 @@
 
                     <div class="binduz-er-populer-news-social binduz-er-author-page-social mt-40">
                         <div class="binduz-er-popular-news-title">
-                            <h3 class="binduz-er-title">Video Post</h3>
+                            <h3 class="binduz-er-title">Видеопосты</h3>
                         </div>
-                        <div class="binduz-er-video-post binduz-er-recently-viewed-item">
-                            <div class="binduz-er-latest-news-item">
-                                <div class="binduz-er-thumb">
-                                    <img src="assets/images/editors-pack-thumb-1.jpg" alt="">
-                                    <div class="binduz-er-play">
-                                        <a href="#"><i class="fas fa-play"></i></a>
-                                    </div>
-                                </div>
-                                <div class="binduz-er-content">
-                                    <div class="binduz-er-meta-item">
-                                        <div class="binduz-er-meta-categories">
-                                            <a href="#">Technology</a>
+
+                        <?php
+
+                        foreach ($ResultReadPostByVideoCenter as $post) {
+                            $category_id = $post['category_id'];
+
+                            $ResultReadCategoryByCategoryId = new \Models\Category;
+                            $ResultReadCategoryByCategoryId = $ResultReadCategoryByCategoryId->read_category_by_category_id($category_id);
+                            foreach ($ResultReadCategoryByCategoryId as $category) {
+                            }
+
+                            $author_id = $post['author_id'];
+                            $ResultReadAuthorByAuthorId = new \Models\Users;
+                            $ResultReadAuthorByAuthorId = $ResultReadAuthorByAuthorId->read_author_by_author_id($author_id);
+                            foreach ($ResultReadAuthorByAuthorId as $author) {
+                            }
+                        ?>
+
+                            <div class="binduz-er-video-post binduz-er-recently-viewed-item">
+                                <div class="binduz-er-latest-news-item">
+                                    <div class="binduz-er-thumb">
+                                        <img src="<?= $post['img_310_200'] ?>" alt="">
+                                        <div class="binduz-er-play">
+                                            <a href="<?= $post['video_link'] ?>"><i class="fas fa-play"></i></a>
                                         </div>
-                                        <div class="binduz-er-meta-date">
-                                            <span><i class="fal fa-calendar-alt"></i>24th February 2020</span>
+                                    </div>
+
+                                    <div class="binduz-er-content">
+                                        <div class="binduz-er-meta-item">
+                                            <div class="binduz-er-meta-categories">
+                                                <a href="<?= PATH ?>/category?category_id=<?= $category['id'] ?>"><?= $category['name'] ?></a>
+                                            </div>
+                                            <div class="binduz-er-meta-date">
+                                                <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
+                                            </div>
+                                        </div>
+                                        <h5 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>"><?= $post['title'] ?></a></h5>
+                                        <div class="binduz-er-meta-author">
+                                            <?= $author['name'] ?></span></span>
                                         </div>
                                     </div>
-                                    <h5 class="binduz-er-title"><a href="#">Nearly three weeks after Rita Ora and Chris Brown released their collaboration, “Body On Me,”</a></h5>
-                                    <div class="binduz-er-meta-author">
-                                        <span>By <span>Rosalina D.</span></span>
-                                    </div>
+
+
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
+                        <?php } ?>
+                    </div>
                     <div class="binduz-er-sidebar-social binduz-er-populer-news-sidebar-add d-none d-lg-block">
-                        <div class="binduz-er-sidebar-add mt-40">
-                            <h3 class="binduz-er-title">Build your website & <span>grow your business</span></h3>
-                            <a class="binduz-er-main-btn" href="#">Purchase</a>
+                        <div class="binduz-er-sidebar-add mt-40" style="background-image: url(assets/images/bus_319_140.jpg);">
+                            <h3 class="binduz-er-title">Создайте свой веб-сайт и <span>развивайте свой бизнес</span></h3>
+                            <a class="binduz-er-main-btn" href="https://web-help24.ru/spets/?utm_source=yandex&utm_medium=cpc&utm_campaign=72113802&utm_content=11972100158&utm_term=%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81+%D1%81%D0%B0%D0%B9%D1%82&etext=2202.pgqJl06Pg19Pc9B2tl1jTWLtVYCZQXw-XCkLwXaFMyb8Wx5VO1jyo9dQlNut_oeFBYC4pjGsFVMp4gx0k4WoNqVm5ir90fK-PBtMEm_m8yesDk93WedOEkl_nY8NnzWybnV2c2JuYXZ0b29jdG9udQ.c576ecd63aa91301671c9e59e4b69a7151e466b8&yclid=3560920387384575289&v=f9308c5d0596">Покупка</a>
                         </div>
                     </div>
                 </div>

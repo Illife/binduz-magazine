@@ -158,7 +158,19 @@ Route::get('/details', function () {
     $ResultReadPostLimit3Offset3 = new \Controllers\PostController;
     $ResultReadPostLimit3Offset3 = $ResultReadPostLimit3Offset3->read_post_limit_3_offset_3();
 
+    $ResultReadPostByTrend = new \Controllers\PostController;
+    $ResultReadPostByTrend = $ResultReadPostByTrend->read_post_by_trend();
+
+    $ResultReadPostLast = new \Controllers\PostController;
+    $ResultReadPostLast = $ResultReadPostLast->read_post_last();
+
+    $ResultReadPostByVideoCenter = new \Controllers\PostController;
+    $ResultReadPostByVideoCenter = $ResultReadPostByVideoCenter->read_post_by_video_center();
+
 
     return view('details')->with('ResultReadPostLimit3', $ResultReadPostLimit3)
-        ->with('ResultReadPostLimit3Offset3', $ResultReadPostLimit3Offset3);
+        ->with('ResultReadPostLimit3Offset3', $ResultReadPostLimit3Offset3)
+        ->with('ResultReadPostByTrend', $ResultReadPostByTrend)
+        ->with('ResultReadPostLast', $ResultReadPostLast)
+        ->with('ResultReadPostByVideoCenter', $ResultReadPostByVideoCenter);
 });

@@ -67,9 +67,6 @@
                                     <a href="<?= PATH ?>/">Главная</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
-                                    <a href="<?= PATH ?>/details">Детали блога</a>
-                                </li>
-                                <li class="binduz-er-news-menu-item-has-children">
                                     <a href="<?= PATH ?>/about-us">О нас</a>
                                 </li>
                                 <li class="binduz-er-news-menu-item-has-children">
@@ -186,9 +183,6 @@
                                             <a class="nav-link" href="<?= PATH ?>/">Главная<i class="fa"></i></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="<?= PATH ?>/details">Детали блога<i class="fa"></i></a>
-                                        </li>
-                                        <li class="nav-item">
                                             <a class="nav-link" href="<?= PATH ?>/about-us">О нас</a>
                                         </li>
                                         <li class="nav-item">
@@ -257,7 +251,7 @@
                                     </div>
                                 </div>
                                 <div class="binduz-er-hero-title">
-                                    <h3 class="binduz-er-title"><a href="<?= PATH ?>/details">
+                                    <h3 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
 
                                             <?php
 
@@ -313,13 +307,13 @@
             <?php foreach ($ResultReadPost as $post) { ?>
                 <div class="binduz-er-news-portal-item">
                     <div class="binduz-er-thumb">
-                        <a href="<?= PATH ?>/details"><img src="<?= $post['img_120_60'] ?>" alt=""></a>
+                        <a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>"><img src="<?= $post['img_120_60'] ?>" alt=""></a>
                     </div>
                     <div class="binduz-er-content">
                         <div class="binduz-er-post-meta-date">
                             <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                         </div>
-                        <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
+                        <h4 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
                                 <?php
 
                                 $post_title = $post['title'];
@@ -401,7 +395,7 @@
                                                                     <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                                                                 </div>
                                                                 <div class="binduz-er-trending-news-title">
-                                                                    <h3 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h3>
+                                                                    <h3 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>"><?= $post['title'] ?></a></h3>
                                                                 </div>
                                                             </div>
                                                             <div class="binduz-er-news-share">
@@ -440,7 +434,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="binduz-er-trending-news-list-title">
-                                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h4>
+                                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>"><?= $post['title'] ?></a></h4>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -479,7 +473,7 @@
                                                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                                                                     </div>
                                                                     <div class="binduz-er-trending-news-title">
-                                                                        <h3 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h3>
+                                                                        <h3 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>"><?= $post['title'] ?></a></h3>
                                                                     </div>
                                                                 </div>
                                                                 <div class="binduz-er-news-share">
@@ -523,7 +517,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="binduz-er-trending-news-list-title">
-                                                                        <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
+                                                                        <h4 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
                                                                                 <?php
 
                                                                                 $post_title = $post['title'];
@@ -609,7 +603,7 @@
                                             </div>
                                         </div>
                                         <div class="binduz-er-trending-news-list-title">
-                                            <h4 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h4>
+                                            <h4 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>"><?= $post['title'] ?></a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -640,7 +634,7 @@
                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                                     </div>
                                     <div class="binduz-er-trending-news-title">
-                                        <h3 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h3>
+                                        <h3 class="binduz-er-title"><a href="?post_id=<?= $post['id'] ?>"><?= $post['title'] ?></a></h3>
                                     </div>
                                 </div>
                                 <div class="binduz-er-news-share">
@@ -780,7 +774,7 @@
                                                 </div>
                                             </div>
                                             <div class="binduz-er-trending-news-list-title">
-                                                <h4 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h4>
+                                                <h4 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>"><?= $post['title'] ?></a></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -816,7 +810,7 @@
                                                 </div>
                                             </div>
                                             <div class="binduz-er-trending-news-list-title">
-                                                <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
+                                                <h4 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
                                                         <?php
 
                                                         $post_title = $post['title'];
@@ -871,7 +865,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="binduz-er-trending-news-list-title">
-                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
+                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
                                                             <?php
 
                                                             $post_title = $post['title'];
@@ -920,7 +914,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="binduz-er-trending-news-list-title">
-                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h4>
+                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>"><?= $post['title'] ?></a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -960,7 +954,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="binduz-er-trending-news-list-title">
-                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
+                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
                                                             <?php
 
                                                             $post_title = $post['title'];
@@ -1028,7 +1022,7 @@
                                         </div>
                                     </div>
                                     <div class="binduz-er-trending-news-list-title">
-                                        <h4 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h4>
+                                        <h4 class="binduz-er-title"><a href="?post_id=<?= $post['id'] ?>"><?= $post['title'] ?></a></h4>
                                     </div>
                                 </div>
                             </div>
@@ -1080,7 +1074,7 @@
                                                 </div>
                                             </div>
                                             <div class="binduz-er-trending-news-list-title">
-                                                <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
+                                                <h4 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
                                                         <?php
 
                                                         $post_title = $post['title'];
@@ -1147,7 +1141,7 @@
                                     </div>
                                     <div class="binduz-er-content">
                                         <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
-                                        <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
+                                        <h4 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
                                                 <?php
 
                                                 $post_title = $post['title'];
@@ -1278,7 +1272,7 @@
                                                 </div>
                                                 <div class="binduz-er-content">
                                                     <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
-                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
+                                                    <h4 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
                                                             <?php
 
                                                             $post_title = $post['title'];

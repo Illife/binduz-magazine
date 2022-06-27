@@ -68,7 +68,7 @@
                                     <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                                 </div>
                             </div>
-                            <h3 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h3>
+                            <h3 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>"><?= $post['title'] ?></a></h3>
                             <div class="binduz-er-meta-author">
                                 <div class="binduz-er-author">
                                     <?php
@@ -146,7 +146,7 @@
                                             </div>
                                             <div class="binduz-er-content">
                                                 <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
-                                                <h4 class="binduz-er-title"><a href="<?= PATH ?>/details">
+                                                <h4 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
                                                         <?php
 
                                                         $post_title = $post['title'];
@@ -172,7 +172,7 @@
                                             <div class="binduz-er-content">
                                                 <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                                                 <h4 class="binduz-er-title">
-                                                    <a href="<?= PATH ?>/details">
+                                                    <a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>">
                                                         <?php
 
                                                         $post_title = $post['title'];
@@ -268,7 +268,7 @@
                                                 <span><i class="fal fa-calendar-alt"></i><?= $post['date'] ?></span>
                                             </div>
                                         </div>
-                                        <h5 class="binduz-er-title"><a href="<?= PATH ?>/details"><?= $post['title'] ?></a></h5>
+                                        <h5 class="binduz-er-title"><a href="<?= PATH ?>/details?post_id=<?= $post['id'] ?>"><?= $post['title'] ?></a></h5>
                                         <div class="binduz-er-meta-author">
                                             <?= $author['name'] ?></span></span>
                                         </div>
